@@ -43,8 +43,9 @@
 
     body {
       background:
-        radial-gradient(circle at 20% 20%, rgba(37,99,235,0.06), transparent 40%),
-        radial-gradient(circle at 80% 0%, rgba(124,58,237,0.05), transparent 40%),
+        radial-gradient(circle at 10% 20%, rgba(37,99,235,0.08), transparent 40%),
+        radial-gradient(circle at 90% 10%, rgba(124,58,237,0.06), transparent 40%),
+        radial-gradient(circle at 50% 100%, rgba(37,99,235,0.05), transparent 50%),
         #f9fafb;
     }
 
@@ -56,7 +57,7 @@
 
     /* Hover lift */
     .lift { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-    .lift:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(37,99,235,.1); border-color: rgba(37,99,235,.3) !important; }
+    .lift:hover { transform: translateY(-6px) scale(1.01); box-shadow: 0 20px 50px rgba(37,99,235,.12); border-color: rgba(37,99,235,.3) !important; }
 
     /* Blue underline grow */
     .grow-line { position:relative; }
@@ -77,9 +78,15 @@
 
 <body class="text-ink font-body antialiased overflow-x-hidden">
 
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="progress-bar" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-blue to-accent z-[60] w-0 transition-none"></div>
+
   <!-- NAV -->
   <nav id="nav" class="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-14 py-5 transition-all duration-300">
-    <a href="#hero" class="font-display font-bold text-[15px] text-ink no-underline">Arun S Prema</a>
+    <div class="flex flex-col">
+      <a href="#hero" class="font-display font-bold text-[15px] text-ink no-underline leading-tight">Arun S Prema</a>
+      <p class="text-[11px] text-dim hidden md:block">Strategy · Operations · Data — I fix what others miss</p>
+    </div>
     <div class="hidden md:flex gap-8">
       <a href="#about"    class="text-[13px] font-medium text-dim hover:text-blue transition-colors no-underline">About</a>
       <a href="#case"     class="text-[13px] font-medium text-dim hover:text-blue transition-colors no-underline">Case Studies</a>
@@ -118,11 +125,11 @@
       <h1 class="rv rv-d1 font-display font-extrabold text-[clamp(44px,7vw,88px)] leading-[1.05] tracking-tight text-ink mb-6">
         Turning Broken<br>
         <span class="text-accent">Systems</span> Into<br>
-        Growth Engines.
+        Measurable Growth.
       </h1>
 
-      <p class="rv rv-d2 text-[16px] text-slate-600 leading-[1.8] max-w-xl mb-10">
-        Data-driven strategist delivering measurable business impact across
+      <p class="rv rv-d2 text-[15px] text-slate-600 leading-[1.8] max-w-xl mb-10">
+        Data-driven strategist delivering <span class="bg-blue/10 px-1.5 py-0.5 rounded text-ink font-medium">measurable business impact</span> across
         analytics, operations, and cross-functional execution.
         I find what's broken — and fix it with proof.
       </p>
@@ -160,6 +167,17 @@
     </div>
   </section>
 
+  <!-- PERSPECTIVE / THINKING MOMENT -->
+  <section class="px-6 md:px-14 py-16 md:py-20">
+    <div class="rv max-w-3xl ml-auto">
+      <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-4">Perspective</p>
+      <h3 class="font-display font-bold text-[clamp(22px,3vw,34px)] text-ink leading-[1.25]">
+        Most organizations don't fail<br class="hidden md:block"> because of lack of data.<br>
+        They fail because <span class="text-accent">no one owns the decision.</span>
+      </h3>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section id="about" class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="grid md:grid-cols-[300px_1fr] gap-14 md:gap-20 max-w-6xl">
@@ -168,15 +186,45 @@
         <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">From Chaos<br>to Clarity</h2>
       </div>
       <div class="rv rv-d1 flex flex-col gap-5 max-w-2xl">
-        <p class="text-[16px] text-[#475569] leading-[1.75]">
+        <p class="text-[15px] text-[#475569] leading-[1.8]">
           I specialize in finding what's broken beneath the surface — misaligned incentives, invisible financial leaks, gut-feel decisions that cost millions — and redesigning the mechanisms that fix them.
         </p>
-        <p class="text-[16px] text-[#475569] leading-[1.75]">
-          Over 8+ years I've led <span class="text-ink font-medium">cross-functional initiatives</span> spanning Finance, Sales, Supply Chain, and IT — always with the same focus: <span class="text-blue font-medium">measurable outcomes, not just reports.</span>
+        <p class="text-[15px] text-[#475569] leading-[1.8]">
+          Over 8+ years I've led <span class="bg-blue/10 px-1.5 py-0.5 rounded text-ink font-medium">cross-functional initiatives</span> spanning Finance, Sales, Supply Chain, and IT — always with the same focus: <span class="bg-accent/10 px-1.5 py-0.5 rounded text-accent font-medium">measurable outcomes, not just reports.</span>
         </p>
-        <p class="text-[16px] text-[#475569] leading-[1.75]">
+        <p class="text-[15px] text-[#475569] leading-[1.8]">
           My toolkit is technical — SQL, Python, Tableau, Power BI — but my value is strategic. I build analytics frameworks that surface real decisions, then execute across teams and territories to ship those decisions into the real world.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I THINK — DECISION MINDSET -->
+  <section class="px-6 md:px-14 py-16 md:py-20">
+    <div class="rv mb-10">
+      <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-4">Mental Model</p>
+      <p class="font-display font-bold text-[clamp(20px,2.5vw,26px)] text-ink leading-snug mb-1">
+        I don't build dashboards.
+      </p>
+      <p class="font-display font-bold text-[clamp(20px,2.5vw,26px)] text-accent leading-snug">
+        I build decisions.
+      </p>
+    </div>
+    <div class="rv rv-d1 grid md:grid-cols-3 gap-5 max-w-4xl text-[14px] text-dim">
+      <div class="relative bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6">
+        <div class="absolute top-2 left-2 bg-blue/8 w-full h-full rounded-xl -z-10"></div>
+        <p class="text-blue font-bold mb-2">→</p>
+        <p>If <span class="text-ink font-medium">incentives are wrong</span>, behavior will be wrong — no matter how good the data</p>
+      </div>
+      <div class="relative bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6">
+        <div class="absolute top-2 left-2 bg-blue/8 w-full h-full rounded-xl -z-10"></div>
+        <p class="text-blue font-bold mb-2">→</p>
+        <p>If <span class="text-ink font-medium">data is slow</span>, decisions will be wrong — no matter how smart the team</p>
+      </div>
+      <div class="relative bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-6">
+        <div class="absolute top-2 left-2 bg-blue/8 w-full h-full rounded-xl -z-10"></div>
+        <p class="text-blue font-bold mb-2">→</p>
+        <p>If <span class="text-ink font-medium">ownership is unclear</span>, execution will fail — no matter how good the strategy</p>
       </div>
     </div>
   </section>
@@ -228,6 +276,12 @@
 
   <!-- BEFORE / AFTER -->
   <section class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-14 md:py-20">
+    <div class="rv mb-10">
+      <p class="font-display font-bold text-[clamp(20px,3vw,28px)] text-ink leading-snug">
+        Most teams would have added dashboards.<br>
+        <span class="text-dim font-normal">I fixed the system instead.</span>
+      </p>
+    </div>
     <p class="rv text-[12px] font-semibold text-dim tracking-wide uppercase mb-8">The Transformation</p>
     <div class="rv grid md:grid-cols-[1fr_56px_1fr] gap-4 items-stretch max-w-5xl">
 
@@ -292,6 +346,11 @@
         </div>
       </div>
 
+      <!-- Transition -->
+      <div class="rv relative pl-10 md:pl-0 mb-6 -mt-8">
+        <p class="text-[13px] text-dim italic md:text-center">This is where things started breaking.</p>
+      </div>
+
       <!-- Solution -->
       <div class="tl-parent rv rv-d1 relative grid md:grid-cols-2 gap-6 md:gap-14 mb-14 pl-10 md:pl-0">
         <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-1"><div class="tl-dot"></div></div>
@@ -307,6 +366,11 @@
         </div>
       </div>
 
+      <!-- Transition -->
+      <div class="rv relative pl-10 md:pl-0 mb-6 -mt-8">
+        <p class="text-[13px] text-dim italic md:text-center">So I redesigned the system from scratch.</p>
+      </div>
+
       <!-- Execution -->
       <div class="tl-parent rv rv-d2 relative grid md:grid-cols-2 gap-6 md:gap-14 mb-14 pl-10 md:pl-0">
         <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-1"><div class="tl-dot"></div></div>
@@ -319,6 +383,11 @@
           <div class="flex items-center gap-4"><span class="font-display font-bold text-[32px] text-blue leading-none">140</span><span class="text-[14px] text-dim">Distributors activated</span></div>
           <div class="flex items-center gap-4"><span class="font-display font-bold text-[32px] text-blue leading-none">6K+</span><span class="text-[14px] text-dim">Retailers engaged</span></div>
         </div>
+      </div>
+
+      <!-- Transition -->
+      <div class="rv relative pl-10 md:pl-0 mb-6 -mt-8">
+        <p class="text-[13px] text-dim italic md:text-center">Then we shipped it — across 95 territories simultaneously.</p>
       </div>
 
       <!-- Results -->
@@ -434,7 +503,12 @@
         <div class="absolute top-0 left-0 w-full h-[3px] bg-blue scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 rounded-t-xl"></div>
         <svg class="w-8 h-8 text-blue mb-5" fill="none" viewBox="0 0 32 32"><path d="M6 26l8-10 6 6 6-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
         <h3 class="font-display font-bold text-[18px] text-ink mb-2">Sales Incentive Optimization</h3>
-        <p class="text-[14px] text-dim leading-relaxed mb-5">Redesigned volume-based incentive structure to margin-based tiers, aligning the sales force with profitable growth.</p>
+        <div class="group relative mb-5">
+          <p class="text-[14px] text-dim leading-relaxed transition-opacity duration-300 group-hover:opacity-0">Redesigned volume-based incentive structure to margin-based tiers, aligning the sales force with profitable growth.</p>
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center">
+            <p class="text-[13px] text-ink leading-relaxed"><span class="font-semibold text-accent">Insight:</span> Sales teams weren't lazy — the incentives were broken. Fix the system, not the people.</p>
+          </div>
+        </div>
         <div class="flex items-baseline gap-2"><span class="font-display font-bold text-[28px] text-blue">20%</span><span class="text-[12px] text-dim">revenue growth</span></div>
       </div>
       <div class="rv rv-d1 lift bg-white/80 backdrop-blur-md rounded-xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 group relative overflow-hidden shadow-sm">
@@ -556,7 +630,7 @@
         <h2 class="font-display font-bold text-[clamp(36px,6vw,72px)] text-ink leading-[1.05] tracking-tight mb-7">
           Let's build<br>something<br>that works.
         </h2>
-        <p class="text-[16px] text-dim leading-[1.75] max-w-md">
+        <p class="text-[15px] text-dim leading-[1.8] max-w-md">
           Open to conversations about <span class="text-ink font-medium">strategy, operations, or complex problems</span> that need a structured approach. A role, a project, or an interesting problem — I'd love to hear it.
         </p>
       </div>
@@ -593,6 +667,14 @@
   </footer>
 
   <script>
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / height) * 100;
+      document.getElementById('progress-bar').style.width = progress + '%';
+    });
+
     // Nav scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
