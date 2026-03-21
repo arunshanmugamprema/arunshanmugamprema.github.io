@@ -18,12 +18,12 @@
       theme: {
         extend: {
           colors: {
-            bg:     '#060606',
-            bg2:    '#0c0c0c',
-            bg3:    '#111111',
+            bg:     '#0b0f14',
+            bg2:    '#11161c',
+            bg3:    '#161b22',
             teal:   '#00d4c8',
             dim:    '#555555',
-            faint:  '#2a2a2a',
+            faint:  '#1e2530',
           },
           fontFamily: {
             display: ['"Barlow Condensed"', 'sans-serif'],
@@ -38,6 +38,17 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     ::selection { background: rgba(0,212,200,.25); color: #fff; }
+
+    /* Soft dark gradient + subtle data grid */
+    body {
+      background-color: #0b0f14;
+      background-image:
+        linear-gradient(to bottom, #0b0f14 0%, #0d1117 50%, #0b0f14 100%),
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 100% 100%, 40px 40px, 40px 40px;
+      background-blend-mode: normal, overlay, overlay;
+    }
 
     /* Reveal */
     .rv { opacity:0; transform:translateY(28px); transition: opacity .8s ease, transform .8s ease; }
@@ -89,7 +100,7 @@
   </style>
 </head>
 
-<body class="bg-bg text-white font-body antialiased overflow-x-hidden">
+<body class="text-white font-body antialiased overflow-x-hidden">
 
   <!-- ═══════════ NAV ═══════════ -->
   <nav id="nav" class="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-8 md:px-16 py-6 transition-all duration-300">
@@ -159,23 +170,23 @@
   </section>
 
   <!-- ═══════════ ABOUT ═══════════ -->
-  <section id="about" class="border-t border-white/[.06]">
+  <section id="about" class="border-t border-white/[.06] bg-gradient-to-b from-transparent to-white/[0.02]">
     <div class="grid md:grid-cols-[320px_1fr] gap-16 md:gap-24 px-8 md:px-16 py-24 md:py-32">
       <div class="rv">
         <div class="text-[10px] font-medium tracking-[.24em] uppercase text-teal mb-4">About</div>
         <h2 class="font-display font-black text-[clamp(36px,5vw,60px)] uppercase leading-[.9] tracking-tight">From Chaos<br>to Clarity</h2>
       </div>
       <div class="rv rv-d1 max-w-2xl flex flex-col gap-6">
-        <p class="text-[15px] font-light text-white/70 leading-[1.85]">
+        <p class="text-[15px] font-light text-white/60 leading-[1.85]">
           I specialize in finding what's broken beneath the surface — misaligned incentives, invisible financial leaks,
           gut-feel decisions that cost millions — and redesigning the mechanisms that fix them.
         </p>
-        <p class="text-[15px] font-light text-white/70 leading-[1.85]">
+        <p class="text-[15px] font-light text-white/60 leading-[1.85]">
           Over 8+ years, I've led <span class="text-white font-normal">cross-functional initiatives</span> spanning
           Finance, Sales, Supply Chain, and IT — always with the same focus:
           <span class="text-teal font-normal">measurable outcomes, not just reports.</span>
         </p>
-        <p class="text-[15px] font-light text-white/70 leading-[1.85]">
+        <p class="text-[15px] font-light text-white/60 leading-[1.85]">
           My toolkit is technical — SQL, Python, Tableau, Power BI — but my value is strategic.
           I build analytics frameworks that surface real decisions, then I execute across teams and territories to ship those decisions into the real world.
         </p>
@@ -184,7 +195,7 @@
   </section>
 
   <!-- ═══════════ CASE STUDY ═══════════ -->
-  <section id="case" class="border-t border-white/[.06] px-8 md:px-16 py-24 md:py-32">
+  <section id="case" class="border-t border-white/[.06] px-8 md:px-16 py-24 md:py-32 bg-gradient-to-b from-white/[0.02] to-transparent">
     <div class="rv mb-16 md:mb-24">
       <div class="text-[10px] font-medium tracking-[.24em] uppercase text-teal mb-4">Case Study</div>
       <h2 class="font-display font-black text-[clamp(36px,5vw,60px)] uppercase leading-[.9] tracking-tight">Redesigning<br>Growth at Scale</h2>
@@ -310,7 +321,7 @@
   </section>
 
   <!-- ═══════════ SKILLS ═══════════ -->
-  <section id="skills" class="border-t border-white/[.06] px-8 md:px-16 py-24 md:py-32">
+  <section id="skills" class="border-t border-white/[.06] px-8 md:px-16 py-24 md:py-32 bg-gradient-to-b from-transparent to-white/[0.02]">
     <div class="grid md:grid-cols-[280px_1fr] gap-16 md:gap-24">
       <div class="rv">
         <div class="text-[10px] font-medium tracking-[.24em] uppercase text-teal mb-4">Capabilities</div>
@@ -355,7 +366,7 @@
   </section>
 
   <!-- ═══════════ SELECTED PROJECTS ═══════════ -->
-  <section id="projects" class="border-t border-white/[.06] px-8 md:px-16 py-24 md:py-32">
+  <section id="projects" class="border-t border-white/[.06] px-8 md:px-16 py-24 md:py-32 bg-gradient-to-b from-white/[0.02] to-transparent">
     <div class="rv mb-16 md:mb-20">
       <div class="text-[10px] font-medium tracking-[.24em] uppercase text-teal mb-4">Featured Work</div>
       <h2 class="font-display font-black text-[clamp(36px,5vw,60px)] uppercase leading-[.9] tracking-tight">Selected<br>Projects</h2>
@@ -399,7 +410,7 @@
   </section>
 
   <!-- ═══════════ KEY ACHIEVEMENTS ═══════════ -->
-  <section id="results" class="border-t border-white/[.06]">
+  <section id="results" class="border-t border-white/[.06] bg-gradient-to-b from-transparent to-white/[0.02]">
     <div class="px-8 md:px-16 py-24 md:py-32">
       <div class="rv mb-16 md:mb-24">
         <div class="text-[10px] font-medium tracking-[.24em] uppercase text-teal mb-4">Track Record</div>
