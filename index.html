@@ -18,17 +18,17 @@
       theme: {
         extend: {
           colors: {
-            bg:     '#f8fafc',
+            bg:     '#f9fafb',
             bg2:    '#ffffff',
             bg3:    '#eef2f7',
-            blue:   '#0ea5e9',
+            blue:   '#2563eb',
             accent: '#7c3aed',
             dim:    '#64748b',
-            faint:  '#e2e8f0',
-            ink:    '#0f172a',
+            faint:  '#e5e7eb',
+            ink:    '#0b1220',
           },
           fontFamily: {
-            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Manrope"', 'sans-serif'],
             body:    ['"Inter"', 'sans-serif'],
           },
         }
@@ -36,17 +36,16 @@
     }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
-    ::selection { background: rgba(14,165,233,.18); color: #0f172a; }
+    ::selection { background: rgba(37,99,235,.15); color: #0b1220; }
 
     body {
-      background-color: #f8fafc;
-      background-image:
-        linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
-      background-size: 48px 48px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(37,99,235,0.06), transparent 40%),
+        radial-gradient(circle at 80% 0%, rgba(124,58,237,0.05), transparent 40%),
+        #f9fafb;
     }
 
     /* Reveal */
@@ -57,16 +56,16 @@
 
     /* Hover lift */
     .lift { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-    .lift:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(14,165,233,.1); border-color: rgba(14,165,233,.35) !important; }
+    .lift:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(37,99,235,.1); border-color: rgba(37,99,235,.3) !important; }
 
     /* Blue underline grow */
     .grow-line { position:relative; }
-    .grow-line::after { content:''; position:absolute; bottom:-1px; left:0; width:0; height:2px; background:#0ea5e9; transition: width .35s ease; }
+    .grow-line::after { content:''; position:absolute; bottom:-1px; left:0; width:0; height:2px; background:#2563eb; transition: width .35s ease; }
     .grow-line:hover::after { width:100%; }
 
     /* Timeline dot */
-    .tl-dot { width:14px; height:14px; border-radius:50%; border:2px solid #0ea5e9; background:#f8fafc; flex-shrink:0; position:relative; z-index:2; }
-    .tl-dot::after { content:''; position:absolute; top:50%; left:50%; width:6px; height:6px; border-radius:50%; background:#0ea5e9; transform:translate(-50%,-50%); opacity:0; transition:opacity .3s; }
+    .tl-dot { width:14px; height:14px; border-radius:50%; border:2px solid #2563eb; background:#f9fafb; flex-shrink:0; position:relative; z-index:2; }
+    .tl-dot::after { content:''; position:absolute; top:50%; left:50%; width:6px; height:6px; border-radius:50%; background:#2563eb; transform:translate(-50%,-50%); opacity:0; transition:opacity .3s; }
     .tl-parent:hover .tl-dot::after { opacity:1; }
 
     /* Terminal */
@@ -116,13 +115,13 @@
         </span>
       </div>
 
-      <h1 class="rv rv-d1 font-display font-extrabold text-[clamp(40px,7vw,80px)] leading-[1.05] tracking-tight text-ink mb-6">
+      <h1 class="rv rv-d1 font-display font-extrabold text-[clamp(44px,7vw,88px)] leading-[1.05] tracking-tight text-ink mb-6">
         Turning Broken<br>
-        <span class="text-blue">Systems</span> Into<br>
+        <span class="text-accent">Systems</span> Into<br>
         Growth Engines.
       </h1>
 
-      <p class="rv rv-d2 text-[17px] font-normal text-dim leading-[1.75] max-w-xl mb-10">
+      <p class="rv rv-d2 text-[16px] text-slate-600 leading-[1.8] max-w-xl mb-10">
         Data-driven strategist delivering measurable business impact across
         analytics, operations, and cross-functional execution.
         I find what's broken — and fix it with proof.
@@ -142,19 +141,19 @@
 
     <!-- Floating stats strip -->
     <div class="rv rv-d4 mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl">
-      <div class="bg-white border border-faint rounded-xl px-5 py-4 shadow-sm">
+      <div class="bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] px-5 py-4 shadow-sm">
         <div class="text-[28px] font-extrabold font-display text-ink leading-none">20<span class="text-blue">%</span></div>
         <div class="text-[12px] text-dim mt-1">Revenue Growth</div>
       </div>
-      <div class="bg-white border border-faint rounded-xl px-5 py-4 shadow-sm">
+      <div class="bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] px-5 py-4 shadow-sm">
         <div class="text-[28px] font-extrabold font-display text-ink leading-none">$2<span class="text-blue">M+</span></div>
         <div class="text-[12px] text-dim mt-1">Errors Caught</div>
       </div>
-      <div class="bg-white border border-faint rounded-xl px-5 py-4 shadow-sm">
+      <div class="bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] px-5 py-4 shadow-sm">
         <div class="text-[28px] font-extrabold font-display text-ink leading-none">96<span class="text-blue">%</span></div>
         <div class="text-[12px] text-dim mt-1">Faster Reporting</div>
       </div>
-      <div class="bg-white border border-faint rounded-xl px-5 py-4 shadow-sm">
+      <div class="bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] px-5 py-4 shadow-sm">
         <div class="text-[28px] font-extrabold font-display text-ink leading-none">200<span class="text-blue">K+</span></div>
         <div class="text-[12px] text-dim mt-1">Residents Impacted</div>
       </div>
@@ -162,7 +161,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="border-t border-faint bg-white px-6 md:px-14 py-20 md:py-28">
+  <section id="about" class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="grid md:grid-cols-[300px_1fr] gap-14 md:gap-20 max-w-6xl">
       <div class="rv">
         <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">About</p>
@@ -183,13 +182,13 @@
   </section>
 
   <!-- HOW I DRIVE IMPACT -->
-  <section class="border-t border-faint px-6 md:px-14 py-20 md:py-28">
+  <section class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="rv mb-12">
       <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">The Approach</p>
       <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">How I Drive Impact</h2>
     </div>
     <div class="rv rv-d1 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl">
-      <div class="bg-white border border-faint rounded-xl p-7 hover:border-blue/30 hover:shadow-sm transition-all duration-300 relative group">
+      <div class="bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-7 hover:border-blue/30 hover:shadow-sm transition-all duration-300 relative group">
         <div class="hidden md:block absolute top-1/2 -right-2 w-4 h-px bg-faint z-10"></div>
         <div class="w-9 h-9 rounded-lg bg-blue/10 border border-blue/20 flex items-center justify-center mb-5">
           <svg class="w-4.5 h-4.5 text-blue" width="20" height="20" fill="none" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 7v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -198,7 +197,7 @@
         <div class="font-display font-bold text-[16px] text-ink mb-2">Diagnose</div>
         <p class="text-[13px] text-dim leading-relaxed">Identify broken systems, hidden inefficiencies, and misaligned incentives</p>
       </div>
-      <div class="bg-white border border-faint rounded-xl p-7 hover:border-blue/30 hover:shadow-sm transition-all duration-300 relative group">
+      <div class="bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-7 hover:border-blue/30 hover:shadow-sm transition-all duration-300 relative group">
         <div class="hidden md:block absolute top-1/2 -right-2 w-4 h-px bg-faint z-10"></div>
         <div class="w-9 h-9 rounded-lg bg-blue/10 border border-blue/20 flex items-center justify-center mb-5">
           <svg class="w-4.5 h-4.5 text-blue" width="20" height="20" fill="none" viewBox="0 0 20 20"><path d="M4 10h12M10 4v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="3" y="3" width="14" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -216,7 +215,7 @@
         <div class="font-display font-bold text-[16px] text-blue mb-2">Redesign</div>
         <p class="text-[13px] text-dim leading-relaxed">Build scalable systems, processes, and incentives that align teams to outcomes</p>
       </div>
-      <div class="bg-white border border-faint rounded-xl p-7 hover:border-blue/30 hover:shadow-sm transition-all duration-300 group">
+      <div class="bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-7 hover:border-blue/30 hover:shadow-sm transition-all duration-300 group">
         <div class="w-9 h-9 rounded-lg bg-blue/10 border border-blue/20 flex items-center justify-center mb-5">
           <svg class="w-4.5 h-4.5 text-blue" width="20" height="20" fill="none" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M10 4v2M10 14v2M4 10h2M14 10h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
@@ -228,7 +227,7 @@
   </section>
 
   <!-- BEFORE / AFTER -->
-  <section class="border-t border-faint bg-white px-6 md:px-14 py-14 md:py-20">
+  <section class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-14 md:py-20">
     <p class="rv text-[12px] font-semibold text-dim tracking-wide uppercase mb-8">The Transformation</p>
     <div class="rv grid md:grid-cols-[1fr_56px_1fr] gap-4 items-stretch max-w-5xl">
 
@@ -269,7 +268,7 @@
   </section>
 
   <!-- CASE STUDY — MAIN TIMELINE -->
-  <section id="case" class="border-t border-faint px-6 md:px-14 py-20 md:py-28">
+  <section id="case" class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="rv mb-14 max-w-6xl">
       <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">Case Study</p>
       <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">Redesigning Growth at Scale</h2>
@@ -340,7 +339,7 @@
   </section>
 
   <!-- MORE CASE STUDIES: Digital Channel + DHS -->
-  <section class="border-t border-faint bg-white px-6 md:px-14 py-20 md:py-28">
+  <section class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="rv mb-12">
       <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">More Work</p>
       <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">Other Initiatives</h2>
@@ -381,42 +380,42 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="border-t border-faint px-6 md:px-14 py-20 md:py-28">
+  <section id="skills" class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="grid md:grid-cols-[260px_1fr] gap-12 md:gap-20 max-w-6xl">
       <div class="rv">
         <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">Capabilities</p>
         <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">Skills</h2>
       </div>
       <div class="rv rv-d1 grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M9 18l3-4 3 3 4-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="text-[13px] font-semibold text-ink">SQL</span>
         </div>
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><path d="M8 22V12M14 22V6M20 22V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           <span class="text-[13px] font-semibold text-ink">Python</span>
         </div>
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M14 9v5l3.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
           <span class="text-[13px] font-semibold text-ink">Tableau</span>
         </div>
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><rect x="5" y="5" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="15" y="5" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="5" y="15" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="15" y="15" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.4"/></svg>
           <span class="text-[13px] font-semibold text-ink">Power BI</span>
         </div>
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><path d="M5 14h4l3-7 4 14 3-7h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="text-[13px] font-semibold text-ink">Data Analytics</span>
         </div>
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><circle cx="14" cy="14" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M7 7l3 3M18 18l3 3M7 21l3-3M18 10l3-3M14 4v4M14 20v4M4 14h4M20 14h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
           <span class="text-[13px] font-semibold text-ink">Strategy</span>
         </div>
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><path d="M6 10h16M6 14h16M6 18h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
           <span class="text-[13px] font-semibold text-ink">Operations</span>
         </div>
-        <div class="lift bg-white border border-faint rounded-xl px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
+        <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] px-4 py-5 flex flex-col items-center text-center gap-3 shadow-sm">
           <svg class="w-7 h-7 text-blue" fill="none" viewBox="0 0 28 28"><circle cx="14" cy="8" r="3" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="20" r="3" stroke="currentColor" stroke-width="1.4"/><circle cx="21" cy="20" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M14 11v2M10.5 18l-1.5-3M17.5 18l1.5-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
           <span class="text-[13px] font-semibold text-ink">Cross-Functional<br>Leadership</span>
         </div>
@@ -425,27 +424,27 @@
   </section>
 
   <!-- SELECTED PROJECTS -->
-  <section id="projects" class="border-t border-faint bg-white px-6 md:px-14 py-20 md:py-28">
+  <section id="projects" class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="rv mb-12">
       <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">Featured Work</p>
       <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">Selected Projects</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-5 max-w-6xl">
-      <div class="rv lift bg-bg rounded-xl border border-faint p-8 group relative overflow-hidden shadow-sm">
+      <div class="rv lift bg-white/80 backdrop-blur-md rounded-xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 group relative overflow-hidden shadow-sm">
         <div class="absolute top-0 left-0 w-full h-[3px] bg-blue scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 rounded-t-xl"></div>
         <svg class="w-8 h-8 text-blue mb-5" fill="none" viewBox="0 0 32 32"><path d="M6 26l8-10 6 6 6-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
         <h3 class="font-display font-bold text-[18px] text-ink mb-2">Sales Incentive Optimization</h3>
         <p class="text-[14px] text-dim leading-relaxed mb-5">Redesigned volume-based incentive structure to margin-based tiers, aligning the sales force with profitable growth.</p>
         <div class="flex items-baseline gap-2"><span class="font-display font-bold text-[28px] text-blue">20%</span><span class="text-[12px] text-dim">revenue growth</span></div>
       </div>
-      <div class="rv rv-d1 lift bg-bg rounded-xl border border-faint p-8 group relative overflow-hidden shadow-sm">
+      <div class="rv rv-d1 lift bg-white/80 backdrop-blur-md rounded-xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 group relative overflow-hidden shadow-sm">
         <div class="absolute top-0 left-0 w-full h-[3px] bg-blue scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 rounded-t-xl"></div>
         <svg class="w-8 h-8 text-blue mb-5" fill="none" viewBox="0 0 32 32"><rect x="5" y="7" width="22" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M11 19l4-5 4 3 4-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <h3 class="font-display font-bold text-[18px] text-ink mb-2">SQL Analytics Framework</h3>
         <p class="text-[14px] text-dim leading-relaxed mb-5">Built custom SQL frameworks from scratch — automated reporting, caught $2M+ in billing errors, compressed decision cycles.</p>
         <div class="flex items-baseline gap-2"><span class="font-display font-bold text-[28px] text-blue">96%</span><span class="text-[12px] text-dim">faster reporting</span></div>
       </div>
-      <div class="rv rv-d2 lift bg-bg rounded-xl border border-faint p-8 group relative overflow-hidden shadow-sm">
+      <div class="rv rv-d2 lift bg-white/80 backdrop-blur-md rounded-xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 group relative overflow-hidden shadow-sm">
         <div class="absolute top-0 left-0 w-full h-[3px] bg-blue scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 rounded-t-xl"></div>
         <svg class="w-8 h-8 text-blue mb-5" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 16l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <h3 class="font-display font-bold text-[18px] text-ink mb-2">Zero-Budget COVID Pivot</h3>
@@ -456,34 +455,34 @@
   </section>
 
   <!-- KEY ACHIEVEMENTS -->
-  <section id="results" class="border-t border-faint px-6 md:px-14 py-20 md:py-28">
+  <section id="results" class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="rv mb-12">
       <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">Track Record</p>
       <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">Proof in the Numbers</h2>
     </div>
     <div class="rv rv-d1 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl">
-      <div class="lift bg-white border border-faint rounded-xl p-8 shadow-sm group">
+      <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 shadow-sm group">
         <div class="font-display font-bold text-[clamp(44px,5vw,64px)] leading-none text-ink tracking-tight">
           <span class="count-num" data-target="20">0</span><span class="text-blue">%</span>
         </div>
         <div class="mt-2 text-[13px] font-medium text-dim group-hover:text-ink transition-colors">Annual Revenue Growth</div>
         <p class="mt-3 text-[13px] text-dim leading-relaxed">Margin-based incentive redesign across 95 territories</p>
       </div>
-      <div class="lift bg-white border border-faint rounded-xl p-8 shadow-sm group">
+      <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 shadow-sm group">
         <div class="font-display font-bold text-[clamp(44px,5vw,64px)] leading-none text-ink tracking-tight">
           <span class="count-num" data-target="96">0</span><span class="text-blue">%</span>
         </div>
         <div class="mt-2 text-[13px] font-medium text-dim group-hover:text-ink transition-colors">Faster Reporting</div>
         <p class="mt-3 text-[13px] text-dim leading-relaxed">SQL frameworks compressed weeks into hours</p>
       </div>
-      <div class="lift bg-white border border-faint rounded-xl p-8 shadow-sm group">
+      <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 shadow-sm group">
         <div class="font-display font-bold text-[clamp(44px,5vw,64px)] leading-none text-ink tracking-tight">
           $<span class="count-num" data-target="2">0</span><span class="text-blue">M+</span>
         </div>
         <div class="mt-2 text-[13px] font-medium text-dim group-hover:text-ink transition-colors">Errors Identified</div>
         <p class="mt-3 text-[13px] text-dim leading-relaxed">Financial discrepancies uncovered via structured analysis</p>
       </div>
-      <div class="lift bg-white border border-faint rounded-xl p-8 shadow-sm group">
+      <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-8 shadow-sm group">
         <div class="font-display font-bold text-[clamp(44px,5vw,64px)] leading-none text-ink tracking-tight">
           <span class="count-num" data-target="200">0</span><span class="text-blue">K+</span>
         </div>
@@ -494,7 +493,7 @@
   </section>
 
   <!-- COMMAND CENTER -->
-  <section class="border-t border-faint bg-white px-6 md:px-14 py-16 md:py-20">
+  <section class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-16 md:py-20">
     <p class="rv text-[12px] font-semibold text-blue tracking-wide uppercase mb-6">Analytics Pipeline</p>
     <div class="rv max-w-2xl bg-[#0f172a] rounded-xl overflow-hidden shadow-lg">
       <div class="flex items-center gap-2 px-5 py-3 bg-white/[.05] border-b border-white/10">
@@ -519,27 +518,27 @@
   </section>
 
   <!-- WHY ARUN -->
-  <section class="border-t border-faint px-6 md:px-14 py-20 md:py-28">
+  <section class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="rv mb-10">
       <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-3">The Case for Hiring Me</p>
       <h2 class="font-display font-bold text-[clamp(28px,4vw,44px)] text-ink leading-[1.15] tracking-tight">Why Arun?</h2>
     </div>
     <div class="rv rv-d1 grid md:grid-cols-3 gap-5 max-w-5xl">
-      <div class="lift bg-white border border-faint rounded-xl p-7 shadow-sm group hover:border-blue/25 transition-all duration-300">
+      <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-7 shadow-sm group hover:border-blue/25 transition-all duration-300">
         <div class="w-10 h-10 rounded-xl bg-blue/10 border border-blue/20 flex items-center justify-center mb-5">
           <svg class="w-5 h-5 text-blue" fill="none" viewBox="0 0 20 20"><path d="M4 10h12M10 4v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <h3 class="font-display font-bold text-[17px] text-ink mb-2">Proven $2M+ Impact</h3>
         <p class="text-[14px] text-dim leading-relaxed">Real financial errors caught, real revenue unlocked. Results are measurable and documented — not theory.</p>
       </div>
-      <div class="lift bg-white border border-faint rounded-xl p-7 shadow-sm group hover:border-accent/25 transition-all duration-300">
+      <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-7 shadow-sm group hover:border-accent/25 transition-all duration-300">
         <div class="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center mb-5">
           <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 20 20"><circle cx="10" cy="6" r="2.5" stroke="currentColor" stroke-width="1.4"/><circle cx="5" cy="15" r="2.5" stroke="currentColor" stroke-width="1.4"/><circle cx="15" cy="15" r="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v2M7.5 13.5l-1-2.5M12.5 13.5l1-2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         </div>
         <h3 class="font-display font-bold text-[17px] text-ink mb-2">Strategy + Execution</h3>
         <p class="text-[14px] text-dim leading-relaxed">I design the system AND ship it across 95 territories. Cross-functional alignment across Finance, Sales, Supply Chain, IT.</p>
       </div>
-      <div class="lift bg-white border border-faint rounded-xl p-7 shadow-sm group hover:border-blue/25 transition-all duration-300">
+      <div class="lift bg-white/80 backdrop-blur-md border border-white/50 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-7 shadow-sm group hover:border-blue/25 transition-all duration-300">
         <div class="w-10 h-10 rounded-xl bg-blue/10 border border-blue/20 flex items-center justify-center mb-5">
           <svg class="w-5 h-5 text-blue" fill="none" viewBox="0 0 20 20"><path d="M10 3v4M10 13v4M3 10h4M13 10h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.4"/></svg>
         </div>
@@ -550,7 +549,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="border-t border-faint bg-white px-6 md:px-14 py-20 md:py-28">
+  <section id="contact" class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-20 md:py-28">
     <div class="grid md:grid-cols-[1fr_440px] gap-14 md:gap-20 items-start max-w-6xl">
       <div class="rv">
         <p class="text-[12px] font-semibold text-blue tracking-wide uppercase mb-5">Get in touch</p>
@@ -588,7 +587,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="border-t border-faint px-6 md:px-14 py-6 flex flex-col md:flex-row items-center justify-between gap-2">
+  <footer class="bg-white/70 backdrop-blur-sm px-6 md:px-14 py-6 flex flex-col md:flex-row items-center justify-between gap-2">
     <p class="text-[12px] text-dim">&copy; 2026 Arun S Prema</p>
     <p class="text-[12px] text-dim">Strategy &amp; Operations · Data-Driven Redesign</p>
   </footer>
