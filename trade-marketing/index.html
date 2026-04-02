@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arun S P — Trade Marketing & Channel Sales Leader</title>
+<meta name="description" content="Trade Marketing &amp; Channel Sales Leader with 21+ years experience. Expert in incentive design, distributor strategy, and commercial analytics driving profitable growth across consumer durables and FMCG.">
+<meta name="keywords" content="Trade Marketing, Channel Sales, Distributor Management, Incentive Design, Commercial Analytics, FMCG, Consumer Durables, Chennai">
+<title>Arun S P — I redesign channel economics to unlock profitable growth at scale.</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,216 +21,216 @@
     --accent-light: #f5ece6;
     --teal: #0f6e56;
     --teal-light: #e1f5ee;
-    --gold: #ba7517;
-    --gold-light: #faeeda;
   }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 70px; }
 
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--ink);
-    font-size: 16px;
-    line-height: 1.7;
+  #scroll-progress {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: var(--accent); z-index: 9999; transition: width 0.1s linear;
   }
+
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); font-size: 16px; line-height: 1.7; }
 
   /* NAV */
   nav {
     position: sticky; top: 0; z-index: 100;
-    background: rgba(250,248,243,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
-    display: flex; align-items: center; justify-content: space-between;
-    height: 56px;
+    background: rgba(250,248,243,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border); padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between; height: 56px;
   }
   .nav-brand { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--ink); text-decoration: none; }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
   .nav-links a { font-size: 13px; font-weight: 500; color: var(--ink-soft); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--accent); }
+  .nav-cta { background: var(--accent) !important; color: #fff !important; padding: 8px 18px !important; border-radius: 4px; transition: all 0.2s !important; }
+  .nav-cta:hover { background: #9a4218 !important; transform: translateY(-1px); }
 
   /* HERO */
-  .hero {
-    display: grid; grid-template-columns: 1fr 1fr;
-    min-height: 88vh;
-  }
+  .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 88vh; }
   .hero-left {
-    background: var(--ink);
-    padding: 80px 64px;
+    background: var(--ink); padding: 80px 64px;
     display: flex; flex-direction: column; justify-content: flex-end;
     position: relative; overflow: hidden;
   }
-  .hero-left::before {
-    content: '';
-    position: absolute; top: -60px; left: -60px;
-    width: 300px; height: 300px;
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 50%;
-  }
-  .hero-left::after {
-    content: '';
-    position: absolute; bottom: 40px; right: -80px;
-    width: 200px; height: 200px;
-    border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 50%;
-  }
-  .hero-eyebrow {
-    font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
-    color: rgba(255,255,255,0.45); margin-bottom: 24px;
-  }
-  .hero-name {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(42px, 5vw, 68px);
-    font-weight: 700; line-height: 1.05;
-    color: #fff; margin-bottom: 8px;
-  }
+  .hero-left::before { content: ''; position: absolute; top: -60px; left: -60px; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,0.06); border-radius: 50%; }
+  .hero-left::after { content: ''; position: absolute; bottom: 40px; right: -80px; width: 200px; height: 200px; border: 1px solid rgba(255,255,255,0.04); border-radius: 50%; }
+  .hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 24px; }
+  .hero-name { font-family: 'Playfair Display', serif; font-size: clamp(42px, 5vw, 68px); font-weight: 700; line-height: 1.05; color: #fff; margin-bottom: 14px; }
   .hero-name em { font-style: italic; color: rgba(255,255,255,0.55); }
-  .hero-title {
-    font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.6);
-    margin-bottom: 48px; letter-spacing: 0.02em;
-  }
+  .hero-positioning { font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.78); margin-bottom: 40px; letter-spacing: 0.01em; line-height: 1.5; border-left: 2px solid var(--accent); padding-left: 16px; font-style: italic; }
   .hero-cta-group { display: flex; gap: 12px; flex-wrap: wrap; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 12px 24px; border-radius: 4px;
-    font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
-    text-decoration: none; transition: all 0.2s; cursor: pointer; border: none;
-  }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 4px; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: all 0.25s; cursor: pointer; border: none; }
   .btn-primary { background: var(--accent); color: #fff; }
-  .btn-primary:hover { background: #9a4218; }
+  .btn-primary:hover { background: #9a4218; transform: translateY(-2px); }
   .btn-outline { background: transparent; color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.25); }
-  .btn-outline:hover { background: rgba(255,255,255,0.08); color: #fff; }
+  .btn-outline:hover { background: rgba(255,255,255,0.08); color: #fff; transform: translateY(-2px); }
 
-  .hero-right {
-    background: var(--cream-dark);
-    padding: 80px 64px;
-    display: flex; flex-direction: column; justify-content: center;
-  }
-  .hero-summary {
-    font-size: 17px; font-weight: 300; line-height: 1.75;
-    color: var(--ink-soft); margin-bottom: 48px;
-  }
+  .hero-right { background: var(--cream-dark); padding: 80px 64px; display: flex; flex-direction: column; justify-content: center; }
+  .hero-summary { font-size: 17px; font-weight: 300; line-height: 1.75; color: var(--ink-soft); margin-bottom: 36px; }
   .hero-summary strong { font-weight: 500; color: var(--ink); }
+  .hero-download { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.04em; padding: 10px 0; border-bottom: 1px solid var(--accent); transition: gap 0.2s; width: fit-content; }
+  .hero-download:hover { gap: 14px; }
 
-  /* STATS STRIP */
-  .stats-strip {
-    border-top: 1px solid var(--border);
-    display: grid; grid-template-columns: repeat(3, 1fr);
-  }
-  .stat-cell {
-    padding: 28px 32px;
-    border-right: 1px solid var(--border);
-  }
+  /* BEST FIT */
+  .best-fit-block { margin: 20px 0 32px; padding: 20px 24px; background: #fff; border: 1px solid var(--border); border-radius: 6px; border-left: 3px solid var(--teal); }
+  .best-fit-label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
+  .best-fit-list { list-style: none; padding: 0; }
+  .best-fit-list li { font-size: 14px; color: var(--ink-soft); padding: 4px 0 4px 16px; position: relative; line-height: 1.5; }
+  .best-fit-list li::before { content: ''; position: absolute; left: 0; top: 12px; width: 6px; height: 1px; background: var(--teal); }
+
+  /* BEFORE / AFTER */
+  .before-after-bg { background: var(--cream-dark); }
+  .before-after-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: stretch; }
+  .ba-col { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 36px; }
+  .ba-col.after { border-color: var(--teal); border-width: 1.5px; }
+  .ba-header { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .ba-col.before .ba-header { color: var(--ink-mute); }
+  .ba-col.after .ba-header { color: var(--teal); }
+  .ba-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
+  .ba-item:last-child { margin-bottom: 0; }
+  .ba-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+  .ba-col.before .ba-dot { background: var(--ink-mute); }
+  .ba-col.after .ba-dot { background: var(--teal); }
+  .ba-text { font-size: 14px; line-height: 1.55; }
+  .ba-col.before .ba-text { color: var(--ink-mute); }
+  .ba-col.after .ba-text { color: var(--ink-soft); font-weight: 500; }
+  .ba-arrow { display: flex; align-items: center; justify-content: center; font-size: 28px; color: var(--accent); font-weight: 700; }
+
+  /* CASE STUDY */
+  .case-study-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 48px; }
+  .cs-sidebar { }
+  .cs-context { background: var(--ink); color: #fff; border-radius: 8px; padding: 32px; margin-bottom: 20px; }
+  .cs-context-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
+  .cs-context-text { font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.85); line-height: 1.6; }
+  .cs-result-card { background: var(--accent-light); border: 1px solid rgba(181,82,30,0.2); border-radius: 8px; padding: 24px; }
+  .cs-result-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .cs-result-num { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 4px; }
+  .cs-result-sub { font-size: 12px; color: var(--ink-mute); }
+  .cs-main { }
+  .cs-block { margin-bottom: 28px; }
+  .cs-block-label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .cs-block-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+  .cs-block-body { font-size: 14px; color: var(--ink-soft); line-height: 1.65; }
+  .cs-steps { list-style: none; padding: 0; margin-top: 8px; }
+  .cs-step { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .cs-step:last-child { border-bottom: none; }
+  .cs-step-num { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--accent); flex-shrink: 0; width: 24px; line-height: 1.4; }
+  .cs-step-text { font-size: 14px; color: var(--ink-soft); line-height: 1.55; }
+  .cs-step-text strong { color: var(--ink); font-weight: 500; }
+  .cs-outcomes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 8px; }
+  .cs-outcome { background: var(--teal-light); border: 1px solid rgba(15,110,86,0.15); border-radius: 6px; padding: 16px; }
+  .cs-outcome-num { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--teal); margin-bottom: 4px; }
+  .cs-outcome-label { font-size: 11px; color: var(--teal); }
+
+  /* LEADERSHIP PHILOSOPHY */
+  .philosophy-bg { background: var(--ink); }
+  .philosophy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,0.08); }
+  .philosophy-card { background: var(--ink); padding: 40px 36px; transition: background 0.2s; }
+  .philosophy-card:hover { background: #252523; }
+  .philosophy-quote { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--accent); line-height: 1; margin-bottom: 16px; }
+  .philosophy-text { font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.8); line-height: 1.65; }
+  .philosophy-text strong { font-weight: 500; color: #fff; }
+  .philosophy-hook { margin-top: 56px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; }
+  .philosophy-hook-text { font-family: 'Playfair Display', serif; font-size: clamp(20px, 2.5vw, 28px); color: rgba(255,255,255,0.7); font-style: italic; }
+  .philosophy-hook-text strong { color: #fff; font-style: normal; }
+
+  /* STATS */
+  .stats-strip { border-top: 1px solid var(--border); display: grid; grid-template-columns: repeat(3, 1fr); }
+  .stat-cell { padding: 28px 32px; border-right: 1px solid var(--border); }
   .stat-cell:last-child { border-right: none; }
-  .stat-number {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px; font-weight: 700; color: var(--accent);
-    line-height: 1.1; margin-bottom: 4px;
-  }
+  .stat-number { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; color: var(--accent); line-height: 1.1; margin-bottom: 4px; }
   .stat-label { font-size: 12px; font-weight: 500; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.1em; }
 
   /* SECTIONS */
   section { padding: 96px 0; }
   .container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
   .section-header { margin-bottom: 56px; }
-  .section-eyebrow {
-    font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: 12px;
-  }
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(28px, 3vw, 40px); font-weight: 700;
-    line-height: 1.15; color: var(--ink);
-  }
+  .section-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3vw, 40px); font-weight: 700; line-height: 1.15; color: var(--ink); }
+
+  /* HOW I OPERATE */
+  .operate-bg { background: var(--cream-dark); }
+  .operate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .operate-intersection { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 36px; }
+  .operate-label { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px; }
+  .operate-pillar { display: flex; align-items: flex-start; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--border); }
+  .operate-pillar:last-child { border-bottom: none; padding-bottom: 0; }
+  .operate-pillar-num { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--accent); line-height: 1; flex-shrink: 0; width: 28px; }
+  .operate-pillar-text strong { display: block; font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
+  .operate-pillar-text span { font-size: 13px; color: var(--ink-mute); }
+  .operate-step { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 24px; }
+  .operate-step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #fff; flex-shrink: 0; margin-top: 2px; }
+  .operate-step-content strong { display: block; font-size: 15px; font-weight: 500; color: var(--ink); margin-bottom: 3px; }
+  .operate-step-content span { font-size: 13px; color: var(--ink-mute); line-height: 1.55; }
+
+  /* LEADERSHIP */
+  .leadership-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .leadership-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 28px 32px; display: flex; gap: 20px; align-items: flex-start; transition: transform 0.2s, box-shadow 0.2s; }
+  .leadership-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.07); }
+  .leadership-icon { width: 44px; height: 44px; border-radius: 8px; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+  .leadership-card-title { font-size: 15px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+  .leadership-card-desc { font-size: 13px; color: var(--ink-mute); line-height: 1.55; }
 
   /* HIGHLIGHTS */
   .highlights-bg { background: var(--ink); }
   .highlights-bg .section-title { color: #fff; }
   .highlights-bg .section-eyebrow { color: rgba(255,255,255,0.45); }
-
   .highlights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,0.08); }
-  .highlight-card {
-    background: var(--ink); padding: 40px 36px;
-    transition: background 0.2s;
-  }
+  .highlight-card { background: var(--ink); padding: 40px 36px; transition: background 0.2s; }
   .highlight-card:hover { background: #252523; }
-  .highlight-icon {
-    width: 40px; height: 40px; border-radius: 50%;
-    background: var(--accent); display: flex; align-items: center; justify-content: center;
-    margin-bottom: 20px; font-size: 18px;
-  }
-  .highlight-big {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px; font-weight: 700; color: #fff;
-    margin-bottom: 6px; line-height: 1;
-  }
+  .highlight-icon { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 18px; }
+  .highlight-big { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #fff; margin-bottom: 6px; line-height: 1; }
   .highlight-sub { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.45); margin-bottom: 16px; letter-spacing: 0.04em; }
   .highlight-desc { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.6); line-height: 1.6; }
 
+  /* ANALYTICS */
+  .analytics-bg { background: var(--ink); }
+  .analytics-bg .section-eyebrow { color: rgba(255,255,255,0.45); }
+  .analytics-intro { font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.6); max-width: 620px; line-height: 1.75; margin-bottom: 48px; }
+  .analytics-intro strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+  .analytics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: rgba(255,255,255,0.08); }
+  .analytics-card { background: var(--ink); padding: 36px; transition: background 0.2s; }
+  .analytics-card:hover { background: #222220; }
+  .analytics-card-label { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .analytics-card-title { font-size: 17px; font-weight: 500; color: #fff; margin-bottom: 10px; line-height: 1.3; }
+  .analytics-card-desc { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+  .analytics-card-metric { margin-top: 16px; font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: var(--accent); }
+
   /* EXPERIENCE */
   .experience-grid { display: grid; grid-template-columns: 200px 1fr; gap: 0 64px; }
-  .exp-item { display: contents; }
-  .exp-meta {
-    padding: 40px 0; border-top: 1px solid var(--border);
-    font-size: 13px; color: var(--ink-mute);
-  }
+  .exp-meta { padding: 40px 0; border-top: 1px solid var(--border); font-size: 13px; color: var(--ink-mute); }
   .exp-meta strong { display: block; font-size: 12px; font-weight: 500; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px; }
   .exp-meta .period { color: var(--accent); font-weight: 500; font-size: 14px; margin-top: 8px; display: block; }
-
   .exp-content { padding: 40px 0; border-top: 1px solid var(--border); }
   .exp-role { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
-  .exp-company { font-size: 14px; font-weight: 500; color: var(--accent); margin-bottom: 20px; }
+  .exp-company { font-size: 14px; font-weight: 500; color: var(--accent); margin-bottom: 24px; }
+
+  /* PAO bullets */
+  .pao-item { margin-bottom: 14px; padding: 16px 20px; background: #fff; border: 1px solid var(--border); border-radius: 6px; border-left: 3px solid var(--accent); }
+  .pao-label { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 5px; }
+  .pao-action { font-size: 14px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 8px; }
+  .pao-outcome { font-size: 13px; font-weight: 500; color: var(--teal); }
+
   .exp-bullets { list-style: none; padding: 0; }
-  .exp-bullets li {
-    padding: 6px 0 6px 20px;
-    position: relative; font-size: 14px; color: var(--ink-soft); line-height: 1.65;
-  }
-  .exp-bullets li::before {
-    content: ''; position: absolute; left: 0; top: 15px;
-    width: 6px; height: 1px; background: var(--accent);
-  }
-  .exp-tag {
-    display: inline-block; margin: 2px 4px 2px 0;
-    padding: 3px 10px; border-radius: 3px;
-    background: var(--accent-light); color: var(--accent);
-    font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
-  }
+  .exp-bullets li { padding: 6px 0 6px 20px; position: relative; font-size: 14px; color: var(--ink-soft); line-height: 1.65; }
+  .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 15px; width: 6px; height: 1px; background: var(--accent); }
+  .exp-tag { display: inline-block; margin: 2px 4px 2px 0; padding: 3px 10px; border-radius: 3px; background: var(--accent-light); color: var(--accent); font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
   .exp-tags { margin-top: 16px; }
 
   /* SKILLS */
   .skills-bg { background: var(--cream-dark); }
   .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .skill-card {
-    background: #fff; border: 1px solid var(--border);
-    border-radius: 8px; padding: 28px 32px;
-  }
+  .skill-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 28px 32px; }
   .skill-card-title { font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 12px; }
-  .skill-pill {
-    display: inline-block; margin: 3px 4px 3px 0;
-    padding: 5px 12px; border-radius: 20px;
-    background: var(--cream-dark); color: var(--ink-soft);
-    font-size: 13px; font-weight: 400; border: 1px solid var(--border);
-  }
+  .skill-pill { display: inline-block; margin: 3px 4px 3px 0; padding: 5px 12px; border-radius: 20px; background: var(--cream-dark); color: var(--ink-soft); font-size: 13px; font-weight: 400; border: 1px solid var(--border); }
 
   /* PROJECTS */
   .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .project-card {
-    border: 1px solid var(--border); border-radius: 8px;
-    padding: 32px 28px; background: #fff;
-    transition: transform 0.2s, box-shadow 0.2s;
-    position: relative; overflow: hidden;
-  }
-  .project-card::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0;
-    height: 3px; background: var(--accent);
-  }
+  .project-card { border: 1px solid var(--border); border-radius: 8px; padding: 32px 28px; background: #fff; transition: transform 0.2s, box-shadow 0.2s; position: relative; overflow: hidden; }
+  .project-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); }
   .project-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
-  .project-tag {
-    font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--teal); background: var(--teal-light);
-    display: inline-block; padding: 3px 10px; border-radius: 3px; margin-bottom: 16px;
-  }
+  .project-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); background: var(--teal-light); display: inline-block; padding: 3px 10px; border-radius: 3px; margin-bottom: 16px; }
   .project-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 10px; line-height: 1.3; }
   .project-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.65; }
   .project-metric { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); }
@@ -237,10 +239,7 @@
 
   /* EDUCATION */
   .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .edu-card {
-    border: 1px solid var(--border); border-radius: 8px;
-    padding: 32px; background: #fff;
-  }
+  .edu-card { border: 1px solid var(--border); border-radius: 8px; padding: 32px; background: #fff; }
   .edu-degree { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 6px; line-height: 1.3; }
   .edu-school { font-size: 14px; font-weight: 500; color: var(--accent); margin-bottom: 4px; }
   .edu-year { font-size: 13px; color: var(--ink-mute); }
@@ -252,25 +251,17 @@
   .contact-bg .section-eyebrow { color: rgba(255,255,255,0.4); }
   .contact-desc { font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.6); margin: 24px 0 40px; line-height: 1.75; }
   .contact-links { display: flex; flex-direction: column; gap: 14px; }
-  .contact-link {
-    display: flex; align-items: center; gap: 14px;
-    color: rgba(255,255,255,0.7); text-decoration: none;
-    font-size: 15px; font-weight: 300; transition: color 0.2s;
-  }
+  .contact-link { display: flex; align-items: center; gap: 14px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 15px; font-weight: 300; transition: color 0.2s; }
   .contact-link:hover { color: #fff; }
-  .contact-link-icon {
-    width: 36px; height: 36px; border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.15);
-    display: flex; align-items: center; justify-content: center; font-size: 14px;
-    flex-shrink: 0;
-  }
+  .contact-link-icon { width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+
+  /* STICKY CTA */
+  .sticky-cta { position: fixed; bottom: 32px; right: 32px; z-index: 200; background: var(--accent); color: #fff; padding: 14px 24px; border-radius: 4px; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(181,82,30,0.35); transition: all 0.25s; opacity: 0; pointer-events: none; }
+  .sticky-cta.visible { opacity: 1; pointer-events: all; }
+  .sticky-cta:hover { background: #9a4218; transform: translateY(-2px); }
 
   /* FOOTER */
-  footer {
-    background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08);
-    padding: 28px 48px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
+  footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08); padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; }
   .footer-copy { font-size: 13px; color: rgba(255,255,255,0.3); }
   .footer-brand { font-family: 'Playfair Display', serif; font-size: 16px; color: rgba(255,255,255,0.4); }
 
@@ -282,6 +273,7 @@
   .fade-up:nth-child(3) { animation-delay: 0.3s; }
   .fade-up:nth-child(4) { animation-delay: 0.4s; }
   .fade-up:nth-child(5) { animation-delay: 0.5s; }
+  .fade-up:nth-child(6) { animation-delay: 0.6s; }
 
   /* RESPONSIVE */
   @media (max-width: 860px) {
@@ -290,8 +282,10 @@
     .hero-right { padding: 48px 32px 60px; }
     .stats-strip { grid-template-columns: 1fr 1fr; }
     .stats-strip .stat-cell:last-child { border-right: 1px solid var(--border); grid-column: 1 / -1; border-top: 1px solid var(--border); }
-    .highlights-grid, .projects-grid { grid-template-columns: 1fr; }
-    .skills-grid, .edu-grid { grid-template-columns: 1fr; }
+    .highlights-grid, .projects-grid, .analytics-grid, .leadership-grid, .operate-grid, .skills-grid, .edu-grid, .philosophy-grid, .cs-outcomes { grid-template-columns: 1fr; }
+    .before-after-grid { grid-template-columns: 1fr; }
+    .ba-arrow { transform: rotate(90deg); text-align: center; }
+    .case-study-grid { grid-template-columns: 1fr; }
     .experience-grid { grid-template-columns: 1fr; gap: 0; }
     .exp-meta { padding: 32px 0 0; border-top: 1px solid var(--border); }
     .exp-content { padding: 12px 0 32px; border-top: none; }
@@ -299,20 +293,25 @@
     footer { flex-direction: column; gap: 8px; text-align: center; }
     nav { padding: 0 24px; }
     .nav-links { display: none; }
+    .sticky-cta { bottom: 20px; right: 20px; padding: 12px 18px; font-size: 12px; }
   }
 </style>
 </head>
 <body>
 
+<div id="scroll-progress"></div>
+<a href="#contact" class="sticky-cta" id="sticky-cta">Discuss a Role ↗</a>
+
 <!-- NAV -->
 <nav>
   <a class="nav-brand" href="#">Arun S P</a>
   <ul class="nav-links">
-    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#how-i-operate">How I Think</a></li>
+    <li><a href="#highlights">Impact</a></li>
+    <li><a href="#case-study">Case Study</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Discuss Role</a></li>
   </ul>
 </nav>
 
@@ -321,10 +320,10 @@
   <div class="hero-left">
     <p class="hero-eyebrow">Trade Marketing &amp; Channel Sales Leader</p>
     <h1 class="hero-name">Arun <em>S&nbsp;P</em></h1>
-    <p class="hero-title">21+ Years · Consumer Durables &amp; Electricals · India &amp; USA</p>
+    <p class="hero-positioning">I redesign channel economics to unlock profitable growth at scale.</p>
     <div class="hero-cta-group">
-      <a href="#contact" class="btn btn-primary">Get in touch</a>
-      <a href="#experience" class="btn btn-outline">View experience</a>
+      <a href="#contact" class="btn btn-primary">Discuss Leadership Role</a>
+      <a href="#highlights" class="btn btn-outline">View Strategic Impact</a>
     </div>
   </div>
   <div class="hero-right">
@@ -343,14 +342,243 @@
       </div>
     </div>
     <p class="hero-summary">
-      Trade Marketing and Channel Sales leader who <strong>finds broken commercial mechanisms, rebuilds them with data, and ships measurable results.</strong>
+      Trade Marketing and Channel Sales leader who <strong>identifies broken commercial levers, rebuilds them with data, and delivers measurable growth.</strong>
       Redesigned incentive architecture across 95 territories and 140 distributors—delivering 20% annual revenue growth and lifting retailer activation from 15% to 50% in just 3 months.
     </p>
-    <p class="hero-summary" style="margin-bottom:0;">
-      Now returning to Chennai to take on a <strong>senior Trade Marketing or Channel Sales leadership role</strong> in consumer durables or FMCG.
+    <p class="hero-summary" style="margin-bottom: 8px;">
+      Experience across <strong>India and the United States</strong> — bringing global perspective to channel strategy and commercial analytics.
     </p>
+    <div class="best-fit-block">
+      <div class="best-fit-label">Best fit for</div>
+      <ul class="best-fit-list">
+        <li>Consumer durables / FMCG companies scaling distribution</li>
+        <li>Organisations with fragmented or underperforming channel networks</li>
+        <li>Businesses looking to shift from volume-led to margin-led growth</li>
+      </ul>
+    </div>
+    <a href="Arun_SP_Resume.pdf" class="hero-download" download>↓ Download Resume (PDF)</a>
   </div>
 </div>
+
+<!-- HOW I OPERATE -->
+<section id="how-i-operate" class="operate-bg">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Strategic framework</p>
+      <h2 class="section-title">How I operate</h2>
+    </div>
+    <div class="operate-grid">
+      <div class="operate-intersection">
+        <div class="operate-label">I operate at the intersection of</div>
+        <div class="operate-pillar">
+          <div class="operate-pillar-num">01</div>
+          <div class="operate-pillar-text">
+            <strong>Commercial Strategy</strong>
+            <span>Margin-first thinking — rewarding value creation, not just volume</span>
+          </div>
+        </div>
+        <div class="operate-pillar">
+          <div class="operate-pillar-num">02</div>
+          <div class="operate-pillar-text">
+            <strong>Channel Behaviour Design</strong>
+            <span>Using incentives and activation to shift how distributors and retailers actually act</span>
+          </div>
+        </div>
+        <div class="operate-pillar">
+          <div class="operate-pillar-num">03</div>
+          <div class="operate-pillar-text">
+            <strong>Data Systems</strong>
+            <span>Visibility → control → growth: you can't fix what you can't see</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="operate-label" style="margin-bottom: 24px;">My four-step approach</div>
+        <div class="operate-step">
+          <div class="operate-step-num">1</div>
+          <div class="operate-step-content">
+            <strong>Diagnose the broken commercial lever</strong>
+            <span>Map where incentives, data, or execution are misaligned with business outcomes</span>
+          </div>
+        </div>
+        <div class="operate-step">
+          <div class="operate-step-num">2</div>
+          <div class="operate-step-content">
+            <strong>Redesign incentives aligned to profit, not volume</strong>
+            <span>Shift reward mechanics so distributor and retailer behaviour drives margin, not just offtake</span>
+          </div>
+        </div>
+        <div class="operate-step">
+          <div class="operate-step-num">3</div>
+          <div class="operate-step-content">
+            <strong>Build visibility before scaling</strong>
+            <span>Create data infrastructure — sell-through, pipeline, forecast — before spending on growth</span>
+          </div>
+        </div>
+        <div class="operate-step">
+          <div class="operate-step-num">4</div>
+          <div class="operate-step-content">
+            <strong>Execute through channel, not top-down push</strong>
+            <span>Enable partners with training, tools, and real-time data so growth sustains without constant intervention</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP SCOPE -->
+<section id="leadership">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Leadership scope</p>
+      <h2 class="section-title">Authority, influence &amp; reach</h2>
+    </div>
+    <div class="leadership-grid">
+      <div class="leadership-card">
+        <div class="leadership-icon">🗺️</div>
+        <div>
+          <div class="leadership-card-title">Distributor Network — 95 Territories</div>
+          <div class="leadership-card-desc">Owned commercial strategy and incentive architecture across 140 distributors and 95 territories spanning South and North India zones.</div>
+        </div>
+      </div>
+      <div class="leadership-card">
+        <div class="leadership-icon">👥</div>
+        <div>
+          <div class="leadership-card-title">Influenced 16 Regional Teams</div>
+          <div class="leadership-card-desc">Built and delivered real-time channel intelligence infrastructure used daily by 16 regional sales teams and senior leadership in monthly business reviews.</div>
+        </div>
+      </div>
+      <div class="leadership-card">
+        <div class="leadership-icon">💰</div>
+        <div>
+          <div class="leadership-card-title">Incentive Budget Ownership</div>
+          <div class="leadership-card-desc">Designed and owned monthly and quarterly rebate structures — calibrated tiers, eligibility, and payout mechanics — driving revenue targets across the zone.</div>
+        </div>
+      </div>
+      <div class="leadership-card">
+        <div class="leadership-icon">🔗</div>
+        <div>
+          <div class="leadership-card-title">Cross-functional Alignment</div>
+          <div class="leadership-card-desc">Drove alignment across Sales, Finance, Supply Chain, and IT to build forecasting, visibility, and execution systems no single function could build alone.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="before-after-bg">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">The transformation</p>
+      <h2 class="section-title">Before I arrived. After I rebuilt.</h2>
+    </div>
+    <div class="before-after-grid">
+      <div class="ba-col before">
+        <div class="ba-header">Before</div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Volume-driven incentives rewarding offtake regardless of margin</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">No sell-through visibility — teams flying blind on actual channel health</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Reactive stock management and frequent stockouts damaging retailer confidence</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Dormant retailer base — 15% active participation on premium lines</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Reporting taking 5 days — decisions made on stale, lagged data</div></div>
+      </div>
+      <div class="ba-arrow">→</div>
+      <div class="ba-col after">
+        <div class="ba-header">After</div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Margin-aligned incentive systems with tiered payout mechanics driving 20% YoY growth</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Real-time channel intelligence across 4,000+ outlets fed to 16 regional teams daily</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Predictive demand planning across 200+ SKUs — 60% reduction in stockouts</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">50% active retailer participation achieved in 90 days, zero external spend</div></div>
+        <div class="ba-item"><div class="ba-dot"></div><div class="ba-text">Reporting cycle compressed to 5 hours via SQL automation — 96% faster</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY -->
+<section id="case-study">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Deep dive</p>
+      <h2 class="section-title">Case Study: Distributor Incentive Redesign</h2>
+    </div>
+    <p style="font-size: 16px; font-weight: 300; color: var(--ink-soft); max-width: 620px; line-height: 1.75; margin-bottom: 48px; border-left: 3px solid var(--accent); padding-left: 20px;">Most leaders talk about results. Few show how they think.<br>Here's one example of how I redesign a broken commercial system end-to-end.</p>
+    <div class="case-study-grid">
+      <div class="cs-sidebar">
+        <div class="cs-context">
+          <div class="cs-context-label">Context</div>
+          <div class="cs-context-text">Bajaj Electricals — 140 distributors, 95 territories, South &amp; North India zones. A partner network underperforming on margin despite meeting volume targets.</div>
+        </div>
+        <div class="cs-result-card">
+          <div class="cs-result-label">Primary outcome</div>
+          <div class="cs-result-num">20%</div>
+          <div class="cs-result-sub">Annual revenue growth, sustained post-redesign</div>
+        </div>
+        <div class="cs-result-card" style="margin-top: 16px; background: var(--teal-light); border-color: rgba(15,110,86,0.2);">
+          <div class="cs-result-label" style="color: var(--teal);">Time to impact</div>
+          <div class="cs-result-num" style="color: var(--teal); font-size: 22px;">12 months</div>
+          <div class="cs-result-sub">From redesign to sustained growth</div>
+        </div>
+        <div class="cs-result-card" style="margin-top: 16px; background: var(--cream-dark); border-color: var(--border);">
+          <div class="cs-result-label" style="color: var(--ink-mute);">Scale</div>
+          <div class="cs-result-num" style="color: var(--ink); font-size: 18px;">95 territories</div>
+          <div class="cs-result-sub">South &amp; North India zones · 140 distributors</div>
+        </div>
+      </div>
+      <div class="cs-main">
+        <div class="cs-block">
+          <div class="cs-block-label">The problem</div>
+          <div class="cs-block-body">The incentive structure rewarded distributors purely on primary sales volume — how much stock they bought from us, not how much they sold through. This created a predictable failure: distributors loaded up on fast-moving low-margin SKUs to hit volume targets, ignored premium products, and gamed scheme eligibility. The channel was busy, but unprofitable.</div>
+        </div>
+        <div class="cs-block">
+          <div class="cs-block-label">What I changed</div>
+          <ul class="cs-steps">
+            <li class="cs-step"><div class="cs-step-num">1</div><div class="cs-step-text"><strong>Diagnosed the misalignment.</strong> Mapped incentive payout vs. actual margin contribution per distributor — found the top 20% by volume were delivering below-average margins.</div></li>
+            <li class="cs-step"><div class="cs-step-num">2</div><div class="cs-step-text"><strong>Introduced margin-based tiers.</strong> Redesigned payout structure so rebate percentages scaled with premium product sell-through, not just total offtake. Volume still mattered — but margin led.</div></li>
+            <li class="cs-step"><div class="cs-step-num">3</div><div class="cs-step-text"><strong>Added eligibility thresholds.</strong> Distributors had to hit minimum sell-through rates on premium SKUs to unlock higher-tier rebates — making range-selling commercially rational for them.</div></li>
+            <li class="cs-step"><div class="cs-step-num">4</div><div class="cs-step-text"><strong>Built monthly analytics loop.</strong> Tracked scheme burn rates, flagged underperforming accounts, and delivered corrective recommendations to regional heads monthly — closing the feedback loop.</div></li>
+          </ul>
+        </div>
+        <div class="cs-block">
+          <div class="cs-block-label">Results</div>
+          <div class="cs-outcomes">
+            <div class="cs-outcome"><div class="cs-outcome-num">20%</div><div class="cs-outcome-label">YoY revenue growth sustained</div></div>
+            <div class="cs-outcome"><div class="cs-outcome-num">↑ Mix</div><div class="cs-outcome-label">Premium product sales mix improved</div></div>
+            <div class="cs-outcome"><div class="cs-outcome-num">↑ ROI</div><div class="cs-outcome-label">Distributor profitability per territory</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP PHILOSOPHY -->
+<section class="philosophy-bg">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow" style="color:rgba(255,255,255,0.45);">Leadership philosophy</p>
+      <h2 class="section-title" style="color:#fff;">How I think about people, data &amp; growth</h2>
+    </div>
+    <div class="philosophy-grid">
+      <div class="philosophy-card">
+        <div class="philosophy-quote">"</div>
+        <div class="philosophy-text"><strong>Incentives drive behaviour more than instructions.</strong> You can't manage people into doing the right thing. Design the system so the right thing is also the rewarding thing.</div>
+      </div>
+      <div class="philosophy-card">
+        <div class="philosophy-quote">"</div>
+        <div class="philosophy-text"><strong>Data should guide decisions, not justify them after.</strong> Most teams use analytics to explain what happened. I use it to decide what to do next — before the problem shows up in the P&amp;L.</div>
+      </div>
+      <div class="philosophy-card">
+        <div class="philosophy-quote">"</div>
+        <div class="philosophy-text"><strong>Channel partners should be enabled, not controlled.</strong> The best commercial results come when distributors and retailers see your success as their success — alignment, not coercion.</div>
+      </div>
+    </div>
+    <div class="philosophy-hook">
+      <div class="philosophy-hook-text">I turn channel complexity into <strong>predictable, profitable growth.</strong></div>
+    </div>
+  </div>
+</section>
 
 <!-- HIGHLIGHTS -->
 <section id="highlights" class="highlights-bg">
@@ -400,6 +628,43 @@
   </div>
 </section>
 
+<!-- COMMERCIAL ANALYTICS -->
+<section class="analytics-bg">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Commercial analytics capability</p>
+      <h2 class="section-title" style="color:#fff;">Data + Trade Marketing — a rare combination</h2>
+    </div>
+    <p class="analytics-intro">Most trade marketing leaders operate on instinct and lagged reports. I build the <strong>data infrastructure that makes channel decisions fast, defensible, and repeatable</strong> — then use it to drive commercial outcomes others can't see coming.</p>
+    <div class="analytics-grid">
+      <div class="analytics-card">
+        <div class="analytics-card-label">Visibility</div>
+        <div class="analytics-card-title">Real-Time Sell-Through Infrastructure</div>
+        <div class="analytics-card-desc">Built tracking across 4,000+ outlets delivering live secondary sales data to 16 regional teams — replacing guesswork with daily decision-grade data.</div>
+        <div class="analytics-card-metric">4,000+ outlets</div>
+      </div>
+      <div class="analytics-card">
+        <div class="analytics-card-label">Efficiency</div>
+        <div class="analytics-card-title">Reporting Cycle Compression</div>
+        <div class="analytics-card-desc">Reduced monthly reporting from 5 days to 5 hours using SQL automation and Tableau dashboards — directly transferable to trade MIS and commercial reporting.</div>
+        <div class="analytics-card-metric">96% faster</div>
+      </div>
+      <div class="analytics-card">
+        <div class="analytics-card-label">Forecasting</div>
+        <div class="analytics-card-title">Distributor + Territory Demand Model</div>
+        <div class="analytics-card-desc">Integrated distributor inventory data with territory-level offtake trends across 200+ SKUs — enabling proactive replenishment before stockouts occurred.</div>
+        <div class="analytics-card-metric">60% fewer stockouts</div>
+      </div>
+      <div class="analytics-card">
+        <div class="analytics-card-label">Decision Intelligence</div>
+        <div class="analytics-card-title">Commercial Analytics → Action</div>
+        <div class="analytics-card-desc">Converted data into commercial decisions: flagging underperforming accounts, identifying territory redistribution opportunities, uncovering $2M+ in billing errors.</div>
+        <div class="analytics-card-metric">$2M+ recovered</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
@@ -409,7 +674,6 @@
     </div>
     <div class="experience-grid">
 
-      <!-- Bajaj Regional -->
       <div class="exp-meta">
         <strong>Bajaj Electricals Ltd</strong>
         Chennai / Lucknow, India
@@ -418,24 +682,36 @@
       <div class="exp-content">
         <div class="exp-role">Regional Channel Marketing Manager</div>
         <div class="exp-company">South &amp; North Zones</div>
-        <ul class="exp-bullets">
-          <li>Redesigned partner incentive architecture across 140 distributors and 95 territories—shifted reward basis from volume to margin, driving 20% annual revenue growth and improving premium product sales mix.</li>
-          <li>3-month retailer activation drive converting 6,000 retailers from 15% to 50% active participation on premium lines—zero external spend.</li>
-          <li>COVID-period online push via WhatsApp and Google Forms targeting 20% of retailer network, generating ₹16 Cr+ ($2M) during full market shutdown.</li>
-          <li>Built sell-through visibility infrastructure for 4,000+ retail outlets; real-time secondary sales data delivered to 16 regional teams.</li>
-          <li>Reduced stockouts 60% via demand forecasting model across 200+ SKUs, integrating distributor inventory with territory-level offtake trends.</li>
-          <li>Managed rebate &amp; incentive analytics end-to-end: scheme burn rates, underperforming accounts, corrective recommendations to regional heads monthly.</li>
-        </ul>
+        <div class="pao-item">
+          <div class="pao-label">Problem → Action → Outcome</div>
+          <div class="pao-action">Distributor incentives rewarded volume, not margin — eroding product mix. Redesigned the entire partner reward architecture across 140 distributors and 95 territories, shifting basis to margin contribution with tiered payout mechanics.</div>
+          <div class="pao-outcome">→ 20% annual revenue growth sustained · premium product mix improved</div>
+        </div>
+        <div class="pao-item">
+          <div class="pao-label">Problem → Action → Outcome</div>
+          <div class="pao-action">Only 15% of retailers were actively selling premium lines. Designed and executed a 3-month targeted activation sprint: personalised outreach, POS support, scheme communication, and frontline coaching — zero external spend.</div>
+          <div class="pao-outcome">→ Retailer activation: 15% → 50% in 90 days across 6,000 retailers</div>
+        </div>
+        <div class="pao-item">
+          <div class="pao-label">Problem → Action → Outcome</div>
+          <div class="pao-action">COVID-19 shut the physical market entirely. Launched a digital push via WhatsApp and Google Forms targeting the top 20% premium retailer network — enabling remote order capture and scheme communication during full lockdown.</div>
+          <div class="pao-outcome">→ ₹16 Cr+ ($2M) in revenue generated with zero marketing budget</div>
+        </div>
+        <div class="pao-item">
+          <div class="pao-label">Problem → Action → Outcome</div>
+          <div class="pao-action">Teams were 'flying blind' — relying on primary sales as a proxy for channel health. Built real-time sell-through visibility infrastructure across 4,000+ retail outlets feeding structured secondary sales data to 16 regional teams daily.</div>
+          <div class="pao-outcome">→ 16 teams now operating on live channel intelligence</div>
+        </div>
+        <div class="pao-item">
+          <div class="pao-label">Problem → Action → Outcome</div>
+          <div class="pao-action">Frequent stockouts were damaging retailer confidence. Built demand forecasting model across 200+ SKUs integrating distributor inventory data with territory-level offtake trends for proactive replenishment.</div>
+          <div class="pao-outcome">→ 60% reduction in stock-out incidents</div>
+        </div>
         <div class="exp-tags">
-          <span class="exp-tag">Trade Marketing</span>
-          <span class="exp-tag">Incentive Design</span>
-          <span class="exp-tag">Channel Analytics</span>
-          <span class="exp-tag">BTL Execution</span>
-          <span class="exp-tag">Demand Forecasting</span>
+          <span class="exp-tag">Trade Marketing</span><span class="exp-tag">Incentive Design</span><span class="exp-tag">Channel Analytics</span><span class="exp-tag">BTL Execution</span><span class="exp-tag">Demand Forecasting</span>
         </div>
       </div>
 
-      <!-- Bajaj Area Manager -->
       <div class="exp-meta">
         <strong>Bajaj Electricals Ltd</strong>
         Chennai, India
@@ -451,14 +727,10 @@
           <li>Built territory-level sales tracking (primary vs. secondary, pipeline, scheme participation) enabling proactive management and faster demand response.</li>
         </ul>
         <div class="exp-tags">
-          <span class="exp-tag">Distributor Management</span>
-          <span class="exp-tag">Sales Execution</span>
-          <span class="exp-tag">P&amp;L Governance</span>
-          <span class="exp-tag">Territory Planning</span>
+          <span class="exp-tag">Distributor Management</span><span class="exp-tag">Sales Execution</span><span class="exp-tag">P&amp;L Governance</span><span class="exp-tag">Territory Planning</span>
         </div>
       </div>
 
-      <!-- Philips -->
       <div class="exp-meta">
         <strong>Philips India Ltd</strong>
         Chennai, India
@@ -470,16 +742,13 @@
         <ul class="exp-bullets">
           <li>Managed major accounts contributing ₹16 Cr+ ($2M+) annual sales through consultative selling and sustained relationship management.</li>
           <li>Identified and executed cross-sell and upsell opportunities across dealer portfolio to improve revenue per account and range penetration.</li>
-          <li>Translated technical product features into customer-facing value propositions for buyers, architects, and contractor networks across Tamil Nadu.</li>
+          <li>Translated technical product features into value propositions for buyers, architects, and contractor networks across Tamil Nadu.</li>
         </ul>
         <div class="exp-tags">
-          <span class="exp-tag">Key Account Management</span>
-          <span class="exp-tag">Consultative Selling</span>
-          <span class="exp-tag">Dealer Network</span>
+          <span class="exp-tag">Key Account Management</span><span class="exp-tag">Consultative Selling</span><span class="exp-tag">Dealer Network</span>
         </div>
       </div>
 
-      <!-- Asian Paints -->
       <div class="exp-meta">
         <strong>Asian Paints Ltd</strong>
         Chennai, India
@@ -489,17 +758,14 @@
         <div class="exp-role">Territory Sales Officer</div>
         <div class="exp-company">Chennai Territory</div>
         <ul class="exp-bullets">
-          <li>Executed territory sales plans, consistently exceeding targets through effective dealer and retailer relationship management and in-store activation.</li>
-          <li>Built distributor and retailer network from ground up in assigned territory, establishing coverage and visibility across key retail formats.</li>
+          <li>Exceeded targets consistently through effective dealer and retailer relationship management and in-store activation.</li>
+          <li>Built distributor and retailer network from ground up, establishing coverage and visibility across key retail formats.</li>
         </ul>
         <div class="exp-tags">
-          <span class="exp-tag">Territory Sales</span>
-          <span class="exp-tag">Network Building</span>
-          <span class="exp-tag">Retail Activation</span>
+          <span class="exp-tag">Territory Sales</span><span class="exp-tag">Network Building</span><span class="exp-tag">Retail Activation</span>
         </div>
       </div>
 
-      <!-- AC DHS -->
       <div class="exp-meta">
         <strong>Allegheny County DHS</strong>
         Pittsburgh, PA, USA
@@ -514,10 +780,7 @@
           <li>Served as analytics partner to department heads for budget planning, variance analysis, and KPI tracking at scale.</li>
         </ul>
         <div class="exp-tags">
-          <span class="exp-tag">SQL Automation</span>
-          <span class="exp-tag">Tableau</span>
-          <span class="exp-tag">Financial Controls</span>
-          <span class="exp-tag">Budget Analytics</span>
+          <span class="exp-tag">SQL Automation</span><span class="exp-tag">Tableau</span><span class="exp-tag">Financial Controls</span><span class="exp-tag">Budget Analytics</span>
         </div>
       </div>
 
@@ -537,55 +800,37 @@
         <span class="project-tag">Incentive Architecture</span>
         <div class="project-title">Distributor Incentive Redesign</div>
         <div class="project-desc">Rebuilt the partner reward system for 140 distributors across 95 territories—shifted basis from pure volume to margin contribution. Introduced tiered payout mechanics and eligibility criteria aligned to business targets.</div>
-        <div class="project-metric">
-          <div class="project-metric-num">20% YoY</div>
-          <div class="project-metric-label">Revenue growth sustained post-redesign</div>
-        </div>
+        <div class="project-metric"><div class="project-metric-num">20% YoY</div><div class="project-metric-label">Revenue growth sustained post-redesign</div></div>
       </div>
       <div class="project-card">
         <span class="project-tag">Retailer Activation</span>
         <div class="project-title">6,000-Retailer Activation Sprint</div>
         <div class="project-desc">Designed and executed a 3-month targeted activation drive converting dormant retailers to active premium product participation. Personalised retailer outreach with scheme communication, POS support, and frontline coaching.</div>
-        <div class="project-metric">
-          <div class="project-metric-num">15→50%</div>
-          <div class="project-metric-label">Active participation rate in 90 days</div>
-        </div>
+        <div class="project-metric"><div class="project-metric-num">15→50%</div><div class="project-metric-label">Active participation rate in 90 days</div></div>
       </div>
       <div class="project-card">
         <span class="project-tag">Digital Commerce</span>
         <div class="project-title">COVID Revenue Recovery Campaign</div>
         <div class="project-desc">Zero-budget digital push during full market shutdown. Targeted top 20% of retailer network via WhatsApp and Google Forms, enabling online order capture and remote scheme communication.</div>
-        <div class="project-metric">
-          <div class="project-metric-num">₹16 Cr+</div>
-          <div class="project-metric-label">Revenue with zero marketing spend</div>
-        </div>
+        <div class="project-metric"><div class="project-metric-num">₹16 Cr+</div><div class="project-metric-label">Revenue with zero marketing spend</div></div>
       </div>
       <div class="project-card">
         <span class="project-tag">Analytics Infrastructure</span>
         <div class="project-title">Sell-Through Visibility Platform</div>
-        <div class="project-desc">Built real-time secondary sales tracking infrastructure across 4,000+ outlets, delivering structured data to 16 regional teams. Eliminated reliance on lagged primary sales as a proxy for actual channel health.</div>
-        <div class="project-metric">
-          <div class="project-metric-num">16 teams</div>
-          <div class="project-metric-label">Receiving real-time channel intelligence</div>
-        </div>
+        <div class="project-desc">Built real-time secondary sales tracking infrastructure across 4,000+ outlets, delivering structured data to 16 regional teams. Eliminated reliance on lagged primary sales as a proxy for channel health.</div>
+        <div class="project-metric"><div class="project-metric-num">16 teams</div><div class="project-metric-label">Receiving real-time channel intelligence</div></div>
       </div>
       <div class="project-card">
         <span class="project-tag">Supply Chain</span>
         <div class="project-title">Demand Forecasting Model</div>
         <div class="project-desc">Designed forecasting model across 200+ SKUs integrating distributor stock data with territory-level offtake trends. Enabled proactive replenishment and reduced emergency orders across the zone.</div>
-        <div class="project-metric">
-          <div class="project-metric-num">60%</div>
-          <div class="project-metric-label">Reduction in stock-out incidents</div>
-        </div>
+        <div class="project-metric"><div class="project-metric-num">60%</div><div class="project-metric-label">Reduction in stock-out incidents</div></div>
       </div>
       <div class="project-card">
         <span class="project-tag">ISP &amp; BTL</span>
         <div class="project-title">Pan-India ISP Programme</div>
         <div class="project-desc">End-to-end management of 300+ In-Shop Promoters across India: agency contracting, payroll, training (online &amp; offline), performance monitoring, and strategic redeployment to higher-potential outlets.</div>
-        <div class="project-metric">
-          <div class="project-metric-num">300+</div>
-          <div class="project-metric-label">ISPs managed pan-India</div>
-        </div>
+        <div class="project-metric"><div class="project-metric-num">300+</div><div class="project-metric-label">ISPs managed pan-India</div></div>
       </div>
     </div>
   </div>
@@ -601,54 +846,24 @@
     <div class="skills-grid">
       <div class="skill-card">
         <div class="skill-card-title">Trade Marketing</div>
-        <span class="skill-pill">Incentive & scheme design</span>
-        <span class="skill-pill">Trade promotion ROI</span>
-        <span class="skill-pill">Retailer activation</span>
-        <span class="skill-pill">In-store execution</span>
-        <span class="skill-pill">Range-sell programmes</span>
-        <span class="skill-pill">POSM management</span>
-        <span class="skill-pill">Influencer &amp; dealer meets</span>
+        <span class="skill-pill">Incentive & scheme design</span><span class="skill-pill">Trade promotion ROI</span><span class="skill-pill">Retailer activation</span><span class="skill-pill">In-store execution</span><span class="skill-pill">Range-sell programmes</span><span class="skill-pill">POSM management</span><span class="skill-pill">Influencer &amp; dealer meets</span>
       </div>
       <div class="skill-card">
         <div class="skill-card-title">Channel Management</div>
-        <span class="skill-pill">Distributor appointment</span>
-        <span class="skill-pill">Business reviews</span>
-        <span class="skill-pill">Territory planning</span>
-        <span class="skill-pill">Secondary sales activation</span>
-        <span class="skill-pill">Channel loyalty programmes</span>
-        <span class="skill-pill">Partner enablement</span>
+        <span class="skill-pill">Distributor appointment</span><span class="skill-pill">Business reviews</span><span class="skill-pill">Territory planning</span><span class="skill-pill">Secondary sales activation</span><span class="skill-pill">Channel loyalty programmes</span><span class="skill-pill">Partner enablement</span>
       </div>
       <div class="skill-card">
         <div class="skill-card-title">Sales Analytics</div>
-        <span class="skill-pill">Sell-through visibility</span>
-        <span class="skill-pill">Demand forecasting</span>
-        <span class="skill-pill">MIS reporting</span>
-        <span class="skill-pill">Pipeline tracking</span>
-        <span class="skill-pill">Market &amp; competitive analysis</span>
-        <span class="skill-pill">SQL automation</span>
-        <span class="skill-pill">Tableau / Power BI</span>
+        <span class="skill-pill">Sell-through visibility</span><span class="skill-pill">Demand forecasting</span><span class="skill-pill">MIS reporting</span><span class="skill-pill">Pipeline tracking</span><span class="skill-pill">Market &amp; competitive analysis</span><span class="skill-pill">SQL automation</span><span class="skill-pill">Tableau / Power BI</span>
       </div>
       <div class="skill-card">
         <div class="skill-card-title">P&L &amp; Commercial</div>
-        <span class="skill-pill">Trade spend governance</span>
-        <span class="skill-pill">Margin analysis</span>
-        <span class="skill-pill">Distributor ROI</span>
-        <span class="skill-pill">Working capital optimisation</span>
-        <span class="skill-pill">Budget management at scale</span>
-        <span class="skill-pill">Rebate design</span>
+        <span class="skill-pill">Trade spend governance</span><span class="skill-pill">Margin analysis</span><span class="skill-pill">Distributor ROI</span><span class="skill-pill">Working capital optimisation</span><span class="skill-pill">Budget management at scale</span><span class="skill-pill">Rebate design</span>
       </div>
     </div>
     <div style="margin-top: 24px;" class="skill-card">
       <div class="skill-card-title">Tools &amp; Technology</div>
-      <span class="skill-pill">Advanced Excel</span>
-      <span class="skill-pill">Tableau</span>
-      <span class="skill-pill">Power BI</span>
-      <span class="skill-pill">SQL</span>
-      <span class="skill-pill">Salesforce CRM</span>
-      <span class="skill-pill">SAP (exposure)</span>
-      <span class="skill-pill">JD Edwards ERP</span>
-      <span class="skill-pill">Google Workspace</span>
-      <span class="skill-pill">WhatsApp Business</span>
+      <span class="skill-pill">Advanced Excel</span><span class="skill-pill">Tableau</span><span class="skill-pill">Power BI</span><span class="skill-pill">SQL</span><span class="skill-pill">Salesforce CRM</span><span class="skill-pill">SAP (exposure)</span><span class="skill-pill">JD Edwards ERP</span><span class="skill-pill">Google Workspace</span><span class="skill-pill">WhatsApp Business</span>
     </div>
   </div>
 </section>
@@ -686,53 +901,54 @@
     <div class="contact-inner">
       <div class="section-header" style="margin-bottom: 0;">
         <p class="section-eyebrow">Get in touch</p>
-        <h2 class="section-title">Let's talk</h2>
+        <h2 class="section-title">Let's discuss a role</h2>
       </div>
-      <p class="contact-desc">
-        Returning to Chennai and open to senior Trade Marketing or Channel Sales leadership roles in consumer durables, electricals, or FMCG. Available with 2–3 months' notice. Willing to travel across South India.
-      </p>
+      <p class="contact-desc">Returning to Chennai and open to senior Trade Marketing or Channel Sales leadership roles in consumer durables, electricals, or FMCG. Available for leadership roles with a 2–3 month transition window. Willing to travel across South India.</p>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:arun.padayachi@icloud.com">
-          <span class="contact-link-icon">✉</span>
-          arun.padayachi@icloud.com
-        </a>
-        <a class="contact-link" href="tel:+919884833723">
-          <span class="contact-link-icon">☎</span>
-          +91 98848-33723
-        </a>
-        <a class="contact-link" href="https://linkedin.com/in/arunshanmugamprema" target="_blank">
-          <span class="contact-link-icon">in</span>
-          linkedin.com/in/arunshanmugamprema
-        </a>
-        <a class="contact-link" href="#">
-          <span class="contact-link-icon">📍</span>
-          Chennai, Tamil Nadu, India (returning)
-        </a>
+        <a class="contact-link" href="mailto:arun.padayachi@icloud.com"><span class="contact-link-icon">✉</span>arun.padayachi@icloud.com</a>
+        <a class="contact-link" href="tel:+919884833723"><span class="contact-link-icon">☎</span>+91 98848-33723</a>
+        <a class="contact-link" href="https://linkedin.com/in/arunshanmugamprema" target="_blank"><span class="contact-link-icon">in</span>linkedin.com/in/arunshanmugamprema</a>
+        <a class="contact-link" href="Arun_SP_Resume.pdf" download><span class="contact-link-icon">↓</span>Download Resume (PDF)</a>
+        <a class="contact-link" href="#"><span class="contact-link-icon">📍</span>Chennai, Tamil Nadu, India (returning)</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <span class="footer-copy">© 2024 Arun S P. All rights reserved.</span>
+  <span class="footer-copy">© 2025 Arun S P. All rights reserved.</span>
   <span class="footer-brand">Arun S P</span>
 </footer>
 
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.animationPlayState = 'running';
-      }
-    });
-  }, { threshold: 0.1 });
+  const bar = document.getElementById('scroll-progress');
+  const stickyCta = document.getElementById('sticky-cta');
 
+  window.addEventListener('scroll', () => {
+    const total = document.body.scrollHeight - window.innerHeight;
+    bar.style.width = (window.scrollY / total * 100) + '%';
+    stickyCta.classList.toggle('visible', window.scrollY > 600);
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.style.animationPlayState = 'running'; });
+  }, { threshold: 0.1 });
   document.querySelectorAll('.highlight-card').forEach(el => {
     el.style.animationPlayState = 'paused';
     observer.observe(el);
   });
-</script>
 
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.leadership-card, .analytics-card, .operate-step, .pao-item, .ba-col, .cs-block, .philosophy-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    fadeObserver.observe(el);
+  });
+</script>
 </body>
 </html>
