@@ -1,514 +1,1097 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arun S Prema — Strategy & Operations</title>
-  <meta name="description" content="Analytics and Strategy Leader with 20 years turning broken commercial systems into measurable business growth across FMCG, sales operations, and public sector." />
-  <meta name="author" content="Arun S Prema">
-  <meta property="og:title" content="Arun S Prema — Strategy & Operations Leader">
-  <meta property="og:description" content="I fix broken systems and build the operational infrastructure that drives revenue, efficiency, and growth. 20 years. Director-level. Open to tech & finance.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text y='.9em' font-size='64' x='18' fill='white'>A</text></svg>">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink:    '#0b1220',
-            dim:    '#64748b',
-            faint:  '#e5e7eb',
-            blue:   '#2563eb',
-            accent: '#7c3aed',
-          },
-          fontFamily: {
-            display: ['"Manrope"', 'sans-serif'],
-            body:    ['"Inter"', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    ::selection { background: rgba(37,99,235,.12); color: #0b1220; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arun S. Prema — Strategy & Operations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
 
-    body { background: #fafafa; }
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 18px; scroll-behavior: smooth; }
 
-    /* Reveal */
-    .rv { opacity:0; transform:translateY(18px); transition: opacity .65s ease, transform .65s ease; }
-    .rv.on { opacity:1; transform:translateY(0); }
-    .rv-d1 { transition-delay:.1s }
-    .rv-d2 { transition-delay:.2s }
-    .rv-d3 { transition-delay:.3s }
+:root {
+  --bg: #FAFAF7;
+  --text: #1C1C1A;
+  --text-mid: #4A4A46;
+  --text-soft: #8A8A84;
+  --amber: #B85C20;
+  --amber-pale: #F5EDE6;
+  --border: #E2E0D8;
+  --white: #FFFFFF;
+}
 
-    /* Grow underline */
-    .grow-line { position:relative; display:inline-block; }
-    .grow-line::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:#2563eb; transition: width .3s ease; }
-    .grow-line:hover::after { width:100%; }
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-    /* Divider line */
-    .section-line { width:40px; height:3px; background:#2563eb; border-radius:2px; margin-bottom:1.5rem; }
+/* ─── HEADER ─── */
+header {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
-    /* Targeting banner */
-    .target-banner {
-      background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
-      border: 1px solid #dbeafe;
-      border-left: 3px solid #2563eb;
-    }
-  </style>
+.site-name {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.header-nav a {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-soft);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.header-nav a:hover { color: var(--amber); }
+
+/* ─── HERO ─── */
+.hero {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 5rem 2rem 4rem;
+}
+
+.hero-intro {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 1.5rem;
+}
+
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+.hero-name em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--amber);
+}
+
+.hero-body {
+  font-family: 'Lora', serif;
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: var(--text-mid);
+  max-width: 620px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-body strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hero-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: var(--text);
+  padding: 0.65rem 1.5rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+.hero-cta:hover { background: var(--amber); }
+
+.hero-resume {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.hero-resume:hover { color: var(--amber); border-color: var(--amber); }
+
+.hero-divider {
+  max-width: 760px;
+  margin: 0 auto 0;
+  padding: 0 2rem;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* ─── CURRENTLY BANNER ─── */
+.currently {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.currently-inner {
+  background: var(--amber-pale);
+  border-left: 3px solid var(--amber);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.currently-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  white-space: nowrap;
+  padding-top: 0.1rem;
+  flex-shrink: 0;
+}
+.currently-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-mid);
+}
+.currently-text strong { color: var(--text); font-weight: 600; }
+
+/* ─── SECTION ─── */
+.section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.section-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.prose {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+}
+.prose p { margin-bottom: 1.25rem; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { color: var(--text); font-weight: 600; }
+
+/* ─── NUMBERS STRIP ─── */
+.numbers-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+  margin-top: 3rem;
+}
+.number-item {
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--border);
+  text-align: center;
+}
+.number-item:last-child { border-right: none; }
+.number-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--amber);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.number-label {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-soft);
+  line-height: 1.4;
+}
+
+/* ─── PROJECTS ─── */
+.project {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.project:last-child { border-bottom: none; }
+
+.project-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+.project-num {
+  font-family: 'Lora', serif;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  flex-shrink: 0;
+}
+.project-title {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+.project-company {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 1rem;
+}
+
+.project-body {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-mid);
+  margin-bottom: 1rem;
+}
+.project-body strong { color: var(--text); font-weight: 600; }
+
+.project-result {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.4rem 0.9rem 0.4rem 0.7rem;
+  background: var(--amber-pale);
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--amber);
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.project-result::before {
+  content: '↑';
+  font-size: 0.7rem;
+}
+
+.project-toggle {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-soft);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.02em;
+}
+.project-toggle:hover { color: var(--amber); }
+.project-toggle .arrow { transition: transform 0.3s; display: inline-block; }
+.project-toggle.open .arrow { transform: rotate(90deg); }
+
+.project-detail {
+  display: none;
+  margin-top: 1.25rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
+.project-detail.show { display: block; }
+
+.detail-col { margin-bottom: 1.25rem; }
+.detail-col:last-child { margin-bottom: 0; }
+.detail-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 0.5rem;
+}
+.detail-col ul { list-style: none; padding: 0; }
+.detail-col ul li {
+  font-family: 'Lora', serif;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-mid);
+  padding: 0.2rem 0 0.2rem 1rem;
+  position: relative;
+}
+.detail-col ul li::before {
+  content: '–';
+  position: absolute; left: 0;
+  color: var(--amber);
+}
+.detail-col ul li strong { color: var(--text); font-weight: 600; }
+
+/* ─── SKILLS ─── */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.skill-tag {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-mid);
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 1px;
+  background: var(--white);
+  transition: border-color 0.2s, color 0.2s;
+}
+.skill-tag:hover { border-color: var(--amber); color: var(--amber); }
+.skill-tag.featured {
+  background: var(--amber-pale);
+  border-color: transparent;
+  color: var(--amber);
+  font-weight: 500;
+}
+
+.skills-row { margin-bottom: 1.75rem; }
+.skills-row-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* ─── RESULTS ─── */
+.results-prose {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+  margin-bottom: 2.5rem;
+}
+.results-prose strong { color: var(--text); font-weight: 600; }
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.result-card {
+  background: var(--white);
+  padding: 1.75rem;
+}
+.result-big {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--amber);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.result-desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-mid);
+}
+.result-src {
+  font-size: 0.7rem;
+  color: var(--text-soft);
+  margin-top: 0.3rem;
+  display: block;
+  font-style: italic;
+}
+
+/* ─── CONTACT ─── */
+.contact-body {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+  margin-bottom: 2rem;
+}
+.contact-body strong { color: var(--text); font-weight: 600; }
+
+.open-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2A6647;
+  background: #E3EDE8;
+  border: 1px solid #B8D4C6;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 1.75rem;
+  display: inline-flex;
+}
+.open-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #2A6647;
+  animation: blink 2s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.25} }
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.2s;
+}
+.contact-item:hover { color: var(--amber); }
+.contact-item-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  width: 80px;
+  flex-shrink: 0;
+}
+.contact-item-val {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: inherit;
+  flex: 1;
+}
+.contact-item-arrow { color: var(--text-soft); font-size: 0.8rem; }
+.contact-item:hover .contact-item-arrow { color: var(--amber); }
+
+.target-block {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+}
+.target-block-head {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-bottom: 1rem;
+}
+.target-item {
+  font-family: 'Lora', serif;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.target-item:last-child { border-bottom: none; padding-bottom: 0; }
+.target-item::before { content: '→'; color: var(--amber); font-size: 0.75rem; }
+
+/* ─── FOOTER ─── */
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-copy {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-links a {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--amber); }
+
+/* ─── ANIMATIONS ─── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 640px) {
+  html { font-size: 16px; }
+  header { flex-direction: column; gap: 1rem; }
+  .header-nav { gap: 1.25rem; }
+  .numbers-strip { grid-template-columns: 1fr 1fr; }
+  .number-item:nth-child(2) { border-right: none; }
+  .results-grid { grid-template-columns: 1fr; }
+  .hero-name { font-size: 2.4rem; }
+}
+</style>
 </head>
+<body>
 
-<body class="text-ink font-body antialiased" style="overflow-x:clip">
+<header>
+  <a class="site-name" href="#top">Arun S. Prema</a>
+  <ul class="header-nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
-  <!-- NAV -->
-  <nav id="nav" class="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-16 py-5 transition-all duration-300">
-    <a href="#top" class="font-display font-bold text-[15px] text-ink no-underline tracking-tight">Arun S Prema</a>
-    <div class="flex items-center gap-6 md:gap-10">
-      <a href="#work"    class="text-[13px] font-medium text-dim hover:text-ink transition-colors no-underline hidden md:block">Work</a>
-      <a href="#about"   class="text-[13px] font-medium text-dim hover:text-ink transition-colors no-underline hidden md:block">About</a>
-      <a href="#contact" class="text-[13px] font-medium text-dim hover:text-ink transition-colors no-underline hidden md:block">Contact</a>
-      <a href="resume.pdf" download class="text-[13px] font-semibold text-blue hover:text-blue/80 transition-colors no-underline">Resume ↓</a>
-    </div>
-  </nav>
+<!-- ─── HERO ─── -->
+<div class="hero" id="top">
+  <p class="hero-intro">Strategy &amp; Operations</p>
+  <h1 class="hero-name">
+    I turn <em>ambiguous</em><br>problems into systems<br>that actually work.
+  </h1>
+  <p class="hero-body">
+    Fifteen years of building things that shouldn't have worked on paper —
+    restructuring go-to-market models across 140 distributors, redesigning
+    incentive economics that had calcified over a decade, and lately, building
+    the analytical infrastructure that a <strong>$1B+ public sector organisation</strong>
+    uses to make resource decisions. Always cross-functional. Always measured.
+  </p>
+  <div class="hero-links">
+    <a href="#work" class="hero-cta">See the work</a>
+    <a href="resume.pdf" class="hero-resume">Download resume →</a>
+  </div>
+</div>
 
-  <!-- ─────────────────────── TARGETING BANNER ─────────────────────── -->
-  <div class="target-banner px-6 md:px-16 py-3 mt-0 pt-[72px]">
-    <p class="text-[13px] text-ink max-w-4xl mx-auto">
-      <span class="font-semibold text-blue">Currently targeting:</span>
-      Senior Manager &amp; Director roles in Strategy &amp; Operations, Business Analytics, or Revenue Operations —
-      in <strong>tech or financial services</strong>.
-      Open to <strong>H-1B sponsorship</strong>. Based in Pittsburgh, PA.
+<hr class="hero-divider">
+
+<!-- ─── CURRENTLY ─── -->
+<div class="currently">
+  <div class="currently-inner">
+    <span class="currently-label">Now</span>
+    <p class="currently-text">
+      <strong>Budget Analyst II / Data Analyst II</strong> at Allegheny County Department of Human Services, Pittsburgh —
+      managing analytics strategy across 8 departments and a combined $1B+ budget.
+      Previously: 11 years leading channel strategy and GTM operations at Bajaj Electricals across Tamil Nadu.
+    </p>
+  </div>
+</div>
+
+<!-- ─── ABOUT ─── -->
+<section class="section fade-in" id="about">
+  <span class="section-tag">About</span>
+  <h2>The person behind the work</h2>
+  <div class="prose">
+    <p>
+      I come from a mathematics background — B.Sc. from St. Joseph's College, then a postgraduate diploma
+      in Data Science and Analytics from UT Austin's McCombs School of Business. But the career that
+      followed was less about numbers on a spreadsheet and more about what those numbers were
+      hiding: misaligned incentives, invisible financial leakage, decisions made on instinct
+      when data was sitting right there.
+    </p>
+    <p>
+      Eleven years at Bajaj Electricals taught me that strategy without execution is just a slide deck.
+      I ran a region of 95 territories and 140 distributors, which meant that every framework I built,
+      I also had to sell to a room full of people who would tell me it wouldn't work — and then
+      prove them wrong over five months. The incentive redesign. The inventory stocking model.
+      The COVID pivot that generated $2M in three days with no budget. Those weren't analytics projects.
+      They were operating model changes that happened to be driven by data.
+    </p>
+    <p>
+      Since moving to the US in 2023, I've been at Allegheny County DHS — a different sector,
+      same fundamental problem: leadership making consequential decisions without a reliable
+      information architecture underneath them. I built the forecasting framework.
+      Fund reallocations dropped 80%. That's the job.
+    </p>
+    <p>
+      I'm now looking for Strategy &amp; Operations roles at companies where that kind of
+      full-cycle work — diagnosis, design, execution, measurement — is what the job actually is.
     </p>
   </div>
 
-  <!-- ─────────────────────── HERO ─────────────────────── -->
-  <section id="top" class="min-h-[calc(100vh-40px)] flex items-center px-6 md:px-16 pt-16 pb-16">
-    <div class="max-w-3xl">
-
-      <p class="rv text-[14px] font-medium text-dim mb-6">Hi, I'm Arun —</p>
-
-      <h1 class="rv rv-d1 font-display font-extrabold text-[clamp(38px,6vw,72px)] leading-[1.08] tracking-tight text-ink mb-8">
-        Analytics &amp; Strategy<br>
-        Leader
-      </h1>
-
-      <p class="rv rv-d2 text-[17px] text-dim leading-[1.85] max-w-2xl mb-10">
-        I fix broken systems — misaligned incentives, hidden inefficiencies,
-        decisions made on gut feel — and replace them with
-        <span class="text-ink font-medium">operational infrastructure that drives measurable growth.</span>
-        20 years across FMCG, commercial ops, and public sector.
-      </p>
-
-      <div class="rv rv-d3 flex flex-wrap items-center gap-4 mb-16">
-        <a href="#work" class="px-6 py-3 bg-blue text-white text-[14px] font-semibold rounded-lg hover:bg-blue/90 transition-colors no-underline">
-          View My Work
-        </a>
-        <a href="#contact" class="px-6 py-3 border border-faint text-ink text-[14px] font-medium rounded-lg hover:border-blue/40 transition-colors no-underline bg-white">
-          Get In Touch
-        </a>
-      </div>
-
-      <!-- Quick proof -->
-      <div class="rv flex flex-wrap gap-x-10 gap-y-3 text-[13px] text-dim border-t border-faint pt-8">
-        <span><span class="font-semibold text-ink">20%</span> revenue growth driven</span>
-        <span><span class="font-semibold text-ink">$2M+</span> in errors prevented</span>
-        <span><span class="font-semibold text-ink">96%</span> faster reporting</span>
-        <span><span class="font-semibold text-ink">200K+</span> residents impacted</span>
-      </div>
-
+  <div class="numbers-strip">
+    <div class="number-item">
+      <span class="number-val">15+</span>
+      <span class="number-label">Years cross-functional leadership</span>
     </div>
-  </section>
-
-  <!-- ─────────────────────── WHAT I BRING ─────────────────────── -->
-  <section id="about" class="px-6 md:px-16 py-20 md:py-28 bg-white border-t border-faint">
-    <div class="max-w-4xl">
-      <div class="rv section-line"></div>
-      <h2 class="rv font-display font-bold text-[clamp(26px,3.5vw,40px)] text-ink leading-tight mb-5">
-        What I bring to your team
-      </h2>
-      <p class="rv text-[16px] text-dim leading-[1.8] max-w-2xl mb-12">
-        I sit at the intersection of strategy, data, and execution. I don't just
-        analyse problems — I redesign the systems causing them and ship the solution
-        across teams, territories, and functions.
-      </p>
-
-      <div class="rv rv-d1 grid md:grid-cols-2 gap-6 max-w-3xl">
-        <div class="flex items-start gap-4">
-          <span class="text-blue font-bold text-[18px] leading-none mt-0.5">✔</span>
-          <div>
-            <p class="font-semibold text-ink text-[15px]">20 years in strategy &amp; commercial operations</p>
-            <p class="text-dim text-[14px] mt-1 leading-relaxed">FMCG, public sector, supply chain — delivered in the real world, not just decks</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4">
-          <span class="text-blue font-bold text-[18px] leading-none mt-0.5">✔</span>
-          <div>
-            <p class="font-semibold text-ink text-[15px]">Cross-functional leadership at scale</p>
-            <p class="text-dim text-[14px] mt-1 leading-relaxed">95 territories, 140 distributors, Finance + Sales + Supply Chain + IT aligned simultaneously</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4">
-          <span class="text-blue font-bold text-[18px] leading-none mt-0.5">✔</span>
-          <div>
-            <p class="font-semibold text-ink text-[15px]">Data as a strategic tool, not an end goal</p>
-            <p class="text-dim text-[14px] mt-1 leading-relaxed">Power BI, SQL, Excel — used to surface decisions, not just produce reports</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4">
-          <span class="text-blue font-bold text-[18px] leading-none mt-0.5">✔</span>
-          <div>
-            <p class="font-semibold text-ink text-[15px]">Incentive &amp; systems redesign</p>
-            <p class="text-dim text-[14px] mt-1 leading-relaxed">I find the root cause — misaligned incentives, broken processes — and build the fix</p>
-          </div>
-        </div>
-      </div>
+    <div class="number-item">
+      <span class="number-val">$1B+</span>
+      <span class="number-label">Portfolio under current oversight</span>
     </div>
-  </section>
-
-  <!-- ─────────────────────── PERSPECTIVE ─────────────────────── -->
-  <section class="px-6 md:px-16 py-20 md:py-24">
-    <div class="rv max-w-3xl ml-auto text-right">
-      <p class="text-[13px] font-semibold text-dim uppercase tracking-wide mb-4">A perspective I work from</p>
-      <blockquote class="font-display font-bold text-[clamp(20px,3vw,32px)] text-ink leading-[1.3]">
-        "Most organizations don't fail<br>
-        because of lack of data.<br>
-        They fail because <span class="text-accent">no one owns<br>the decision.</span>"
-      </blockquote>
+    <div class="number-item">
+      <span class="number-val">140</span>
+      <span class="number-label">Distributors in GTM restructure</span>
     </div>
-  </section>
-
-  <!-- ─────────────────────── FEATURED CASE STUDY ─────────────────────── -->
-  <section id="work" class="px-6 md:px-16 py-20 md:py-28 bg-white border-t border-faint">
-    <div class="max-w-4xl">
-      <div class="rv section-line"></div>
-      <p class="rv text-[13px] font-semibold text-dim uppercase tracking-wide mb-3">Featured Case Study</p>
-      <h2 class="rv font-display font-bold text-[clamp(26px,3.5vw,40px)] text-ink leading-tight mb-3">
-        Redesigning Growth at Scale
-      </h2>
-      <p class="rv text-dim text-[14px] mb-14">FMCG · Sales Operations · Analytics · Supply Chain · Bajaj Electricals</p>
-
-      <!-- Problem -->
-      <div class="rv mb-12">
-        <p class="text-[12px] font-bold text-blue uppercase tracking-wider mb-3">The Problem</p>
-        <p class="text-[13px] text-dim italic mb-4">This is where things started breaking.</p>
-        <h3 class="font-display font-semibold text-[22px] text-ink mb-4">Broken incentives. No visibility. Decisions made on gut feel.</h3>
-        <p class="text-[15px] text-dim leading-[1.85] max-w-2xl">
-          Retailer activation was stuck at 15%. Sales reps chased volume, not margin. Supply chain had no data
-          — stock-outs were frequent, with no way to predict or prevent them. And buried in the billing system:
-          over <span class="font-semibold text-ink">$2M in undetected errors</span> that nobody had been looking for.
-        </p>
-      </div>
-
-      <!-- Approach -->
-      <div class="rv rv-d1 mb-12 pl-6 border-l-2 border-faint">
-        <p class="text-[12px] font-bold text-blue uppercase tracking-wider mb-3">My Approach</p>
-        <p class="text-[13px] text-dim italic mb-4">So I redesigned the system from scratch.</p>
-        <h3 class="font-display font-semibold text-[22px] text-ink mb-4">Diagnose → Analyze → Redesign → Execute</h3>
-        <div class="flex flex-col gap-3 text-[15px] text-dim leading-[1.8] max-w-2xl">
-          <p>→ Rebuilt incentive structure from volume-based to <span class="text-ink font-medium">margin-based tiers</span> — aligning what reps were rewarded for with what the business actually needed.</p>
-          <p>→ Built analytics frameworks and automated reporting — what used to take weeks now ran in hours, giving leadership real-time visibility for the first time.</p>
-          <p>→ Used <span class="text-ink font-medium">holdout groups</span> to measure true incremental lift and prove the system worked — not just felt better.</p>
-          <p>→ Coordinated rollout across Finance, Sales, Supply Chain, and IT simultaneously across 95 territories.</p>
-        </div>
-      </div>
-
-      <!-- Impact counters — FIXED: using static values with CSS animation trigger -->
-      <div class="rv rv-d2 mb-4" id="impact-section">
-        <p class="text-[12px] font-bold text-blue uppercase tracking-wider mb-3">The Impact</p>
-        <p class="text-[13px] text-dim italic mb-6">Shipped across 95 territories simultaneously.</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-          <div class="py-5 border-t-2 border-blue">
-            <div class="font-display font-extrabold text-[clamp(32px,4vw,48px)] text-ink leading-none">
-              <span class="count-num" data-target="20" data-suffix="%">0</span>
-            </div>
-            <p class="text-[13px] text-dim mt-2">Revenue growth</p>
-          </div>
-          <div class="py-5 border-t-2 border-blue">
-            <div class="font-display font-extrabold text-[clamp(32px,4vw,48px)] text-ink leading-none">
-              <span class="count-num" data-target="50" data-suffix="%">0</span>
-            </div>
-            <p class="text-[13px] text-dim mt-2">Retailer activation</p>
-          </div>
-          <div class="py-5 border-t-2 border-blue">
-            <div class="font-display font-extrabold text-[clamp(32px,4vw,48px)] text-ink leading-none">
-              <span class="count-num" data-target="96" data-suffix="%">0</span>
-            </div>
-            <p class="text-[13px] text-dim mt-2">Faster reporting</p>
-          </div>
-          <div class="py-5 border-t-2 border-blue">
-            <div class="font-display font-extrabold text-[clamp(32px,4vw,48px)] text-ink leading-none">
-              <span class="count-num" data-prefix="$" data-target="2" data-suffix="M+">0</span>
-            </div>
-            <p class="text-[13px] text-dim mt-2">Errors identified</p>
-          </div>
-        </div>
-      </div>
+    <div class="number-item">
+      <span class="number-val">5</span>
+      <span class="number-label">End-to-end operating model redesigns</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ─────────────────────── BEFORE / AFTER ─────────────────────── -->
-  <section class="px-6 md:px-16 py-16 md:py-20">
-    <div class="rv mb-8 max-w-4xl">
-      <p class="font-display font-bold text-[clamp(18px,2.5vw,26px)] text-ink">
-        Most teams would have added more dashboards.<br>
-        <span class="text-dim font-normal">I fixed the system instead.</span>
-      </p>
+<!-- ─── WORK ─── -->
+<section class="section fade-in" id="work">
+  <span class="section-tag">Selected Work</span>
+  <h2>Five problems. Five operating models rebuilt.</h2>
+
+  <!-- 01 -->
+  <div class="project">
+    <div class="project-header">
+      <span class="project-num">01 —</span>
+      <span class="project-title">Budget Forecasting &amp; Planning Across 8 Departments</span>
     </div>
-    <div class="rv rv-d1 grid md:grid-cols-2 gap-6 max-w-4xl">
-      <div class="bg-red-50 border border-red-100 rounded-xl p-7">
-        <p class="text-[12px] font-bold text-red-500 uppercase tracking-wide mb-5">Before</p>
-        <ul class="space-y-3 text-[14px] text-dim">
-          <li class="flex gap-3"><span class="text-red-400 mt-0.5 flex-shrink-0">—</span><span>15% retailer activation, manual processes</span></li>
-          <li class="flex gap-3"><span class="text-red-400 mt-0.5 flex-shrink-0">—</span><span>Volume-based incentives rewarding wrong behaviour</span></li>
-          <li class="flex gap-3"><span class="text-red-400 mt-0.5 flex-shrink-0">—</span><span>$2M+ in errors hiding in plain sight</span></li>
-          <li class="flex gap-3"><span class="text-red-400 mt-0.5 flex-shrink-0">—</span><span>Reporting took days, decisions made on gut feel</span></li>
+    <p class="project-company">Allegheny County DHS &nbsp;·&nbsp; Budget Analyst II</p>
+    <p class="project-body">
+      Eight departments, no consistent forecasting discipline, and a recurring pattern:
+      budgets would run short mid-year, triggering reactive reallocation cycles that consumed
+      weeks of leadership bandwidth. I built the forecasting framework from scratch —
+      five years of historical spend data, variance analysis, seasonality modelling,
+      and a stakeholder alignment process that made department heads co-owners of the projections.
+      The <strong>80% reduction in fund reallocations</strong> wasn't the goal; it was the evidence
+      that the operating model had actually changed.
+    </p>
+    <div>
+      <span class="project-result">80% fewer budget reallocations</span>
+      <span class="project-result">70% less manual effort in planning cycles</span>
+    </div>
+    <button class="project-toggle" onclick="toggleDetail(this)">
+      <span class="arrow">›</span> See the detail
+    </button>
+    <div class="project-detail">
+      <div class="detail-col">
+        <p class="detail-label">What I did</p>
+        <ul>
+          <li>Pulled and cleaned <strong>5 years of historical spending data</strong> across all 8 departments and cost centres</li>
+          <li>Built forecasting models incorporating spend trends, seasonality cycles, and variance analysis</li>
+          <li>Ran structured alignment sessions with department heads to validate projections and capture one-time policy-driven expenses</li>
+          <li>Established a <strong>proactive planning cadence</strong> that replaced the reactive fund transfer cycle</li>
         </ul>
       </div>
-      <div class="bg-blue/[.04] border border-blue/15 rounded-xl p-7">
-        <p class="text-[12px] font-bold text-blue uppercase tracking-wide mb-5">After</p>
-        <ul class="space-y-3 text-[14px] text-dim">
-          <li class="flex gap-3"><span class="text-blue mt-0.5 flex-shrink-0">→</span><span><span class="text-ink font-medium">50% activation</span>, app-based ordering, full visibility</span></li>
-          <li class="flex gap-3"><span class="text-blue mt-0.5 flex-shrink-0">→</span><span><span class="text-ink font-medium">20% revenue growth</span> driven by margin-based redesign</span></li>
-          <li class="flex gap-3"><span class="text-blue mt-0.5 flex-shrink-0">→</span><span><span class="text-ink font-medium">$2M+ identified</span> and corrected through structured analysis</span></li>
-          <li class="flex gap-3"><span class="text-blue mt-0.5 flex-shrink-0">→</span><span><span class="text-ink font-medium">96% faster</span> — 5 days compressed to 5 hours</span></li>
+      <div class="detail-col">
+        <p class="detail-label">The outcomes</p>
+        <ul>
+          <li><strong>80% reduction</strong> in mid-year fund reallocations</li>
+          <li><strong>70% decrease</strong> in manual effort and approval processing time</li>
+          <li>Faster, uninterrupted expense execution across departments</li>
+          <li>Improved financial governance and accuracy for executive-level allocation decisions</li>
         </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ─────────────────────── MORE CASE STUDIES ─────────────────────── -->
-  <section class="px-6 md:px-16 py-20 md:py-28 bg-white border-t border-faint">
-    <div class="max-w-4xl">
-      <div class="rv section-line"></div>
-      <h2 class="rv font-display font-bold text-[clamp(26px,3.5vw,40px)] text-ink leading-tight mb-14">
-        More Work
-      </h2>
-
-      <!-- Case Study 2 -->
-      <div class="rv mb-14 pb-14 border-b border-faint">
-        <p class="text-[12px] font-bold text-blue uppercase tracking-wider mb-2">Case Study · Digital Channel Launch · Bajaj Electricals</p>
-        <h3 class="font-display font-semibold text-[22px] text-ink mb-4">Loyalty Platform — QR System Design (0→1)</h3>
-        <div class="grid md:grid-cols-3 gap-6 text-[14px] text-dim leading-[1.8]">
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Problem</p>
-            <p>Manual loyalty tracking was unreliable and invisible. No data on what 6,000+ retailers were actually doing. Leadership was flying blind on engagement metrics.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Approach</p>
-            <p>Conducted 50+ field interviews with electricians and retailers to map real behavior. Designed and launched a QR-based digital tracking platform from zero — defined requirements, aligned IT and finance, and managed rollout.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Impact</p>
-            <p><span class="text-ink font-semibold">84 active users, 2,825 scans, 49K+ loyalty points issued</span> in 6 months — a working digital loyalty infrastructure where none existed before.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Case Study 3 -->
-      <div class="rv rv-d1 mb-14 pb-14 border-b border-faint">
-        <p class="text-[12px] font-bold text-accent uppercase tracking-wider mb-2">Case Study · Current Role · Allegheny County DHS</p>
-        <h3 class="font-display font-semibold text-[22px] text-ink mb-4">Analytics Infrastructure — Public Sector at Scale</h3>
-        <div class="grid md:grid-cols-3 gap-6 text-[14px] text-dim leading-[1.8]">
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Problem</p>
-            <p>Manual 5-day reporting cycles across 8 departments. Financial discrepancies embedded in $180M+ agency spend. Leadership lacked real-time visibility across 150+ program budgets and 4 vendor contracts.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Approach</p>
-            <p>Built automated analytics infrastructure using Power Query and SharePoint. Applied systematic reconciliation analysis across all 8 departments to surface billing pattern errors. Standardized KPI definitions across MCO vendor contracts.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Impact</p>
-            <p><span class="text-ink font-semibold">$2M+ in annual errors prevented</span> — framework adopted as county operating standard. <span class="text-ink font-semibold">96% faster reporting</span> (5 days → 5 hours). 200K+ residents benefiting from improved operational decisions.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Case Study 4 -->
-      <div class="rv rv-d2">
-        <p class="text-[12px] font-bold text-blue uppercase tracking-wider mb-2">Case Study · COVID Pivot · Bajaj Electricals</p>
-        <h3 class="font-display font-semibold text-[22px] text-ink mb-4">Zero-Budget Revenue Generation During Market Shutdown</h3>
-        <div class="grid md:grid-cols-3 gap-6 text-[14px] text-dim leading-[1.8]">
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Problem</p>
-            <p>Complete market shutdown in April 2020. Zero marketing budget. Traditional field sales and distribution channels unavailable. Regional peers posting negative growth.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Approach</p>
-            <p>Analyzed transaction data to identify 3 high-velocity micro-markets still showing demand signals. Reallocated field capacity entirely to those pockets. Activated digital outreach via WhatsApp with existing retailer relationships — no new spend.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-ink text-[13px] uppercase tracking-wide mb-2">Impact</p>
-            <p><span class="text-ink font-semibold">₹16 Cr (~$1.9M) in revenue</span> closed in a 90-day window with zero marketing budget — while regional peers posted negative growth. Pure data-driven resource reallocation.</p>
-          </div>
-        </div>
-      </div>
-
+  <!-- 02 -->
+  <div class="project">
+    <div class="project-header">
+      <span class="project-num">02 —</span>
+      <span class="project-title">Retailer Incentive Program — Rebuilt from the Ground Up</span>
     </div>
-  </section>
-
-  <!-- ─────────────────────── DECISION MINDSET ─────────────────────── -->
-  <section class="px-6 md:px-16 py-20 md:py-28">
-    <div class="max-w-4xl">
-      <div class="rv mb-6">
-        <p class="font-display font-bold text-[clamp(20px,2.5vw,28px)] text-ink">I don't build dashboards.</p>
-        <p class="font-display font-bold text-[clamp(20px,2.5vw,28px)] text-accent">I build decisions.</p>
+    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Regional Channel Marketing Manager</p>
+    <p class="project-body">
+      The existing programme had 13 irregular 28-day cycles, tier-based bonus points that
+      required a sales rep to decode, and zero self-service visibility for retailers.
+      Participation had fallen to 15%. I redesigned the entire structure: simplified to a
+      12-month calendar, shifted to forward-looking performance targets so retailers could
+      actually plan, and moved tracking to the retailer app so they never had to ask a rep
+      where they stood. <strong>Participation went from 15% to 55% in six months.</strong>
+      The structural change did what the incentive itself couldn't.
+    </p>
+    <div>
+      <span class="project-result">15% → 55% retailer participation</span>
+      <span class="project-result">25% increase in SKU billing depth</span>
+      <span class="project-result">15% sales uplift</span>
+    </div>
+    <button class="project-toggle" onclick="toggleDetail(this)">
+      <span class="arrow">›</span> See the detail
+    </button>
+    <div class="project-detail">
+      <div class="detail-col">
+        <p class="detail-label">What I did</p>
+        <ul>
+          <li>Diagnosed the structural causes of low participation — complexity, opacity, and rep dependency</li>
+          <li>Transitioned from <strong>13 irregular cycles to a standard 12-month calendar</strong></li>
+          <li>Introduced forward-looking incentives based on prior cycle performance — retailers could predict earnings</li>
+          <li>Built <strong>self-service weekly tracking into the retailer app</strong>, eliminating sales rep dependency</li>
+          <li>Simplified qualification criteria to make targets motivating rather than confusing</li>
+        </ul>
       </div>
-      <div class="rv rv-d1 grid md:grid-cols-3 gap-8 mt-10 text-[14px] text-dim leading-[1.85]">
-        <p><span class="text-ink font-semibold">If incentives are wrong,</span> behavior will be wrong — no matter how good the data.</p>
-        <p><span class="text-ink font-semibold">If data is slow,</span> decisions will be wrong — no matter how smart the team.</p>
-        <p><span class="text-ink font-semibold">If ownership is unclear,</span> execution will fail — no matter how good the strategy.</p>
+      <div class="detail-col">
+        <p class="detail-label">The outcomes</p>
+        <ul>
+          <li>Participation: <strong>15% → 55% within 3–6 months</strong></li>
+          <li><strong>15% sales uplift</strong> from higher retailer engagement</li>
+          <li><strong>25% improvement in SKU billing depth</strong>, strengthening product mix</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ─────────────────────── SKILLS ─────────────────────── -->
-  <section class="px-6 md:px-16 py-20 bg-white border-t border-faint">
-    <div class="max-w-4xl grid md:grid-cols-[200px_1fr] gap-12">
-      <div class="rv">
-        <div class="section-line"></div>
-        <h2 class="font-display font-bold text-[24px] text-ink">Skills</h2>
+  <!-- 03 -->
+  <div class="project">
+    <div class="project-header">
+      <span class="project-num">03 —</span>
+      <span class="project-title">SKU Availability &amp; Supply Chain Visibility</span>
+    </div>
+    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Regional Channel Marketing Manager</p>
+    <p class="project-body">
+      Distributors were rationally optimising for fast-moving SKUs — the incentive structure
+      rewarded volume, so they stocked volume. Mid and premium segments were perpetually
+      understocked, and leadership had no visibility into territory-level inventory health.
+      I built SKU-wise stocking norms based on actual sales frequency, demand patterns,
+      and seasonality — then drove region-wide adoption across 95 territories over five months.
+      <strong>SKU availability improved 45%. Incremental sales grew 15–18%.</strong>
+      Not from better marketing. From fixing the inventory operating model.
+    </p>
+    <div>
+      <span class="project-result">+45% SKU availability</span>
+      <span class="project-result">15–18% incremental sales growth</span>
+    </div>
+    <button class="project-toggle" onclick="toggleDetail(this)">
+      <span class="arrow">›</span> See the detail
+    </button>
+    <div class="project-detail">
+      <div class="detail-col">
+        <p class="detail-label">What I did</p>
+        <ul>
+          <li>Built <strong>SKU-wise stocking norms</strong> based on sales frequency, demand patterns, and seasonality across 95 territories</li>
+          <li>Introduced minimum stock thresholds across an expanded SKU portfolio</li>
+          <li>Enabled <strong>data-driven replenishment cycles</strong> aligned to actual sales velocity</li>
+          <li>Executed region-wide adoption through distributor alignment over 5–6 months</li>
+        </ul>
       </div>
-      <div class="rv rv-d1 grid grid-cols-2 md:grid-cols-3 gap-y-5 gap-x-8 text-[14px] text-dim">
-        <span>Strategy &amp; Operations</span>
-        <span>Revenue Operations</span>
-        <span>Cross-functional Leadership</span>
-        <span>Incentive Architecture</span>
-        <span>GTM Strategy</span>
-        <span>Stakeholder Management</span>
-        <span>Business Analytics</span>
-        <span>Power BI &amp; Tableau</span>
-        <span>Executive Communication</span>
-        <span>Supply Chain Analytics</span>
-        <span>Financial Analysis</span>
-        <span>Program Management</span>
+      <div class="detail-col">
+        <p class="detail-label">The outcomes</p>
+        <ul>
+          <li><strong>+45% improvement</strong> in SKU availability across the distributor network</li>
+          <li><strong>15–18% incremental sales growth</strong> from reduced stock-outs</li>
+          <li>Recovered demand in mid and premium segments that had been systematically missed</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ─────────────────────── CONTACT ─────────────────────── -->
-  <section id="contact" class="px-6 md:px-16 py-24 md:py-32">
-    <div class="max-w-2xl">
-      <div class="rv section-line"></div>
-      <h2 class="rv font-display font-bold text-[clamp(32px,5vw,56px)] text-ink leading-[1.08] tracking-tight mb-6">
-        Let's build something<br>that works.
-      </h2>
-      <p class="rv text-[16px] text-dim leading-[1.8] mb-4">
-        Open to <span class="text-ink font-medium">Senior Manager and Director-level roles</span> in Strategy &amp; Operations, Business Analytics, or Revenue Operations — in <span class="text-ink font-medium">tech or financial services</span>.
-      </p>
-      <p class="rv text-[14px] text-dim leading-[1.8] mb-12">
-        H-1B sponsorship required. Pittsburgh, PA — open to relocation for the right opportunity.
-      </p>
-      <div class="rv rv-d1 flex flex-col gap-0">
-        <a href="mailto:arun.padayachi@icloud.com" class="grow-line flex items-center justify-between py-5 border-b border-faint no-underline group">
-          <div>
-            <p class="text-[11px] font-semibold text-dim uppercase tracking-wide mb-1">Email</p>
-            <p class="text-[16px] font-medium text-ink">arun.padayachi@icloud.com</p>
-          </div>
-          <span class="text-dim group-hover:text-blue group-hover:translate-x-1 transition-all duration-200">→</span>
-        </a>
-        <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank" class="grow-line flex items-center justify-between py-5 border-b border-faint no-underline group">
-          <div>
-            <p class="text-[11px] font-semibold text-dim uppercase tracking-wide mb-1">LinkedIn</p>
-            <p class="text-[16px] font-medium text-ink">arunshanmugamprema</p>
-          </div>
-          <span class="text-dim group-hover:text-blue group-hover:translate-x-1 transition-all duration-200">→</span>
-        </a>
-        <a href="https://github.com/arunshanmugamprema" target="_blank" class="grow-line flex items-center justify-between py-5 border-b border-faint no-underline group">
-          <div>
-            <p class="text-[11px] font-semibold text-dim uppercase tracking-wide mb-1">GitHub</p>
-            <p class="text-[16px] font-medium text-ink">arunshanmugamprema</p>
-          </div>
-          <span class="text-dim group-hover:text-blue group-hover:translate-x-1 transition-all duration-200">→</span>
-        </a>
+  <!-- 04 -->
+  <div class="project">
+    <div class="project-header">
+      <span class="project-num">04 —</span>
+      <span class="project-title">Distributor ROI &amp; Channel Economics</span>
+    </div>
+    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Regional Channel Marketing Manager</p>
+    <p class="project-body">
+      The problem was a misalignment baked into the incentive structure: sales teams were
+      rewarded for revenue but not for collections, which meant working capital was
+      chronically tied up in market credit. Distributors were profitable on paper and
+      struggling in practice. I redesigned the incentive framework to reward both
+      sales achievement and payment collection simultaneously — and introduced
+      same-day payouts to make the behavioral shift immediate rather than theoretical.
+      <strong>Distributor ROI improved 25–50%.</strong>
+    </p>
+    <div>
+      <span class="project-result">25–50% distributor ROI improvement</span>
+      <span class="project-result">Significant reduction in market credit exposure</span>
+    </div>
+    <button class="project-toggle" onclick="toggleDetail(this)">
+      <span class="arrow">›</span> See the detail
+    </button>
+    <div class="project-detail">
+      <div class="detail-col">
+        <p class="detail-label">What I did</p>
+        <ul>
+          <li>Diagnosed the root cause: incentives rewarding revenue but not collections, blocking working capital</li>
+          <li>Redesigned sales incentives to <strong>jointly reward sales achievement and payment collection</strong></li>
+          <li>Introduced <strong>same-day payout mechanics</strong> to create immediate behavioural shift</li>
+          <li>Ran range-selling training to improve SKU mix and inventory rotation at distributor level</li>
+        </ul>
+      </div>
+      <div class="detail-col">
+        <p class="detail-label">The outcomes</p>
+        <ul>
+          <li><strong>25–50% improvement in distributor ROI</strong> across the channel</li>
+          <li>Significant reduction in market credit exposure through improved collection discipline</li>
+          <li>Enhanced inventory rotation and product mix at the distributor level</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="px-6 md:px-16 py-6 border-t border-faint flex flex-col md:flex-row items-center justify-between gap-2">
-    <p class="text-[12px] text-dim">&copy; 2026 Arun S Prema</p>
-    <p class="text-[12px] text-dim">Analytics &amp; Strategy Leader · Director-level · H-1B Sponsored</p>
-  </footer>
+  <!-- 05 -->
+  <div class="project">
+    <div class="project-header">
+      <span class="project-num">05 —</span>
+      <span class="project-title">Crisis GTM — $2M in Revenue with No Budget</span>
+    </div>
+    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Regional Channel Marketing Manager &nbsp;·&nbsp; COVID-19 lockdown</p>
+    <p class="project-body">
+      The entire physical distribution channel shut down. Selling windows were three hours.
+      Movement was restricted. Six months of aged premium inventory was accumulating.
+      And there was no marketing budget. I designed a fully remote GTM motion in two weeks:
+      WhatsApp-led campaign, product repositioning around anti-viral features, phone-based
+      sales activation, and Google Forms for order capture across 4,000+ retailers.
+      <strong>$2M in revenue. 25% of aged inventory liquidated in three days. Zero spend.</strong>
+      The lesson wasn't about WhatsApp. It was about what a sales force can do
+      when the operating model is redesigned around the constraints.
+    </p>
+    <div>
+      <span class="project-result">$2M revenue</span>
+      <span class="project-result">25% inventory cleared in 3 days</span>
+      <span class="project-result">Zero marketing spend</span>
+      <span class="project-result">4,000+ retailers reached</span>
+    </div>
+    <button class="project-toggle" onclick="toggleDetail(this)">
+      <span class="arrow">›</span> See the detail
+    </button>
+    <div class="project-detail">
+      <div class="detail-col">
+        <p class="detail-label">What I did</p>
+        <ul>
+          <li>Designed a <strong>fully remote, digital-first sales campaign</strong> from scratch in under 2 weeks</li>
+          <li>Repositioned premium anti-viral fans as relevant COVID-era products — shifted the value narrative</li>
+          <li>Activated 4,000+ retailers via WhatsApp campaign with product demo video content</li>
+          <li>Enabled seamless digital ordering via <strong>Google Forms at scale</strong></li>
+          <li>Coordinated sales team on phone-based selling across the entire retailer network</li>
+        </ul>
+      </div>
+      <div class="detail-col">
+        <p class="detail-label">The outcomes</p>
+        <ul>
+          <li>Reached <strong>4,000+ retailers</strong> within the campaign window</li>
+          <li>Generated <strong>approximately $2M in revenue</strong> with zero marketing budget</li>
+          <li><strong>25% of aged inventory liquidated in 3 days</strong></li>
+          <li>Built a scalable remote selling model that was replicated post-lockdown</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script>
-    // Nav scroll behaviour
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        nav.classList.add('bg-white/95', 'backdrop-blur-sm', 'border-b', 'border-faint', 'shadow-sm', 'py-4');
-        nav.classList.remove('py-5');
-      } else {
-        nav.classList.remove('bg-white/95', 'backdrop-blur-sm', 'border-b', 'border-faint', 'shadow-sm', 'py-4');
-        nav.classList.add('py-5');
-      }
-    });
+<!-- ─── SKILLS ─── -->
+<section class="section fade-in" id="skills">
+  <span class="section-tag">Capabilities</span>
+  <h2>What I bring</h2>
 
-    // Reveal on scroll
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); }
-      });
-    }, { threshold: 0, rootMargin: '0px 0px -10px 0px' });
-    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+  <div class="skills-row">
+    <span class="skills-row-label">Strategy &amp; Operations</span>
+    <div class="skills-list">
+      <span class="skill-tag featured">Operating model design</span>
+      <span class="skill-tag featured">GTM strategy</span>
+      <span class="skill-tag featured">Incentive restructuring</span>
+      <span class="skill-tag featured">Cross-functional alignment</span>
+      <span class="skill-tag">OKR / KPI frameworks</span>
+      <span class="skill-tag">Executive stakeholder management</span>
+      <span class="skill-tag">Change management</span>
+      <span class="skill-tag">Process redesign</span>
+    </div>
+  </div>
 
-    // Safety net for above-fold elements
-    setTimeout(() => {
-      document.querySelectorAll('.rv:not(.on)').forEach(el => {
-        const r = el.getBoundingClientRect();
-        if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('on');
-      });
-    }, 150);
+  <div class="skills-row">
+    <span class="skills-row-label">Analytics &amp; Technical</span>
+    <div class="skills-list">
+      <span class="skill-tag featured">SQL (advanced)</span>
+      <span class="skill-tag featured">Python</span>
+      <span class="skill-tag featured">Power BI</span>
+      <span class="skill-tag">Tableau</span>
+      <span class="skill-tag">BigQuery</span>
+      <span class="skill-tag">Snowflake</span>
+      <span class="skill-tag">dbt</span>
+      <span class="skill-tag">Forecasting models</span>
+    </div>
+  </div>
 
-    // ── FIXED ANIMATED COUNTERS ──────────────────────────────────────
-    // Uses IntersectionObserver with threshold:0 + rootMargin to trigger
-    // reliably. Reads data-prefix / data-target / data-suffix attributes.
-    function animateCounter(el) {
-      const target  = +el.dataset.target;
-      const prefix  = el.dataset.prefix  || '';
-      const suffix  = el.dataset.suffix  || '';
-      const duration = 1400;
-      const start   = performance.now();
+  <div class="skills-row">
+    <span class="skills-row-label">Finance &amp; Planning</span>
+    <div class="skills-list">
+      <span class="skill-tag featured">Budget forecasting</span>
+      <span class="skill-tag">Variance analysis</span>
+      <span class="skill-tag">Financial modelling</span>
+      <span class="skill-tag">Resource allocation</span>
+      <span class="skill-tag">Headcount planning</span>
+    </div>
+  </div>
 
-      function tick(now) {
-        const elapsed  = now - start;
-        const progress = Math.min(elapsed / duration, 1);
-        // Ease-out cubic
-        const eased    = 1 - Math.pow(1 - progress, 3);
-        const current  = Math.round(eased * target);
-        el.textContent = prefix + current + suffix;
-        if (progress < 1) {
-          requestAnimationFrame(tick);
-        } else {
-          el.textContent = prefix + target + suffix;
-        }
-      }
-      requestAnimationFrame(tick);
-    }
+  <div class="skills-row">
+    <span class="skills-row-label">Education</span>
+    <div class="skills-list">
+      <span class="skill-tag">PG Diploma — Data Science &amp; Analytics, UT Austin McCombs</span>
+      <span class="skill-tag">B.Sc. Mathematics, St. Joseph's College, Bharathidasan University</span>
+    </div>
+  </div>
+</section>
 
-    const counterObs = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          counterObs.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0,
-      rootMargin: '0px 0px -50px 0px'
-    });
+<!-- ─── RESULTS ─── -->
+<section class="section fade-in" id="results">
+  <span class="section-tag">Track Record</span>
+  <h2>The numbers that matter</h2>
+  <p class="results-prose">
+    Across two companies, two countries, and five operating model redesigns — the outcomes have
+    always been the same kind: structural, measurable, and lasting. Not a one-quarter spike.
+    A different baseline.
+  </p>
 
-    document.querySelectorAll('.count-num').forEach(el => {
-      // Set initial display so it doesn't look broken before animating
-      const prefix = el.dataset.prefix || '';
-      const suffix = el.dataset.suffix || '';
-      el.textContent = prefix + '0' + suffix;
-      counterObs.observe(el);
-    });
-  </script>
+  <div class="results-grid">
+    <div class="result-card">
+      <span class="result-big">80%</span>
+      <span class="result-desc">Reduction in mid-year budget reallocations through forecasting model redesign</span>
+      <span class="result-src">Allegheny County DHS — 2023–present</span>
+    </div>
+    <div class="result-card">
+      <span class="result-big">55%</span>
+      <span class="result-desc">Retailer programme participation, up from 15% after incentive structure redesign</span>
+      <span class="result-src">Bajaj Electricals — Regional</span>
+    </div>
+    <div class="result-card">
+      <span class="result-big">+45%</span>
+      <span class="result-desc">SKU availability across 140 distributors after inventory operating model rebuild</span>
+      <span class="result-src">Bajaj Electricals — 95 territories</span>
+    </div>
+    <div class="result-card">
+      <span class="result-big">$2M</span>
+      <span class="result-desc">Revenue generated in 3 days with zero marketing budget during COVID lockdown</span>
+      <span class="result-src">Bajaj Electricals — Tamil Nadu</span>
+    </div>
+    <div class="result-card">
+      <span class="result-big">50%</span>
+      <span class="result-desc">Distributor ROI improvement through incentive and working capital redesign</span>
+      <span class="result-src">Bajaj Electricals — Channel</span>
+    </div>
+    <div class="result-card">
+      <span class="result-big">70%</span>
+      <span class="result-desc">Reduction in manual effort and approval cycles across 8-department planning process</span>
+      <span class="result-src">Allegheny County DHS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section class="section fade-in" id="contact">
+  <span class="section-tag">Contact</span>
+  <h2>Let's talk about a problem worth solving</h2>
+
+  <div class="open-pill">
+    <span class="open-dot"></span>
+    Open to S&amp;O roles — NYC · Chicago · SF · Remote
+  </div>
+
+  <p class="contact-body">
+    I'm looking for <strong>Strategy &amp; Operations, GTM Operations, or Business Operations</strong> roles
+    at the senior level — places where the expectation is that you own both the diagnosis
+    and the execution. If that sounds like something you're hiring for, I'd like to hear about it.
+    A conversation costs nothing.
+  </p>
+
+  <div class="contact-list">
+    <a href="mailto:arun.padayachi@icloud.com" class="contact-item">
+      <span class="contact-item-label">Email</span>
+      <span class="contact-item-val">arun.padayachi@icloud.com</span>
+      <span class="contact-item-arrow">→</span>
+    </a>
+    <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank" class="contact-item">
+      <span class="contact-item-label">LinkedIn</span>
+      <span class="contact-item-val">linkedin.com/in/arunshanmugamprema</span>
+      <span class="contact-item-arrow">→</span>
+    </a>
+    <a href="https://github.com/arunshanmugamprema" target="_blank" class="contact-item">
+      <span class="contact-item-label">GitHub</span>
+      <span class="contact-item-val">github.com/arunshanmugamprema</span>
+      <span class="contact-item-arrow">→</span>
+    </a>
+    <a href="resume.pdf" class="contact-item">
+      <span class="contact-item-label">Resume</span>
+      <span class="contact-item-val">Download PDF</span>
+      <span class="contact-item-arrow">→</span>
+    </a>
+  </div>
+
+  <div class="target-block">
+    <p class="target-block-head">Roles I'm targeting</p>
+    <div class="target-item">Strategy &amp; Operations Manager / Senior Associate</div>
+    <div class="target-item">GTM Strategy &amp; Operations</div>
+    <div class="target-item">Business Operations Manager</div>
+    <div class="target-item">Analytics Strategy Lead</div>
+    <div class="target-item">Senior Business Analyst — S&amp;O</div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 Arun S. Prema · Pittsburgh, PA</span>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank">LinkedIn</a>
+    <a href="https://github.com/arunshanmugamprema" target="_blank">GitHub</a>
+    <a href="resume.pdf">Resume</a>
+  </div>
+</footer>
+
+<script>
+function toggleDetail(btn) {
+  btn.classList.toggle('open');
+  const detail = btn.nextElementSibling;
+  detail.classList.toggle('show');
+  btn.querySelector('.arrow').style.transform = detail.classList.contains('show') ? 'rotate(90deg)' : 'rotate(0)';
+  btn.childNodes[1].textContent = detail.classList.contains('show') ? ' Hide detail' : ' See the detail';
+}
+
+// Fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
