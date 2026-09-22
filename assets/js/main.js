@@ -163,3 +163,57 @@ window.setWorkView = function(view) {
   }
 };
 
+// ─── 9. Start → End Frame Visual Transformation Stepper ───
+let currentSEStep = 1;
+const totalSESteps = 5;
+
+window.setStartEndStep = function(step) {
+  if (step < 1) step = totalSESteps;
+  if (step > totalSESteps) step = 1;
+  currentSEStep = step;
+
+  // Toggle active slide
+  const slides = document.querySelectorAll('.start-end-slide');
+  slides.forEach((slide) => {
+    const slideIndex = parseInt(slide.getAttribute('data-slide'), 10);
+    if (slideIndex === currentSEStep) {
+      slide.classList.add('active');
+    } else {
+      slide.classList.remove('active');
+    }
+  });
+
+  // Update step counter text across any counters
+  const counters = document.querySelectorAll('.se-step-counter');
+  counters.forEach(c => {
+    c.textContent = `0${currentSEStep} / 0${totalSESteps}`;
+  });
+
+  // Update eyebrow
+  const eyebrows = document.querySelectorAll('.se-step-eyebrow');
+  eyebrows.forEach(eb => {
+    eb.textContent = `PROBLEM 0${currentSEStep} OF 0${totalSESteps}`;
+  });
+
+  // Update pill buttons
+  const pills = document.querySelectorAll('.se-pill-btn');
+  pills.forEach(pill => {
+    const pillIndex = parseInt(pill.getAttribute('data-step'), 10);
+    if (pillIndex === currentSEStep) {
+      pill.classList.add('active');
+      pill.setAttribute('aria-selected', 'true');
+    } else {
+      pill.classList.remove('active');
+      pill.setAttribute('aria-selected', 'false');
+    }
+  });
+};
+
+window.prevStartEndStep = function() {
+  window.setStartEndStep(currentSEStep - 1);
+};
+
+window.nextStartEndStep = function() {
+  window.setStartEndStep(currentSEStep + 1);
+};
+
