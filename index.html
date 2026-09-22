@@ -79,7 +79,10 @@
   <div class="header-container">
     <a href="#top" class="site-brand">
       <div class="brand-icon-box">AP</div>
-      <span class="brand-name">Arun S. Prema</span>
+      <div class="brand-text-group">
+        <span class="brand-name">Arun S. Prema</span>
+        <span class="status-badge"><span class="status-dot"></span> Available for Roles</span>
+      </div>
     </a>
     <ul class="header-nav">
       <li><a href="#about">About</a></li>
@@ -190,6 +193,26 @@
   </div>
 </section>
 
+<!-- ENTERPRISE PEDIGREE ROSTER (BEN POWELL / MIKE MATAS INSPIRATION) -->
+<div class="pedigree-container">
+  <div class="pedigree-inner">
+    <span class="pedigree-label">Operating Systems &amp; Revenue Models Scaled Across</span>
+    <div class="pedigree-logos">
+      <span class="pedigree-item">Allegheny County DHS</span>
+      <span class="pedigree-dot">•</span>
+      <span class="pedigree-item">Bajaj Electricals</span>
+      <span class="pedigree-dot">•</span>
+      <span class="pedigree-item">Asian Paints</span>
+      <span class="pedigree-dot">•</span>
+      <span class="pedigree-item">Philips India</span>
+      <span class="pedigree-dot">•</span>
+      <span class="pedigree-item">Godrej</span>
+      <span class="pedigree-dot">•</span>
+      <span class="pedigree-item">Samsung</span>
+    </div>
+  </div>
+</div>
+
 <!-- NOW CALLOUT BANNER -->
 <div class="now-container">
   <div class="now-box">
@@ -250,11 +273,25 @@
 
 <!-- CASE STUDIES: RECENT WORKS -->
 <section class="section" id="work">
-  <span class="section-tag">Recent Works</span>
-  <h2 class="section-title">Five problems. Five operating systems rebuilt.</h2>
-  <p class="section-lead">
-    Detailed breakdowns of end-to-end diagnosis, operating model architecture, stakeholder change management, and verified commercial results.
-  </p>
+  <div class="work-header-flex">
+    <div>
+      <span class="section-tag">Recent Works</span>
+      <h2 class="section-title">Five problems. Five operating systems rebuilt.</h2>
+      <p class="section-lead">
+        Detailed breakdowns of end-to-end diagnosis, operating model architecture, stakeholder change management, and verified commercial results.
+      </p>
+    </div>
+    <div class="view-switch-group" role="tablist" aria-label="Case Study View Switcher">
+      <button class="view-btn active" id="btn-view-cards" onclick="setWorkView('cards')" role="tab" aria-selected="true" title="Detailed Cards View">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg>
+        <span>Cards</span>
+      </button>
+      <button class="view-btn" id="btn-view-list" onclick="setWorkView('list')" role="tab" aria-selected="false" title="Compact Index List">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+        <span>Index</span>
+      </button>
+    </div>
+  </div>
 
   <div class="case-studies-grid">
     <!-- Card 01 -->
@@ -468,6 +505,64 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- COMPACT EDITORIAL INDEX VIEW (BEN POWELL / KIRSCHBERG INSPIRATION) -->
+  <div class="case-studies-list" style="display: none;" role="tabpanel" aria-label="Case Studies List Index">
+    <!-- Row 01 -->
+    <a href="case-studies/kpi-governance-allegheny.html" class="cs-list-row">
+      <div class="cs-list-num">01</div>
+      <div class="cs-list-main">
+        <span class="cs-list-title">Budget Forecasting, KPI Governance &amp; Executive Reporting</span>
+        <span class="cs-list-org">Allegheny County DHS &bull; Public Sector &bull; $1B+ Annual Portfolio &bull; 8 Departments</span>
+      </div>
+      <div class="cs-list-metric">80% fewer budget reallocations</div>
+      <div class="cs-list-action"><span class="cs-arrow">↗</span></div>
+    </a>
+
+    <!-- Row 02 -->
+    <a href="case-studies/loyalty-program-redesign.html" class="cs-list-row">
+      <div class="cs-list-num">02</div>
+      <div class="cs-list-main">
+        <span class="cs-list-title">$40M Retailer Loyalty Architecture Redesign</span>
+        <span class="cs-list-org">Bajaj Electricals &bull; Commercial RevOps &bull; 200,000+ Retailers &bull; 15 Regions</span>
+      </div>
+      <div class="cs-list-metric">15% &rarr; 55% participation in 6 mos</div>
+      <div class="cs-list-action"><span class="cs-arrow">↗</span></div>
+    </a>
+
+    <!-- Row 03 -->
+    <a href="case-studies/stock-availability-planning.html" class="cs-list-row">
+      <div class="cs-list-num">03</div>
+      <div class="cs-list-main">
+        <span class="cs-list-title">SKU Availability &amp; Replenishment Discipline Across 800+ SKUs</span>
+        <span class="cs-list-org">Bajaj Electricals &bull; Supply Operations &bull; 200+ Distributors &bull; 50 Territories</span>
+      </div>
+      <div class="cs-list-metric">Sales loss 28% &rarr; 11%</div>
+      <div class="cs-list-action"><span class="cs-arrow">↗</span></div>
+    </a>
+
+    <!-- Row 04 -->
+    <a href="case-studies/distributor-roi-optimization.html" class="cs-list-row">
+      <div class="cs-list-num">04</div>
+      <div class="cs-list-main">
+        <span class="cs-list-title">Distributor ROI Optimization &amp; Dual-Trigger Incentive Design</span>
+        <span class="cs-list-org">Bajaj Electricals &bull; Channel Economics &bull; 100 Distributors &bull; 97-Person Team</span>
+      </div>
+      <div class="cs-list-metric">+25&ndash;50% distributor ROI</div>
+      <div class="cs-list-action"><span class="cs-arrow">↗</span></div>
+    </a>
+
+    <!-- Row 05 -->
+    <a href="case-studies/crisis-gtm-lockdown.html" class="cs-list-row">
+      <div class="cs-list-num">05</div>
+      <div class="cs-list-main">
+        <span class="cs-list-title">Crisis GTM &amp; Remote Commercial Execution: $2M in 3 Days</span>
+        <span class="cs-list-org">Bajaj Electricals &bull; Crisis Turnaround &bull; COVID Response &bull; 4,000+ Accounts</span>
+      </div>
+      <div class="cs-list-metric">$2M revenue in 3 days ($0 spend)</div>
+      <div class="cs-list-action"><span class="cs-arrow">↗</span></div>
+    </a>
   </div>
 </section>
 

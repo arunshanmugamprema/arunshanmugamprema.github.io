@@ -130,3 +130,36 @@ function showToast(message) {
     toast.classList.remove('show');
   }, 2500);
 }
+
+// ─── 8. Case Study View Switcher (Cards vs. List) ───
+window.setWorkView = function(view) {
+  const cardsGrid = document.querySelector('.case-studies-grid');
+  const listView = document.querySelector('.case-studies-list');
+  const btnCards = document.getElementById('btn-view-cards');
+  const btnList = document.getElementById('btn-view-list');
+
+  if (view === 'list') {
+    if (cardsGrid) cardsGrid.style.display = 'none';
+    if (listView) listView.style.display = 'flex';
+    if (btnCards) {
+      btnCards.classList.remove('active');
+      btnCards.setAttribute('aria-selected', 'false');
+    }
+    if (btnList) {
+      btnList.classList.add('active');
+      btnList.setAttribute('aria-selected', 'true');
+    }
+  } else {
+    if (cardsGrid) cardsGrid.style.display = 'grid';
+    if (listView) listView.style.display = 'none';
+    if (btnCards) {
+      btnCards.classList.add('active');
+      btnCards.setAttribute('aria-selected', 'true');
+    }
+    if (btnList) {
+      btnList.classList.remove('active');
+      btnList.setAttribute('aria-selected', 'false');
+    }
+  }
+};
+
