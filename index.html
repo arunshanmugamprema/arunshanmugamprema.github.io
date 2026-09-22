@@ -1,1121 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arun S. Prema — Strategy & Operations</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun S. Prema — Strategy &amp; Operations Leader</title>
+  <meta name="description" content="Executive portfolio of Arun S. Prema: Director-level Strategy &amp; Operations, Revenue Operations, and GTM Strategy leader. $1B+ budget decisions, ~$100M P&amp;L ownership, 40K+ accounts.">
+  <meta name="keywords" content="Arun S Prema, Strategy and Operations, Revenue Operations, GTM Strategy, BizOps, Allegheny County, Bajaj Electricals, KPI Governance, Commercial Analytics">
+  <meta name="author" content="Arun S. Prema">
+  <link rel="canonical" href="https://arunshanmugamprema.github.io/">
 
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 18px; scroll-behavior: smooth; }
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Arun S. Prema — Strategy &amp; Operations Leader">
+  <meta property="og:description" content="I design and scale revenue &amp; operating systems across $1B+ organizations. $1B+ budget decisions, ~$100M P&amp;L ownership, 40,000+ accounts across 15 regions.">
+  <meta property="og:url" content="https://arunshanmugamprema.github.io/">
+  <meta property="og:image" content="https://arunshanmugamprema.github.io/assets/images/og-preview.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-:root {
-  --bg: #FAFAF7;
-  --text: #1C1C1A;
-  --text-mid: #4A4A46;
-  --text-soft: #8A8A84;
-  --amber: #B85C20;
-  --amber-pale: #F5EDE6;
-  --border: #E2E0D8;
-  --white: #FFFFFF;
-}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arun S. Prema — Strategy &amp; Operations Leader">
+  <meta name="twitter:description" content="I design and scale revenue &amp; operating systems across $1B+ organizations. Verified commercial impact and 0-to-1 operating models.">
+  <meta name="twitter:image" content="https://arunshanmugamprema.github.io/assets/images/og-preview.svg">
 
-body {
-  font-family: 'Outfit', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-}
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
-/* ─── HEADER ─── */
-header {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 4rem 2rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
 
-.site-name {
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text);
-  text-decoration: none;
-  letter-spacing: 0.01em;
-}
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css">
 
-.header-nav {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-.header-nav a {
-  font-size: 0.78rem;
-  font-weight: 400;
-  color: var(--text-soft);
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  transition: color 0.2s;
-}
-.header-nav a:hover { color: var(--amber); }
-
-/* ─── HERO ─── */
-.hero {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 5rem 2rem 4rem;
-}
-
-.hero-intro {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 1.5rem;
-}
-
-.hero-name {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 700;
-  line-height: 1.05;
-  color: var(--text);
-  margin-bottom: 2rem;
-}
-.hero-name em {
-  font-style: italic;
-  font-weight: 500;
-  color: var(--amber);
-}
-
-.hero-body {
-  font-family: 'Lora', serif;
-  font-size: 1.15rem;
-  line-height: 1.85;
-  color: var(--text-mid);
-  max-width: 620px;
-  margin-bottom: 2.5rem;
-}
-
-.hero-body strong {
-  color: var(--text);
-  font-weight: 600;
-}
-
-.hero-links {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.hero-cta {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--white);
-  background: var(--text);
-  padding: 0.65rem 1.5rem;
-  text-decoration: none;
-  border-radius: 2px;
-  transition: background 0.2s;
-}
-.hero-cta:hover { background: var(--amber); }
-
-.hero-resume {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-soft);
-  text-decoration: none;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 1px;
-  transition: color 0.2s, border-color 0.2s;
-}
-.hero-resume:hover { color: var(--amber); border-color: var(--amber); }
-
-.hero-divider {
-  max-width: 760px;
-  margin: 0 auto 0;
-  padding: 0 2rem;
-  border: none;
-  border-top: 1px solid var(--border);
-}
-
-/* ─── CURRENTLY BANNER ─── */
-.currently {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-.currently-inner {
-  background: var(--amber-pale);
-  border-left: 3px solid var(--amber);
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-}
-.currently-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--amber);
-  white-space: nowrap;
-  padding-top: 0.1rem;
-  flex-shrink: 0;
-}
-.currently-text {
-  font-size: 0.88rem;
-  line-height: 1.6;
-  color: var(--text-mid);
-}
-.currently-text strong { color: var(--text); font-weight: 600; }
-
-/* ─── SECTION ─── */
-.section {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.section-tag {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-soft);
-  margin-bottom: 2rem;
-  display: block;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--text);
-  margin-bottom: 1.5rem;
-}
-
-.prose {
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  line-height: 1.9;
-  color: var(--text-mid);
-}
-.prose p { margin-bottom: 1.25rem; }
-.prose p:last-child { margin-bottom: 0; }
-.prose strong { color: var(--text); font-weight: 600; }
-
-/* ─── NUMBERS STRIP ─── */
-.numbers-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  border: 1px solid var(--border);
-  margin-top: 3rem;
-}
-.number-item {
-  padding: 1.5rem 1rem;
-  border-right: 1px solid var(--border);
-  text-align: center;
-}
-.number-item:last-child { border-right: none; }
-.number-val {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--amber);
-  display: block;
-  line-height: 1;
-  margin-bottom: 0.4rem;
-}
-.number-label {
-  font-size: 0.72rem;
-  font-weight: 400;
-  color: var(--text-soft);
-  line-height: 1.4;
-}
-
-/* ─── PROJECTS ─── */
-.project {
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--border);
-}
-.project:last-child { border-bottom: none; }
-
-.project-header {
-  display: flex;
-  gap: 1.5rem;
-  align-items: baseline;
-  margin-bottom: 0.6rem;
-  flex-wrap: wrap;
-}
-.project-num {
-  font-family: 'Lora', serif;
-  font-size: 0.78rem;
-  color: var(--text-soft);
-  flex-shrink: 0;
-}
-.project-title {
-  font-family: 'Lora', serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.3;
-}
-.project-company {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 1rem;
-}
-
-.project-body {
-  font-family: 'Lora', serif;
-  font-size: 0.95rem;
-  line-height: 1.85;
-  color: var(--text-mid);
-  margin-bottom: 1rem;
-}
-.project-body strong { color: var(--text); font-weight: 600; }
-
-.project-result {
-  display: inline-flex;
-  gap: 0.5rem;
-  align-items: center;
-  padding: 0.4rem 0.9rem 0.4rem 0.7rem;
-  background: var(--amber-pale);
-  border-radius: 2px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--amber);
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.project-result::before {
-  content: '↑';
-  font-size: 0.7rem;
-}
-
-.project-toggle {
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--text-soft);
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
-  margin-top: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: color 0.2s;
-  font-family: 'Outfit', sans-serif;
-  letter-spacing: 0.02em;
-}
-.project-toggle:hover { color: var(--amber); }
-.project-toggle .arrow { transition: transform 0.3s; display: inline-block; }
-.project-toggle.open .arrow { transform: rotate(90deg); }
-
-.project-detail {
-  display: none;
-  margin-top: 1.25rem;
-  padding: 1.5rem;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-}
-.project-detail.show { display: block; }
-
-.detail-col { margin-bottom: 1.25rem; }
-.detail-col:last-child { margin-bottom: 0; }
-.detail-label {
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 0.5rem;
-}
-.detail-col ul { list-style: none; padding: 0; }
-.detail-col ul li {
-  font-family: 'Lora', serif;
-  font-size: 0.88rem;
-  line-height: 1.7;
-  color: var(--text-mid);
-  padding: 0.2rem 0 0.2rem 1rem;
-  position: relative;
-}
-.detail-col ul li::before {
-  content: '–';
-  position: absolute; left: 0;
-  color: var(--amber);
-}
-.detail-col ul li strong { color: var(--text); font-weight: 600; }
-
-/* ─── SKILLS ─── */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-}
-.skill-tag {
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: var(--text-mid);
-  padding: 0.35rem 0.8rem;
-  border: 1px solid var(--border);
-  border-radius: 1px;
-  background: var(--white);
-  transition: border-color 0.2s, color 0.2s;
-}
-.skill-tag:hover { border-color: var(--amber); color: var(--amber); }
-.skill-tag.featured {
-  background: var(--amber-pale);
-  border-color: transparent;
-  color: var(--amber);
-  font-weight: 500;
-}
-
-.skills-row { margin-bottom: 1.75rem; }
-.skills-row-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-soft);
-  margin-bottom: 0.75rem;
-  display: block;
-}
-
-/* ─── RESULTS ─── */
-.results-prose {
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  line-height: 1.9;
-  color: var(--text-mid);
-  margin-bottom: 2.5rem;
-}
-.results-prose strong { color: var(--text); font-weight: 600; }
-
-.results-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-}
-.result-card {
-  background: var(--white);
-  padding: 1.75rem;
-}
-.result-big {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--amber);
-  line-height: 1;
-  margin-bottom: 0.4rem;
-  display: block;
-}
-.result-desc {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--text-mid);
-}
-.result-src {
-  font-size: 0.7rem;
-  color: var(--text-soft);
-  margin-top: 0.3rem;
-  display: block;
-  font-style: italic;
-}
-
-/* ─── CONTACT ─── */
-.contact-body {
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  line-height: 1.9;
-  color: var(--text-mid);
-  margin-bottom: 2rem;
-}
-.contact-body strong { color: var(--text); font-weight: 600; }
-
-.open-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #2A6647;
-  background: #E3EDE8;
-  border: 1px solid #B8D4C6;
-  padding: 0.4rem 0.9rem;
-  border-radius: 20px;
-  margin-bottom: 1.75rem;
-  display: inline-flex;
-}
-.open-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: #2A6647;
-  animation: blink 2s infinite;
-}
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.25} }
-
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  border-top: 1px solid var(--border);
-}
-.contact-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--border);
-  text-decoration: none;
-  color: var(--text);
-  transition: color 0.2s;
-}
-.contact-item:hover { color: var(--amber); }
-.contact-item-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-soft);
-  width: 80px;
-  flex-shrink: 0;
-}
-.contact-item-val {
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: inherit;
-  flex: 1;
-}
-.contact-item-arrow { color: var(--text-soft); font-size: 0.8rem; }
-.contact-item:hover .contact-item-arrow { color: var(--amber); }
-
-.target-block {
-  margin-top: 2.5rem;
-  padding: 1.5rem;
-  background: var(--white);
-  border: 1px solid var(--border);
-}
-.target-block-head {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-soft);
-  margin-bottom: 1rem;
-}
-.target-item {
-  font-family: 'Lora', serif;
-  font-size: 0.9rem;
-  color: var(--text-mid);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-.target-item:last-child { border-bottom: none; padding-bottom: 0; }
-.target-item::before { content: '→'; color: var(--amber); font-size: 0.75rem; }
-
-/* ─── FOOTER ─── */
-footer {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 2rem;
-  border-top: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.footer-copy {
-  font-size: 0.78rem;
-  color: var(--text-soft);
-}
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-}
-.footer-links a {
-  font-size: 0.78rem;
-  color: var(--text-soft);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.footer-links a:hover { color: var(--amber); }
-
-/* ─── ANIMATIONS ─── */
-.fade-in {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ─── RESPONSIVE ─── */
-@media (max-width: 640px) {
-  html { font-size: 16px; }
-  header { flex-direction: column; gap: 1rem; }
-  .header-nav { gap: 1.25rem; }
-  .numbers-strip { grid-template-columns: 1fr 1fr; }
-  .number-item:nth-child(2) { border-right: none; }
-  .results-grid { grid-template-columns: 1fr; }
-  .hero-name { font-size: 2.4rem; }
-}
-</style>
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arun S. Prema",
+    "jobTitle": "Strategy & Operations Leader",
+    "url": "https://arunshanmugamprema.github.io/",
+    "email": "mailto:arunshanmugamprema@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/arunshanmugamprema",
+      "https://github.com/arunshanmugamprema"
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "McCombs School of Business, The University of Texas at Austin"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "St. Joseph's College, Bharathidasan University"
+      }
+    ],
+    "knowsAbout": [
+      "Revenue Operations",
+      "GTM Strategy",
+      "KPI Governance",
+      "Commercial Analytics",
+      "Supply Chain Replenishment",
+      "Incentive Design",
+      "Budget Forecasting"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<header>
-  <a class="site-name" href="#top">Arun S. Prema</a>
-  <ul class="header-nav">
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<div id="scroll-progress"></div>
+
+<!-- STICKY SITE HEADER -->
+<header class="site-header">
+  <div class="header-container">
+    <a href="#top" class="site-brand">
+      <div class="brand-monogram">AP</div>
+      <span class="brand-name">Arun S. Prema</span>
+      <span class="brand-title-tag">Strategy &amp; Operations</span>
+    </a>
+    <ul class="header-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Case Studies</a></li>
+      <li><a href="#skills">Capabilities</a></li>
+      <li><a href="#results">Track Record</a></li>
+      <li><a href="resume/">Resume</a></li>
+      <li><a href="#contact" class="nav-cta-btn">Get in Touch</a></li>
+    </ul>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Case Studies</a></li>
+      <li><a href="#skills">Capabilities</a></li>
+      <li><a href="#results">Track Record</a></li>
+      <li><a href="resume/">Interactive Resume</a></li>
+      <li><a href="trade-marketing/">Trade Marketing Profile</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 </header>
 
-<!-- ─── HERO ─── -->
+<!-- HERO SECTION -->
 <div class="hero" id="top">
-  <p class="hero-intro">Strategy &amp; Operations · Director Level</p>
-  <h1 class="hero-name">
-    I design and scale<br>revenue &amp; <em>operating</em><br>systems across $1B+ organizations.
+  <span class="hero-eyebrow">
+    <span class="dot"></span>
+    Strategy &amp; Operations &bull; Director Level
+  </span>
+  <h1 class="hero-headline">
+    I design and scale revenue &amp; <em>operating</em> systems across $1B+ organizations.
   </h1>
-  <p class="hero-body">
+  <p class="hero-lead">
     <strong>$1B+ in budget decisions. ~$100M P&amp;L ownership. 40,000+ accounts across 15 regions.</strong>
-    I design the mechanisms that translate business goals into measurable outcomes —
-    GTM systems, forecasting models, KPI governance, operating cadence —
+    I build the mechanisms that translate executive strategy into measurable commercial outcomes &mdash;
+    GTM architectures, forecasting models, KPI governance frameworks, and frontline operating cadences &mdash;
     and I own them end-to-end, from diagnosis through national-scale execution.
-    I operate as the owner — not the analyst — accountable for outcomes, adoption, and scale.
-    I work directly with leadership to translate data into decisions that drive revenue, planning, and execution.
   </p>
-  <div class="hero-links">
-    <a href="#work" class="hero-cta">See the work</a>
-    <a href="Resume_Arun_S_Prema.pdf" class="hero-resume">Download resume →</a>
+
+  <!-- 3-Column Executive Snapshot -->
+  <div class="hero-snapshot">
+    <div class="snapshot-card">
+      <span class="snapshot-num">$1B+</span>
+      <span class="snapshot-desc">Budget decisions managed across 8 public departments</span>
+    </div>
+    <div class="snapshot-card">
+      <span class="snapshot-num">~$100M</span>
+      <span class="snapshot-desc">P&amp;L commercial scope across 200+ channel partners</span>
+    </div>
+    <div class="snapshot-card">
+      <span class="snapshot-num">20+ Yrs</span>
+      <span class="snapshot-desc">Building commercial &amp; operational systems that scale</span>
+    </div>
+  </div>
+
+  <div class="hero-actions">
+    <a href="#work" class="btn btn-primary">Explore Case Studies &darr;</a>
+    <a href="Resume_Arun_S_Prema.pdf" class="btn btn-secondary" download>Download Resume (PDF)</a>
+    <a href="resume/" class="btn btn-text">View Web Resume &rarr;</a>
   </div>
 </div>
 
-<hr class="hero-divider">
-
-<!-- ─── CURRENTLY ─── -->
-<div class="currently">
-  <div class="currently-inner">
-    <span class="currently-label">Now</span>
-    <p class="currently-text">
-      <strong>Budget Analyst II / Data Analyst II</strong> at Allegheny County Department of Human Services, Pittsburgh —
-      managing analytics strategy across 8 departments, 12 divisions, 4 vendor contracts, and a combined $1B+ budget.
-      Previously: 6 years as Sales Strategy &amp; Operations Lead at Bajaj Electricals, owning 1/3 of the national territory and 1/4 of the distributor network across ~100-member cross-functional teams.
+<!-- CURRENTLY / NOW BANNER -->
+<div class="now-banner-wrapper">
+  <div class="now-banner">
+    <span class="now-tag">Current Role</span>
+    <p class="now-content">
+      <strong>Data Analyst II / Budget Analyst II</strong> at Allegheny County Department of Human Services, Pittsburgh &mdash;
+      directing analytics and financial governance strategy across 8 departments, 12 divisions, 4 vendor contracts, and a combined $1B+ annual budget portfolio.
+      Previously: 6 years leading Sales Strategy &amp; Operations at Bajaj Electricals, owning 1/3 of the national territory across ~100-member cross-functional teams.
     </p>
   </div>
 </div>
 
-<!-- ─── ABOUT ─── -->
+<!-- ABOUT SECTION -->
 <section class="section fade-in" id="about">
-  <span class="section-tag">About</span>
-  <h2>How I operate</h2>
+  <span class="section-label">Executive Overview</span>
+  <h2 class="section-heading">How I operate: replacing intuition with systems</h2>
   <div class="prose">
     <p>
-      I build operating systems that drive revenue, planning, and execution at scale.
-      My work sits at the intersection of strategy, analytics, and operations —
-      designing the mechanisms that translate business goals into measurable outcomes
-      across complex, distributed organisations.
+      My work sits at the intersection of commercial strategy, business analytics, and frontline execution.
+      I operate as the <strong>owner &mdash; not the analyst</strong> &mdash; accountable for outcomes, cross-functional adoption, and long-term organizational baseline shifts.
     </p>
     <p>
-      At <strong>Bajaj Electricals</strong>, I led Sales Strategy &amp; Operations for a <strong>~$100M business</strong> across
-      40,000+ accounts and 200+ distributors — owning 1/3 of the national territory and
-      a ~100-member cross-functional team. I delivered 20% YoY revenue growth through
-      territory, incentive, and GTM redesign. Reduced forecast error from 28% to 11% across
-      800+ SKUs. Built systems later adopted as national operating standards across 15 regions.
-      Every mechanism I designed, I also owned the rollout, adoption monitoring, and outcome measurement.
-      Partnered directly with VP leadership to shape territory strategy, incentive structures,
-      and operating cadence across regions.
+      At <strong>Allegheny County DHS</strong>, I lead Strategy &amp; Operations across a <strong>$1B+ multi-department system</strong> spanning 8 departments and 12 divisions.
+      I built a 0&rarr;1 KPI governance framework standardizing performance tracking across all vendor contracts, reduced mid-year fund reallocations by 80% through forecasting redesign, and compressed executive reporting cycles from 5 days to 2.
+      I own the operating layer between finance, IT, and executive leadership &mdash; ensuring resource allocation decisions are structured, timely, and grounded in measurable signals.
     </p>
     <p>
-      At <strong>Allegheny County DHS</strong>, I lead Strategy &amp; Operations across a
-      <strong>$1B+ multi-department system</strong> — 8 departments, 12 divisions, 4 vendor contracts.
-      Built a 0→1 KPI governance framework standardising performance metrics across the entire organisation.
-      Reduced fund reallocations by 80% through forecasting redesign. Compressed executive reporting
-      cycles from 5 days to 2. Delivered a 1,200-staff system rollout 3 weeks ahead of schedule
-      through cross-functional alignment without direct authority.
-      Own the operating layer between data, finance, and leadership — ensuring decisions are
-      structured, timely, and grounded in measurable signals.
+      At <strong>Bajaj Electricals</strong>, I led Sales Strategy &amp; Operations for a <strong>~$100M commercial business</strong> across 40,000+ accounts and 200+ distributors.
+      I delivered 20% YoY revenue growth through territory, incentive, and GTM redesign.
+      Overcame chronic stockouts by building SKU-wise demand norms that cut availability sales loss from 28% to 11%.
+      Redesigned a $40M retailer loyalty architecture that lifted active network participation from 15% to 55% in 6 months.
+      Every mechanism I designed was paired with hands-on change management, adoption tracking, and executive reviews adopted as national standards across 15 regions.
     </p>
     <p>
-      I focus on building systems that scale across teams and geographies, drive accountability
-      through structured metrics, and enable leadership to make faster, higher-quality decisions.
-      My work consistently replaces intuition-driven execution with structured, repeatable operating systems that scale.
-      PG Diploma in Data Science &amp; Analytics, McCombs School of Business, UT Austin.
-      B.Sc. Mathematics, St. Joseph's College, Bharathidasan University.
+      <strong>Earlier Career Foundation (2004&ndash;2017)</strong>: Progressed through high-velocity commercial and territory leadership roles across market leaders including <strong>Asian Paints</strong>, <strong>Philips India</strong>, <strong>Godrej</strong>, and <strong>Samsung</strong> &mdash; managing regional P&amp;Ls from $1M to $6M and consistently ranking in the top 10% of performance cohorts.
+    </p>
+    <p>
+      <strong>Credentials</strong>: Post Graduate Diploma in Data Science &amp; Analytics, McCombs School of Business, The University of Texas at Austin &bull; B.Sc. Mathematics, St. Joseph's College, Bharathidasan University.
     </p>
   </div>
 
-  <div class="numbers-strip">
-    <div class="number-item">
-      <span class="number-val">20+</span>
-      <span class="number-label">Years leading commercial &amp; operating systems</span>
+  <div class="stats-strip">
+    <div class="stat-cell">
+      <span class="stat-val">20+</span>
+      <span class="stat-lbl">Years leading commercial &amp; operating systems</span>
     </div>
-    <div class="number-item">
-      <span class="number-val">~$100M</span>
-      <span class="number-label">P&amp;L ownership at Bajaj Electricals</span>
+    <div class="stat-cell">
+      <span class="stat-val">~$100M</span>
+      <span class="stat-lbl">P&amp;L ownership at Bajaj Electricals</span>
     </div>
-    <div class="number-item">
-      <span class="number-val">$1B+</span>
-      <span class="number-label">Budget portfolio — current role</span>
+    <div class="stat-cell">
+      <span class="stat-val">$1B+</span>
+      <span class="stat-lbl">Budget portfolio &bull; current DHS role</span>
     </div>
-    <div class="number-item">
-      <span class="number-val">40K+</span>
-      <span class="number-label">Accounts influenced across 15 regions</span>
+    <div class="stat-cell">
+      <span class="stat-val">40K+</span>
+      <span class="stat-lbl">Accounts influenced across 15 regions</span>
     </div>
   </div>
 </section>
 
-<!-- ─── WORK ─── -->
+<!-- CASE STUDIES SECTION -->
 <section class="section fade-in" id="work">
-  <span class="section-tag">Selected Work</span>
-  <h2>Five problems. Five operating models rebuilt.</h2>
+  <span class="section-label">Selected Case Studies</span>
+  <h2 class="section-heading">Five problems. Five operating systems rebuilt.</h2>
 
-  <!-- 01 -->
-  <div class="project">
-    <div class="project-header">
-      <span class="project-num">01 —</span>
-      <span class="project-title">Budget Forecasting, KPI Governance &amp; Executive Reporting — AC DHS</span>
+  <!-- Case Study 01 -->
+  <div class="case-study-item" id="case-study-1">
+    <div class="cs-header-meta">
+      <span class="cs-number">01 &mdash;</span>
+      <h3 class="cs-title">Budget Forecasting, KPI Governance &amp; Executive Reporting</h3>
     </div>
-    <p class="project-company">Allegheny County DHS &nbsp;·&nbsp; Budget Analyst II &nbsp;·&nbsp; $1B+ budget · 8 departments · 12 divisions · 4 vendor contracts</p>
-    <p class="project-body">
-      <strong>Owned end-to-end design and execution.</strong> Eight departments operating on their own metrics with no cross-functional performance baseline.
-      No single source of truth for capital planning. Leadership spending the majority of review cycles
-      assembling data rather than making decisions. I built three interlocking systems: a
-      <strong>county-wide KPI governance framework</strong> standardising metrics across all departments and vendor contracts,
-      a <strong>forecasting and variance tracking model</strong> consolidating $1B+ in planning inputs,
-      and a <strong>QBR reporting architecture</strong> that compressed the 5-day cycle to 2 days.
-      The 80% reduction in fund reallocations and 55% drop in ad-hoc data requests were the evidence
-      that the operating model had actually changed — not just the reports.
+    <div class="cs-org-bar">
+      <span>Allegheny County DHS</span> &bull; Budget Analyst II / Data Analyst II &bull; $1B+ Portfolio &bull; 8 Departments &bull; 4 Vendor Contracts
+    </div>
+    <p class="cs-synopsis">
+      <strong>Owned end-to-end design and execution.</strong> Eight departments operating on disparate metrics with no shared baseline. No single source of truth for multi-million-dollar capital planning. Leadership spent the majority of review cycles reconciling spreadsheets rather than making decisions.
+      I built three interlocking mechanisms: a county-wide 0&rarr;1 KPI governance framework, a forecasting &amp; variance tracking model consolidating 5 years of historical SQL data, and a streamlined QBR reporting architecture that compressed 5-day cycles down to 2 days.
     </p>
-    <div>
-      <span class="project-result">80% fewer budget reallocations</span>
-      <span class="project-result">70% less manual effort</span>
-      <span class="project-result">55% drop in ad-hoc data requests</span>
-      <span class="project-result">5-day QBR → 2-day</span>
+    <div class="cs-results-row">
+      <span class="result-pill positive">80% fewer budget reallocations</span>
+      <span class="result-pill positive">70% reduction in manual effort</span>
+      <span class="result-pill positive">55% drop in ad-hoc data requests</span>
+      <span class="result-pill">5-day QBR &rarr; 2-day</span>
     </div>
-    <button class="project-toggle" onclick="toggleDetail(this)">
-      <span class="arrow">›</span> See the detail
-    </button>
-    <div class="project-detail">
-      <div class="detail-col">
-        <p class="detail-label">What I did</p>
-        <ul>
-          <li>Designed and deployed a <strong>county-wide KPI governance system</strong> standardising performance metrics across 4 vendor contracts and 8 departments</li>
-          <li>Built standardised forecasting and variance tracking models consolidating planning inputs across all departments from 5 years of historical data</li>
-          <li>Re-architected QBR reporting workflows, compressing <strong>5-day cycles into 2 days</strong></li>
-          <li>Led cross-functional programme delivery across 8 senior stakeholders spanning Finance, IT, Legal, and Programme leadership — <strong>delivered 3 weeks ahead of schedule</strong></li>
+    <div class="cs-actions-row">
+      <button class="cs-toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">
+        <span class="arrow-icon">&#9658;</span>
+        <span class="toggle-label">See summary</span>
+      </button>
+      <a href="case-studies/kpi-governance-allegheny.html" class="cs-deepdive-link">
+        Read full case study &rarr;
+      </a>
+    </div>
+    <!-- Accordion Drawer -->
+    <div class="cs-detail-drawer">
+      <div class="detail-section-block">
+        <div class="detail-block-title">Key Interventions &amp; Methodology</div>
+        <ul class="detail-bullets">
+          <li>Extracted 5 years of historical expenditure trends using <strong>SQL across 8 departmental databases</strong>.</li>
+          <li>Defined <strong>8 standardized enterprise KPIs</strong> covering utilization, spend velocity, and contractual compliance.</li>
+          <li>Deployed automated <strong>Power BI dashboards &amp; SharePoint self-serve reports</strong> linked to Workday Financials.</li>
+          <li>Aligned 16 department heads and 4 vendor leads without direct authority, delivering <strong>3 weeks ahead of schedule</strong>.</li>
         </ul>
       </div>
-      <div class="detail-col">
-        <p class="detail-label">The outcomes</p>
-        <ul>
-          <li><strong>80% reduction</strong> in mid-year fund reallocations</li>
-          <li><strong>70% decrease</strong> in manual effort and approval processing time</li>
-          <li><strong>55% reduction</strong> in ad-hoc data requests — leadership shifted from data-chasing to strategic gap-closure</li>
-          <li>QBR cycle compressed from <strong>5 days to 2 days</strong>, redirecting leadership time to decision-making</li>
-          <li>Cross-functional system rollout for 1,200-staff system delivered <strong>3 weeks ahead of schedule</strong></li>
+      <div class="detail-section-block">
+        <div class="detail-block-title">Verified Measurable Outcomes</div>
+        <ul class="detail-bullets">
+          <li><strong>80% reduction</strong> in mid-year emergency budget reallocations (50&ndash;60 down to 10&ndash;15/yr).</li>
+          <li><strong>70% efficiency improvement</strong> in cycle preparation time (12 days cut to 3 days).</li>
+          <li><strong>Freed ~$100M</strong> in stagnant or previously misallocated funds across the portfolio.</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 02 -->
-  <div class="project">
-    <div class="project-header">
-      <span class="project-num">02 —</span>
-      <span class="project-title">$40M Loyalty Programme Redesign — 15% to 55% Participation</span>
+  <!-- Case Study 02 -->
+  <div class="case-study-item" id="case-study-2">
+    <div class="cs-header-meta">
+      <span class="cs-number">02 &mdash;</span>
+      <h3 class="cs-title">$40M Retailer Loyalty Redesign: 15% to 55% Participation</h3>
     </div>
-    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Sales Strategy &amp; Operations Lead &nbsp;·&nbsp; 200,000+ retailers · 15 regions</p>
-    <p class="project-body">
-      <strong>Owned end-to-end design and execution.</strong> National retailer participation sat at 15% across <strong>200,000+ retailers</strong>.
-      The organisation assumed this was the ceiling — without a bigger budget, nothing would move.
-      I ran the diagnosis and found the real barrier wasn't incentive value;
-      it was <strong>programme design complexity</strong>. Thirteen irregular cycles, tier-based points
-      requiring a sales rep to decode, zero real-time visibility. I redesigned the entire
-      <strong>$40M programme architecture</strong>: simplified to a 12-month calendar, built app-based
-      self-service tracking, and managed rollout across 15 regions with weekly adoption monitoring.
-      <strong>We hit the 18-month target in 6 months</strong> — participation from 15% to 55%,
-      without increasing the incentive budget. The programme architecture became the
-      standard operating model for retailer engagement across all 15 regions nationally.
+    <div class="cs-org-bar">
+      <span>Bajaj Electricals</span> &bull; Sales Strategy &amp; Operations Lead &bull; 200,000+ Retailers &bull; 350+ Reps &bull; 15 Regions
+    </div>
+    <p class="cs-synopsis">
+      <strong>Owned end-to-end design and execution.</strong> National retailer participation sat at a sluggish 15% across 200,000+ retail partners. The organization assumed the incentive budget was uncompetitive.
+      My root-cause diagnosis revealed the true friction was <strong>extreme operational complexity</strong>: 13 irregular 28-day cycles, opaque multi-variable formulas, and 100% reliance on sales reps for point statements.
+      I redesigned the $40M architecture into a clean 12-month calendar with app-based self-tracking. We achieved our 18-month strategic goal in just 6 months &mdash; with zero incremental budget expansion.
     </p>
-    <div>
-      <span class="project-result">15% → 55% participation</span>
-      <span class="project-result">18-month target in 6 months</span>
-      <span class="project-result">15% revenue uplift</span>
-      <span class="project-result">25% SKU billing increase</span>
+    <div class="cs-results-row">
+      <span class="result-pill positive">15% &rarr; 55% participation in 6 mos</span>
+      <span class="result-pill positive">+15% revenue uplift</span>
+      <span class="result-pill positive">+25% SKU billing depth</span>
+      <span class="result-pill">$0 budget expansion</span>
     </div>
-    <button class="project-toggle" onclick="toggleDetail(this)">
-      <span class="arrow">›</span> See the detail
-    </button>
-    <div class="project-detail">
-      <div class="detail-col">
-        <p class="detail-label">What I did</p>
-        <ul>
-          <li>Diagnosed the real barrier as <strong>programme design complexity</strong>, not incentive value — redirected the solution accordingly</li>
-          <li>Redesigned the <strong>$40M loyalty architecture</strong>: 13 irregular cycles → standard 12-month structure</li>
-          <li>Built <strong>app-based self-service tracking</strong>, eliminating sales rep dependency across 200,000+ retailers</li>
-          <li>Managed rollout across <strong>15 regions</strong> with weekly adoption monitoring</li>
-          <li>Programme model adopted as <strong>national standard</strong> following rollout success</li>
+    <div class="cs-actions-row">
+      <button class="cs-toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">
+        <span class="arrow-icon">&#9658;</span>
+        <span class="toggle-label">See summary</span>
+      </button>
+      <a href="case-studies/loyalty-program-redesign.html" class="cs-deepdive-link">
+        Read full case study &rarr;
+      </a>
+    </div>
+    <div class="cs-detail-drawer">
+      <div class="detail-section-block">
+        <div class="detail-block-title">Key Interventions &amp; Methodology</div>
+        <ul class="detail-bullets">
+          <li>Replaced 13 irregular cycles with a <strong>standardized 12-month calendar</strong> aligned to quarterly milestones.</li>
+          <li>Partnered with Product team to deploy <strong>app-based self-tracking</strong>, eliminating sales rep administrative bottlenecks.</li>
+          <li>Simplified qualifications to straightforward volume &amp; product-mix targets verified via scenario modeling.</li>
+          <li>Led change management across 350+ sales reps with weekly regional adoption reviews.</li>
         </ul>
       </div>
-      <div class="detail-col">
-        <p class="detail-label">The outcomes</p>
-        <ul>
-          <li>Participation: <strong>15% → 55%</strong> — 18-month target achieved in 6 months</li>
-          <li><strong>15% revenue uplift</strong> from higher engagement</li>
-          <li><strong>25% increase in SKU billing depth</strong>, improving product mix</li>
-          <li>Zero increase in incentive budget</li>
-          <li>Programme model adopted as <strong>national standard</strong> across all 15 regions</li>
+      <div class="detail-section-block">
+        <div class="detail-block-title">Verified Measurable Outcomes</div>
+        <ul class="detail-bullets">
+          <li><strong>15% to 55% retailer participation</strong> achieved in 6 months (18-month target).</li>
+          <li><strong>Reactivated 35%</strong> of previously dormant targeted accounts.</li>
+          <li><strong>Adopted as official national standard</strong> across all 15 regions.</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 03 -->
-  <div class="project">
-    <div class="project-header">
-      <span class="project-num">03 —</span>
-      <span class="project-title">SKU Availability &amp; Replenishment Discipline — 800+ SKUs</span>
+  <!-- Case Study 03 -->
+  <div class="case-study-item" id="case-study-3">
+    <div class="cs-header-meta">
+      <span class="cs-number">03 &mdash;</span>
+      <h3 class="cs-title">SKU Availability &amp; Replenishment Discipline Across 800+ SKUs</h3>
     </div>
-    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Sales Strategy &amp; Operations Lead &nbsp;·&nbsp; 200+ distributors · 15 regions</p>
-    <p class="project-body">
-      <strong>Owned end-to-end design and execution.</strong> Distributors were rationally optimising for fast-moving SKUs across an 800+ SKU portfolio —
-      the incentive structure rewarded volume, so they stocked volume. Mid and premium segments
-      were perpetually understocked, and leadership had no visibility into territory-level inventory health.
-      Sales loss from availability gaps was running at <strong>28%</strong>.
-      I built SKU-level minimum stock norms calibrated to seasonality and sales patterns,
-      enforcing replenishment discipline across the entire network.
-      <strong>Sales loss dropped from 28% to 11% over 3 quarters.</strong>
-      The model became the standard operating system for replenishment planning across all 15 regions.
+    <div class="cs-org-bar">
+      <span>Bajaj Electricals</span> &bull; Sales Strategy &amp; Operations Lead &bull; 200+ Distributors &bull; 50 Territories &bull; 800+ SKUs
+    </div>
+    <p class="cs-synopsis">
+      <strong>Owned end-to-end design and execution.</strong> Distributors were rationally hoarding fast-moving commodity SKUs, leaving mid-tier and premium product lines persistently out of stock across 40% of the catalog.
+      Retailers lost fulfillment trust, and revenue loss from stockouts reached <strong>28% monthly</strong>.
+      I built dynamic SKU-wise stocking norms calibrated to sales velocity, reorder lead times, and seasonality &mdash; institutionalizing ERP-driven replenishment cadences that cut stockout revenue loss to 11% in 3 quarters.
     </p>
-    <div>
-      <span class="project-result">Sales loss 28% → 11%</span>
-      <span class="project-result">3 quarters</span>
-      <span class="project-result">800+ SKUs covered</span>
-      <span class="project-result">Adopted across 15 regions</span>
+    <div class="cs-results-row">
+      <span class="result-pill positive">Sales loss 28% &rarr; 11% in 3 quarters</span>
+      <span class="result-pill positive">+45% SKU availability</span>
+      <span class="result-pill positive">+15&ndash;18% incremental growth</span>
+      <span class="result-pill">800+ SKUs protected</span>
     </div>
-    <button class="project-toggle" onclick="toggleDetail(this)">
-      <span class="arrow">›</span> See the detail
-    </button>
-    <div class="project-detail">
-      <div class="detail-col">
-        <p class="detail-label">What I did</p>
-        <ul>
-          <li>Designed <strong>SKU-level minimum stock norms</strong> calibrated to seasonality and sales patterns across 800+ SKUs</li>
-          <li>Enforced replenishment discipline across 200+ distributors and 15 regions</li>
-          <li>Built <strong>data-driven replenishment cycles</strong> aligned to actual sales velocity rather than distributor intuition</li>
-          <li>Institutionalised the model as the <strong>standard planning system across all 15 regions</strong></li>
+    <div class="cs-actions-row">
+      <button class="cs-toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">
+        <span class="arrow-icon">&#9658;</span>
+        <span class="toggle-label">See summary</span>
+      </button>
+      <a href="case-studies/stock-availability-planning.html" class="cs-deepdive-link">
+        Read full case study &rarr;
+      </a>
+    </div>
+    <div class="cs-detail-drawer">
+      <div class="detail-section-block">
+        <div class="detail-block-title">Key Interventions &amp; Methodology</div>
+        <ul class="detail-bullets">
+          <li>Calculated minimum safety stock norms for <strong>600+ core SKUs</strong> using historical sales velocity and lead times.</li>
+          <li>Collaborated cross-functionally with central Supply Chain to enforce ERP replenishment order cadences.</li>
+          <li>Tied frontline territory sales rep evaluation to distributor stock health and fill-rate SLAs.</li>
         </ul>
       </div>
-      <div class="detail-col">
-        <p class="detail-label">The outcomes</p>
-        <ul>
-          <li>Sales loss from availability gaps: <strong>28% → 11% over 3 quarters</strong></li>
-          <li>Recovered demand in mid and premium segments that had been systematically missed</li>
-          <li>Model institutionalised as the <strong>national standard planning system</strong></li>
+      <div class="detail-section-block">
+        <div class="detail-block-title">Verified Measurable Outcomes</div>
+        <ul class="detail-bullets">
+          <li><strong>Cut stockout sales loss from 28% to 11%</strong> within 3 quarters (near zero in key categories).</li>
+          <li>Recovered <strong>15% to 18% incremental growth</strong> in high-margin appliances.</li>
+          <li>Replenishment system institutionalized permanently across 15 operating regions.</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 04 -->
-  <div class="project">
-    <div class="project-header">
-      <span class="project-num">04 —</span>
-      <span class="project-title">Distributor ROI Redesign — Presented to VP in Place of a Budget Ask</span>
+  <!-- Case Study 04 -->
+  <div class="case-study-item" id="case-study-4">
+    <div class="cs-header-meta">
+      <span class="cs-number">04 &mdash;</span>
+      <h3 class="cs-title">Distributor ROI Optimization &amp; Dual-Trigger Incentive Redesign</h3>
     </div>
-    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Sales Strategy &amp; Operations Lead &nbsp;·&nbsp; 97-person field organisation · 15 regions</p>
-    <p class="project-body">
-      <strong>Owned end-to-end design and execution.</strong> Declining distributor ROI was being treated as a motivation problem. I ran a distributor-level
-      P&amp;L analysis that exposed three structural failures: incentives decoupled from collections,
-      SKU mix skewed to low-margin fast-movers, and zero range-selling enablement.
-      Rather than request a budget increase, I presented the redesign proposal directly to VP leadership.
-      Piloted in 2 regions. Scaled nationally across a 97-person field organisation within 2 quarters.
-      <strong>25–50% ROI improvement, 18% churn reduction, 22% average order size increase.</strong>
+    <div class="cs-org-bar">
+      <span>Bajaj Electricals</span> &bull; Sales Strategy &amp; Operations Lead &bull; 100 Distributors &bull; 50 Reps &bull; 97-Person Field Org
+    </div>
+    <p class="cs-synopsis">
+      <strong>Owned end-to-end design and execution.</strong> Stagnant distributor ROI (18&ndash;20%) was being misdiagnosed as partner apathy.
+      My forensic P&amp;L audit uncovered that sales reps were incentivized exclusively on gross invoice value with zero accountability for cash collection.
+      Distributor capital was locked up in market credit at 1.5 to 2.0x monthly sales.
+      I presented a structural redesign to the VP of Sales: introducing a <strong>Dual-Trigger Incentive Structure</strong> that tied field payouts to timely cash collections.
     </p>
-    <div>
-      <span class="project-result">25–50% distributor ROI</span>
-      <span class="project-result">18% churn reduction</span>
-      <span class="project-result">22% avg order size increase</span>
-      <span class="project-result">Scaled to 97-person field org</span>
+    <div class="cs-results-row">
+      <span class="result-pill positive">+25&ndash;50% distributor ROI</span>
+      <span class="result-pill positive">+55% payment collection speed</span>
+      <span class="result-pill positive">-18% distributor churn</span>
+      <span class="result-pill">+22% average order size</span>
     </div>
-    <button class="project-toggle" onclick="toggleDetail(this)">
-      <span class="arrow">›</span> See the detail
-    </button>
-    <div class="project-detail">
-      <div class="detail-col">
-        <p class="detail-label">What I did</p>
-        <ul>
-          <li>Ran distributor-level P&amp;L analysis exposing <strong>three structural failures</strong>: incentives decoupled from collections, skewed SKU mix, zero range-selling enablement</li>
-          <li>Presented redesign proposal to <strong>VP leadership in place of a budget increase request</strong></li>
-          <li>Redesigned incentives to jointly reward <strong>sales achievement and payment collection</strong></li>
-          <li>Introduced same-day payout mechanics to create immediate behavioural shift</li>
-          <li>Piloted in 2 regions — scaled nationally across <strong>97-person field organisation</strong></li>
+    <div class="cs-actions-row">
+      <button class="cs-toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">
+        <span class="arrow-icon">&#9658;</span>
+        <span class="toggle-label">See summary</span>
+      </button>
+      <a href="case-studies/distributor-roi-optimization.html" class="cs-deepdive-link">
+        Read full case study &rarr;
+      </a>
+    </div>
+    <div class="cs-detail-drawer">
+      <div class="detail-section-block">
+        <div class="detail-block-title">Key Interventions &amp; Methodology</div>
+        <ul class="detail-bullets">
+          <li>Executed distributor P&amp;L analysis revealing excessive credit exposure and low-margin product bias.</li>
+          <li>Built <strong>dual-trigger Excel compensation models</strong>: commission unlocked upon verified collections.</li>
+          <li>Operationalized real-time CRM collection workflows and trained 50 reps on profitable range-selling.</li>
+          <li>Scaled from a 2-region pilot to a 97-person national organization within 2 quarters.</li>
         </ul>
       </div>
-      <div class="detail-col">
-        <p class="detail-label">The outcomes</p>
-        <ul>
-          <li><strong>25–50% improvement in distributor ROI</strong> within 2 quarters</li>
-          <li><strong>18% churn reduction</strong> across the distributor network</li>
-          <li><strong>22% average order size increase</strong></li>
-          <li>Significant reduction in market credit exposure through improved collection discipline</li>
+      <div class="detail-section-block">
+        <div class="detail-block-title">Verified Measurable Outcomes</div>
+        <ul class="detail-bullets">
+          <li><strong>25% to 50% ROI improvement</strong> lifting partner profitability into the healthy 24&ndash;30% band.</li>
+          <li>Market outstanding compressed from 2.0x down to 1.2x monthly sales.</li>
+          <li><strong>18% churn reduction</strong>, retaining crucial market distribution points.</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 05 -->
-  <div class="project">
-    <div class="project-header">
-      <span class="project-num">05 —</span>
-      <span class="project-title">Crisis GTM — $2M Revenue Recovery, Zero Incremental Spend</span>
+  <!-- Case Study 05 -->
+  <div class="case-study-item" id="case-study-5">
+    <div class="cs-header-meta">
+      <span class="cs-number">05 &mdash;</span>
+      <h3 class="cs-title">Crisis GTM &amp; Remote Commercial Execution: $2M in 3 Days</h3>
     </div>
-    <p class="project-company">Bajaj Electricals &nbsp;·&nbsp; Sales Strategy &amp; Operations Lead &nbsp;·&nbsp; COVID-19 lockdown · scaled nationally</p>
-    <p class="project-body">
-      <strong>Owned end-to-end design and execution.</strong> COVID shutdowns had left $2M+ of ageing premium stock locked across the network
-      with no clear liquidation path and zero budget for traditional outreach.
-      Rather than wait, I ran transaction analysis across <strong>4,000+ regular accounts</strong>
-      to identify high-velocity micro-markets, then activated a zero-cost digital outreach
-      mechanism using WhatsApp and Google Forms.
-      <strong>$2M incremental revenue with zero spend.</strong>
-      The mechanism became the standard operating model for remote selling
-      across the organisation — scaled nationally beyond the lockdown period.
+    <div class="cs-org-bar">
+      <span>Bajaj Electricals</span> &bull; Sales Strategy &amp; Operations Lead &bull; COVID-19 Lockdown &bull; 4,000+ Accounts &bull; 95 Reps
+    </div>
+    <p class="cs-synopsis">
+      <strong>Owned end-to-end design and execution.</strong> Nationwide pandemic shutdowns froze physical retail, leaving over <strong>$8M in aging inventory</strong> stranded in warehouses with zero marketing budget.
+      Rather than wait for restrictions to lift, I ran micro-market transaction analysis across 4,000+ accounts to identify operational stores, repositioned premium anti-viral fan lines as hygiene essentials, and launched an agile, zero-cost remote sales motion using WhatsApp Business and Google Forms.
     </p>
-    <div>
-      <span class="project-result">$2M revenue</span>
-      <span class="project-result">Zero incremental spend</span>
-      <span class="project-result">4,000+ accounts activated</span>
-      <span class="project-result">Scaled nationally</span>
+    <div class="cs-results-row">
+      <span class="result-pill positive">$2M revenue in 3 days</span>
+      <span class="result-pill positive">$0 incremental marketing spend</span>
+      <span class="result-pill positive">25% aged inventory cleared</span>
+      <span class="result-pill">4,000+ accounts activated</span>
     </div>
-    <button class="project-toggle" onclick="toggleDetail(this)">
-      <span class="arrow">›</span> See the detail
-    </button>
-    <div class="project-detail">
-      <div class="detail-col">
-        <p class="detail-label">What I did</p>
-        <ul>
-          <li>Ran <strong>transaction analysis across 4,000+ regular accounts</strong> to identify high-velocity micro-markets</li>
-          <li>Designed a fully remote, zero-budget GTM motion from scratch — repositioned premium anti-viral fans as COVID-era products</li>
-          <li>Activated the network via <strong>WhatsApp campaign + Google Forms order capture</strong> at scale</li>
-          <li>Coordinated sales team on phone-based selling across the entire retailer network</li>
-          <li>Mechanism <strong>scaled nationally</strong> post-lockdown as a repeatable remote selling model</li>
+    <div class="cs-actions-row">
+      <button class="cs-toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">
+        <span class="arrow-icon">&#9658;</span>
+        <span class="toggle-label">See summary</span>
+      </button>
+      <a href="case-studies/crisis-gtm-lockdown.html" class="cs-deepdive-link">
+        Read full case study &rarr;
+      </a>
+    </div>
+    <div class="cs-detail-drawer">
+      <div class="detail-section-block">
+        <div class="detail-block-title">Key Interventions &amp; Methodology</div>
+        <ul class="detail-bullets">
+          <li>Segmented 4,000+ account databases by municipal lockdown status to isolate operable zones.</li>
+          <li>Repositioned premium catalog inventory into COVID-relevant health and airflow messaging.</li>
+          <li>Built digital order capture with zero software procurement: WhatsApp kits + Google Forms.</li>
+          <li>Trained and activated 95 field reps across 15 regions via daily remote sales playbooks.</li>
         </ul>
       </div>
-      <div class="detail-col">
-        <p class="detail-label">The outcomes</p>
-        <ul>
-          <li><strong>$2M incremental revenue</strong> with zero incremental spend</li>
-          <li>Full liquidation of ageing premium inventory</li>
-          <li><strong>4,000+ accounts</strong> reached within the campaign window</li>
-          <li>Remote selling model <strong>adopted nationally</strong> beyond the lockdown period</li>
+      <div class="detail-section-block">
+        <div class="detail-block-title">Verified Measurable Outcomes</div>
+        <ul class="detail-bullets">
+          <li><strong>$2M revenue generated in 72 hours</strong> with zero marketing budget expenditure.</li>
+          <li>Successfully liquidated 25% of aged inventory without heavy margin dilution.</li>
+          <li>Model adopted permanently as the corporate remote-selling standard for long-tail accounts.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── SKILLS ─── -->
+<!-- CAPABILITIES & TECHNICAL SKILLS -->
 <section class="section fade-in" id="skills">
-  <span class="section-tag">Capabilities</span>
-  <h2>What I bring</h2>
+  <span class="section-label">Core Capabilities</span>
+  <h2 class="section-heading">Strategic frameworks, analytical depth &amp; modern AI</h2>
 
-  <div class="skills-row">
-    <span class="skills-row-label">Strategy &amp; Operations</span>
-    <div class="skills-list">
-      <span class="skill-tag featured">Operating model design</span>
-      <span class="skill-tag featured">GTM strategy</span>
-      <span class="skill-tag featured">Incentive restructuring</span>
-      <span class="skill-tag featured">Cross-functional alignment</span>
-      <span class="skill-tag">OKR / KPI frameworks</span>
-      <span class="skill-tag">Executive stakeholder management</span>
-      <span class="skill-tag">Change management</span>
-      <span class="skill-tag">Process redesign</span>
+  <div class="skills-grid">
+    <!-- Category 1 -->
+    <div class="skills-category">
+      <div class="skills-category-title">
+        <span>Strategy &amp; Commercial Operations</span>
+        <span style="font-size: 0.68rem; color: var(--text-soft);">Executive Core</span>
+      </div>
+      <div class="skills-tags-wrap">
+        <span class="skill-pill highlight">Operating Model Design</span>
+        <span class="skill-pill highlight">GTM Strategy &amp; Planning</span>
+        <span class="skill-pill highlight">Incentive Architecture</span>
+        <span class="skill-pill highlight">Cross-Functional Alignment</span>
+        <span class="skill-pill">0&rarr;1 Program Architecture</span>
+        <span class="skill-pill">OKR / KPI Governance</span>
+        <span class="skill-pill">Executive Stakeholder Management</span>
+        <span class="skill-pill">Channel Economics &amp; Distribution</span>
+        <span class="skill-pill">Change Management</span>
+        <span class="skill-pill">Process Transformation</span>
+      </div>
     </div>
-  </div>
 
-  <div class="skills-row">
-    <span class="skills-row-label">Analytics &amp; Technical</span>
-    <div class="skills-list">
-      <span class="skill-tag featured">SQL (advanced)</span>
-      <span class="skill-tag featured">Python</span>
-      <span class="skill-tag featured">Power BI</span>
-      <span class="skill-tag">Tableau</span>
-      <span class="skill-tag">BigQuery</span>
-      <span class="skill-tag">Snowflake</span>
-      <span class="skill-tag">dbt</span>
-      <span class="skill-tag">Forecasting models</span>
+    <!-- Category 2 -->
+    <div class="skills-category">
+      <div class="skills-category-title">
+        <span>Analytics, Data Infrastructure &amp; BI</span>
+        <span style="font-size: 0.68rem; color: var(--text-soft);">Hands-On Technical</span>
+      </div>
+      <div class="skills-tags-wrap">
+        <span class="skill-pill highlight">SQL (PostgreSQL, BigQuery)</span>
+        <span class="skill-pill highlight">Power BI (Dashboards, DAX)</span>
+        <span class="skill-pill highlight">Excel (Scenario Models, Power Query)</span>
+        <span class="skill-pill">Tableau</span>
+        <span class="skill-pill">Python (Data Analysis)</span>
+        <span class="skill-pill">Forecasting &amp; Variance Modeling</span>
+        <span class="skill-pill">Snowflake</span>
+        <span class="skill-pill">dbt Data Modeling</span>
+        <span class="skill-pill">Salesforce CRM</span>
+        <span class="skill-pill">Workday Financials</span>
+        <span class="skill-pill">SAP / ERP Systems</span>
+      </div>
     </div>
-  </div>
 
-  <div class="skills-row">
-    <span class="skills-row-label">Finance &amp; Planning</span>
-    <div class="skills-list">
-      <span class="skill-tag featured">Budget forecasting</span>
-      <span class="skill-tag">Variance analysis</span>
-      <span class="skill-tag">Financial modelling</span>
-      <span class="skill-tag">Resource allocation</span>
-      <span class="skill-tag">Headcount planning</span>
+    <!-- Category 3 -->
+    <div class="skills-category">
+      <div class="skills-category-title">
+        <span>Emerging Tech, AI Workflows &amp; Automation</span>
+        <span style="font-size: 0.68rem; color: var(--forest); font-weight: 700;">Tech-Forward Leadership</span>
+      </div>
+      <div class="skills-tags-wrap">
+        <span class="skill-pill tech-ai">Claude API (Anthropic)</span>
+        <span class="skill-pill tech-ai">Apify Web Scraping &amp; Data Mining</span>
+        <span class="skill-pill tech-ai">Generative AI Workflow Automation</span>
+        <span class="skill-pill tech-ai">Prompt Engineering &amp; LLM Pipelines</span>
+        <span class="skill-pill">Automated Executive Synthesis</span>
+        <span class="skill-pill">Workflow Scripting</span>
+        <span class="skill-pill">Rapid Low-Code Prototyping</span>
+      </div>
     </div>
-  </div>
 
-  <div class="skills-row">
-    <span class="skills-row-label">Education</span>
-    <div class="skills-list">
-      <span class="skill-tag">PG Diploma — Data Science &amp; Analytics, UT Austin McCombs</span>
-      <span class="skill-tag">B.Sc. Mathematics, St. Joseph's College, Bharathidasan University</span>
+    <!-- Category 4 -->
+    <div class="skills-category">
+      <div class="skills-category-title">
+        <span>Finance, Planning &amp; Education</span>
+        <span style="font-size: 0.68rem; color: var(--text-soft);">Quantitative Foundations</span>
+      </div>
+      <div class="skills-tags-wrap">
+        <span class="skill-pill">Multi-Department Budget Forecasting</span>
+        <span class="skill-pill">Financial Variance Analysis</span>
+        <span class="skill-pill">Capital Resource Allocation</span>
+        <span class="skill-pill">Headcount &amp; Capacity Planning</span>
+        <span class="skill-pill highlight">PG Diploma — Data Science &amp; Analytics, UT Austin McCombs</span>
+        <span class="skill-pill highlight">B.Sc. Mathematics, St. Joseph's College (Bharathidasan Univ.)</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ─── RESULTS ─── -->
+<!-- TRACK RECORD / RESULTS GRID -->
 <section class="section fade-in" id="results">
-  <span class="section-tag">Track Record</span>
-  <h2>The numbers that matter</h2>
-  <p class="results-prose">
-    Across two companies, two countries, and five operating model redesigns — the outcomes have
-    always been the same kind: structural, measurable, and lasting. Not a one-quarter spike.
-    A different baseline.
+  <span class="section-label">Proven Track Record</span>
+  <h2 class="section-heading">The numbers that matter: structural, measurable, lasting</h2>
+  <p class="prose">
+    Across public sector enterprise portfolios, national consumer distribution networks, and five major operating model overhauls &mdash; the results have consistently replaced friction with permanent, data-backed baselines.
   </p>
 
   <div class="results-grid">
     <div class="result-card">
-      <span class="result-big">80%</span>
-      <span class="result-desc">Reduction in mid-year budget reallocations through forecasting model redesign</span>
-      <span class="result-src">Allegheny County DHS — 2023–present</span>
+      <span class="result-metric-big">80%</span>
+      <span class="result-explanation">Reduction in mid-year emergency budget reallocations through SQL forecasting model redesign.</span>
+      <span class="result-provenance">Allegheny County DHS &bull; 2023&ndash;Present</span>
     </div>
     <div class="result-card">
-      <span class="result-big">55%</span>
-      <span class="result-desc">Drop in ad-hoc data requests after KPI governance system deployment across 8 departments</span>
-      <span class="result-src">Allegheny County DHS</span>
+      <span class="result-metric-big">55%</span>
+      <span class="result-explanation">Drop in ad-hoc data requests following 0&rarr;1 KPI governance deployment across 8 departments.</span>
+      <span class="result-provenance">Allegheny County DHS &bull; 2023&ndash;Present</span>
     </div>
     <div class="result-card">
-      <span class="result-big">55%</span>
-      <span class="result-desc">Retailer programme participation, up from 15% — $40M programme, 200,000+ retailers, 18-month target in 6 months</span>
-      <span class="result-src">Bajaj Electricals — 15 regions</span>
+      <span class="result-metric-big">55%</span>
+      <span class="result-explanation">Retailer loyalty participation (up from 15%) across 200,000+ stores &mdash; achieved 18-month target in 6 months.</span>
+      <span class="result-provenance">Bajaj Electricals &bull; 15 Regions</span>
     </div>
     <div class="result-card">
-      <span class="result-big">28→11%</span>
-      <span class="result-desc">Sales loss from availability gaps cut across 800+ SKUs using replenishment norm system</span>
-      <span class="result-src">Bajaj Electricals — 3 quarters</span>
+      <span class="result-metric-big">28% &rarr; 11%</span>
+      <span class="result-explanation">Sales loss from chronic stockouts eliminated across 800+ SKUs using mathematical stocking norms.</span>
+      <span class="result-provenance">Bajaj Electricals &bull; 3 Quarters</span>
     </div>
     <div class="result-card">
-      <span class="result-big">$2M</span>
-      <span class="result-desc">Revenue recovered with zero incremental spend via transaction-analysis-driven GTM pivot</span>
-      <span class="result-src">Bajaj Electricals — COVID lockdown</span>
+      <span class="result-metric-big">$2M</span>
+      <span class="result-explanation">Incremental revenue recovered in 72 hours with zero marketing spend during lockdown via agile digital GTM.</span>
+      <span class="result-provenance">Bajaj Electricals &bull; COVID Response</span>
     </div>
     <div class="result-card">
-      <span class="result-big">50%</span>
-      <span class="result-desc">Distributor ROI improvement — plus 18% churn reduction and 22% avg order size increase — scaled to 97-person field org</span>
-      <span class="result-src">Bajaj Electricals — 2 quarters</span>
+      <span class="result-metric-big">50%</span>
+      <span class="result-explanation">Improvement in distributor ROI, paired with 18% churn reduction and 22% order size increase across 97 reps.</span>
+      <span class="result-provenance">Bajaj Electricals &bull; 2 Quarters</span>
     </div>
   </div>
 </section>
 
-<!-- ─── CONTACT ─── -->
+<!-- CONTACT SECTION -->
 <section class="section fade-in" id="contact">
-  <span class="section-tag">Contact</span>
-  <h2>Let's talk about a problem worth solving</h2>
+  <span class="section-label">Connect</span>
+  <h2 class="section-heading">Let's discuss an operating problem worth solving</h2>
 
-  <div class="open-pill">
-    <span class="open-dot"></span>
-    Open to S&amp;O roles — NYC · Chicago · SF · Remote
+  <div class="contact-status-badge">
+    <span class="contact-pulse-dot"></span>
+    Open to Strategy &amp; Operations Leadership Roles &bull; NYC &bull; Chicago &bull; SF &bull; Remote
   </div>
 
-  <p class="contact-body">
-    I'm targeting <strong>Director-level Strategy &amp; Operations, Revenue Operations, and GTM leadership roles</strong>
-    at companies where the expectation is end-to-end ownership — not just analysis handed upward.
-    If you're building teams that require ownership of both strategy and execution at scale, I'd be glad to connect.
+  <p class="prose">
+    I am actively targeting <strong>Director-level Strategy &amp; Operations, Revenue Operations, and GTM leadership roles</strong> at growth-oriented companies where the mandate is end-to-end ownership: diagnosing commercial bottlenecks, aligning cross-functional teams, and engineering scalable operating models.
   </p>
 
-  <div class="contact-list">
-    <a href="mailto:arun.padayachi@icloud.com" class="contact-item">
-      <span class="contact-item-label">Email</span>
-      <span class="contact-item-val">arun.padayachi@icloud.com</span>
-      <span class="contact-item-arrow">→</span>
+  <div class="contact-channels-list">
+    <!-- Email Row with Copy Button -->
+    <div class="channel-row">
+      <span class="channel-label">Email</span>
+      <span class="channel-value">arunshanmugamprema@gmail.com</span>
+      <div style="display: flex; align-items: center;">
+        <button class="copy-btn" onclick="copyToClipboard('arunshanmugamprema@gmail.com', event)">Copy</button>
+        <a href="mailto:arunshanmugamprema@gmail.com" class="channel-arrow" style="margin-left: 0.75rem; text-decoration: none;">&rarr;</a>
+      </div>
+    </div>
+
+    <!-- Phone Row with Copy Button -->
+    <div class="channel-row">
+      <span class="channel-label">Phone</span>
+      <span class="channel-value">+1 (724) 359-9803</span>
+      <div style="display: flex; align-items: center;">
+        <button class="copy-btn" onclick="copyToClipboard('+17243599803', event)">Copy</button>
+        <a href="tel:+17243599803" class="channel-arrow" style="margin-left: 0.75rem; text-decoration: none;">&rarr;</a>
+      </div>
+    </div>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank" rel="noopener" class="channel-row">
+      <span class="channel-label">LinkedIn</span>
+      <span class="channel-value">linkedin.com/in/arunshanmugamprema</span>
+      <span class="channel-arrow">&rarr;</span>
     </a>
-    <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank" class="contact-item">
-      <span class="contact-item-label">LinkedIn</span>
-      <span class="contact-item-val">linkedin.com/in/arunshanmugamprema</span>
-      <span class="contact-item-arrow">→</span>
+
+    <!-- GitHub -->
+    <a href="https://github.com/arunshanmugamprema" target="_blank" rel="noopener" class="channel-row">
+      <span class="channel-label">GitHub</span>
+      <span class="channel-value">github.com/arunshanmugamprema</span>
+      <span class="channel-arrow">&rarr;</span>
     </a>
-    <a href="https://github.com/arunshanmugamprema" target="_blank" class="contact-item">
-      <span class="contact-item-label">GitHub</span>
-      <span class="contact-item-val">github.com/arunshanmugamprema</span>
-      <span class="contact-item-arrow">→</span>
-    </a>
-    <a href="Resume_Arun_S_Prema.pdf" class="contact-item">
-      <span class="contact-item-label">Resume</span>
-      <span class="contact-item-val">Download PDF</span>
-      <span class="contact-item-arrow">→</span>
+
+    <!-- Resume PDF & Web Resume -->
+    <a href="resume/" class="channel-row">
+      <span class="channel-label">Resume</span>
+      <span class="channel-value">View Interactive Web Resume / Download PDF</span>
+      <span class="channel-arrow">&rarr;</span>
     </a>
   </div>
 
-  <div class="target-block">
-    <p class="target-block-head">Roles I'm targeting</p>
-    <div class="target-item">Director, Strategy &amp; Operations</div>
-    <div class="target-item">Director, Revenue Operations</div>
-    <div class="target-item">GTM Strategy Lead / Director</div>
-    <div class="target-item">Business Operations (BizOps) Lead</div>
-    <div class="target-item">Head of Sales Strategy &amp; Operations</div>
+  <div class="roles-target-card">
+    <div class="roles-target-title">Target Leadership Profiles</div>
+    <div class="roles-target-list">
+      <div class="role-pill-item">Director, Strategy &amp; Operations</div>
+      <div class="role-pill-item">Director, Revenue Operations (RevOps)</div>
+      <div class="role-pill-item">GTM Strategy &amp; Commercial Planning Lead</div>
+      <div class="role-pill-item">Head of Business Operations (BizOps)</div>
+      <div class="role-pill-item">Head of Sales Strategy &amp; Operations</div>
+      <div class="role-pill-item">VP / Director of Commercial Systems</div>
+    </div>
   </div>
 </section>
 
-<footer>
-  <span class="footer-copy">© 2026 Arun S. Prema · Pittsburgh, PA</span>
-  <div class="footer-links">
-    <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank">LinkedIn</a>
-    <a href="https://github.com/arunshanmugamprema" target="_blank">GitHub</a>
-    <a href="Resume_Arun_S_Prema.pdf">Resume</a>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand-wrap">
+      <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.1rem; color: var(--text);">Arun S. Prema</div>
+      <span class="footer-legal">&copy; 2026 Arun S. Prema &bull; Strategy &amp; Operations &bull; Pittsburgh, PA</span>
+    </div>
+    <div class="footer-links-row">
+      <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/arunshanmugamprema" target="_blank" rel="noopener">GitHub</a>
+      <a href="resume/">Web Resume</a>
+      <a href="Resume_Arun_S_Prema.pdf" download>PDF Resume</a>
+      <a href="trade-marketing/">Trade Marketing Profile</a>
+    </div>
   </div>
 </footer>
 
-<script>
-function toggleDetail(btn) {
-  btn.classList.toggle('open');
-  const detail = btn.nextElementSibling;
-  detail.classList.toggle('show');
-  btn.querySelector('.arrow').style.transform = detail.classList.contains('show') ? 'rotate(90deg)' : 'rotate(0)';
-  btn.childNodes[1].textContent = detail.classList.contains('show') ? ' Hide detail' : ' See the detail';
-}
-
-// Fade-in on scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-}, { threshold: 0.08 });
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
+<!-- Interactive Scripts -->
+<script src="assets/js/main.js"></script>
 </body>
 </html>

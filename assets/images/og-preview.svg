@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C1C1A"/>
+      <stop offset="100%" stop-color="#2A2A26"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="12" height="630" fill="#B85C20"/>
+  <circle cx="1080" cy="120" r="160" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+  <circle cx="1120" cy="500" r="220" fill="none" stroke="rgba(184,92,32,0.12)" stroke-width="2"/>
+  
+  <!-- Content -->
+  <text x="100" y="140" font-family="'Outfit', -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="600" fill="#B85C20" letter-spacing="4">STRATEGY &amp; OPERATIONS &bull; DIRECTOR LEVEL</text>
+  
+  <text x="100" y="230" font-family="'Playfair Display', Georgia, serif" font-size="64" font-weight="700" fill="#FFFFFF">Arun S. Prema</text>
+  
+  <text x="100" y="310" font-family="'Lora', Georgia, serif" font-size="28" font-weight="400" fill="#E2E0D8">
+    I design and scale revenue &amp; operating systems
+  </text>
+  <text x="100" y="355" font-family="'Lora', Georgia, serif" font-size="28" font-style="italic" fill="#B85C20">
+    across $1B+ organizations.
+  </text>
+  
+  <!-- Metrics Pill Bar -->
+  <g transform="translate(100, 420)">
+    <rect width="980" height="120" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    
+    <!-- Metric 1 -->
+    <text x="50" y="55" font-family="'Playfair Display', Georgia, serif" font-size="40" font-weight="700" fill="#B85C20">$1B+</text>
+    <text x="50" y="90" font-family="'Outfit', sans-serif" font-size="16" fill="#8A8A84">Budget Decisions Managed</text>
+    
+    <!-- Divider -->
+    <line x1="330" y1="25" x2="330" y2="95" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    
+    <!-- Metric 2 -->
+    <text x="380" y="55" font-family="'Playfair Display', Georgia, serif" font-size="40" font-weight="700" fill="#B85C20">~$100M</text>
+    <text x="380" y="90" font-family="'Outfit', sans-serif" font-size="16" fill="#8A8A84">P&amp;L Commercial Ownership</text>
+    
+    <!-- Divider -->
+    <line x1="680" y1="25" x2="680" y2="95" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    
+    <!-- Metric 3 -->
+    <text x="730" y="55" font-family="'Playfair Display', Georgia, serif" font-size="40" font-weight="700" fill="#B85C20">40,000+</text>
+    <text x="730" y="90" font-family="'Outfit', sans-serif" font-size="16" fill="#8A8A84">Accounts Across 15 Regions</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="100" y="585" font-family="'Outfit', sans-serif" font-size="16" fill="#8A8A84">arunshanmugamprema.github.io &bull; Allegheny County DHS &bull; Ex-Bajaj Electricals</text>
+</svg>
