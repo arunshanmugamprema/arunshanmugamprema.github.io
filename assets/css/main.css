@@ -29,8 +29,8 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
-  --max-w: 840px;
-  --max-w-wide: 1040px;
+  --max-w: 820px;
+  --max-w-wide: 820px;
 }
 
 html {
@@ -66,7 +66,7 @@ header.site-header {
   position: sticky;
   top: 0;
   z-index: 900;
-  background: rgba(250, 250, 247, 0.92);
+  background: rgba(250, 250, 247, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -74,20 +74,23 @@ header.site-header {
 }
 
 .header-container {
-  max-width: var(--max-w-wide);
+  max-width: var(--max-w);
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1.1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .site-brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
   text-decoration: none;
   color: var(--text);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .brand-monogram {
@@ -102,6 +105,7 @@ header.site-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .brand-name {
@@ -109,30 +113,19 @@ header.site-header {
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .brand-title-tag {
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-soft);
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .brand-title-tag {
-    display: inline-block;
-    padding-left: 0.6rem;
-    border-left: 1px solid var(--border);
-  }
+  display: none !important;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.75rem;
   list-style: none;
+  flex-shrink: 0;
 }
 
 .header-nav a {
@@ -145,6 +138,7 @@ header.site-header {
   transition: color 0.2s ease;
   position: relative;
   padding: 0.25rem 0;
+  white-space: nowrap;
 }
 
 .header-nav a:hover,
@@ -155,12 +149,17 @@ header.site-header {
 .nav-cta-btn {
   background: var(--ink) !important;
   color: var(--white) !important;
-  padding: 0.5rem 1.1rem !important;
+  padding: 0.45rem 1.15rem !important;
   border-radius: var(--radius-sm);
   font-size: 0.78rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.06em !important;
   transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
 }
 
 .nav-cta-btn:hover {
@@ -1031,13 +1030,14 @@ footer.site-footer {
 }
 
 .footer-container {
-  max-width: var(--max-w-wide);
+  max-width: var(--max-w);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1.25rem;
+  width: 100%;
 }
 
 .footer-brand-wrap {
