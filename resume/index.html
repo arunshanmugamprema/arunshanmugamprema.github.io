@@ -204,6 +204,15 @@
       .r-role-header {
         flex-direction: column;
       }
+      .r-header-with-photo {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .r-header-photo {
+        width: 72px;
+        height: 72px;
+      }
     }
   </style>
 </head>
@@ -218,6 +227,7 @@
       <div class="brand-icon-box">AP</div>
       <div class="brand-text-group">
         <span class="brand-name">Arun S. Prema</span>
+        <span class="brand-role-chip">Sales Strategy &amp; Ops</span>
         <span class="status-badge"><span class="status-dot"></span> Available for Roles</span>
       </div>
     </a>
@@ -261,15 +271,20 @@
 
   <!-- Document Paper -->
   <article class="resume-paper">
-    <header class="r-header">
-      <h1 class="r-name">Arun S. Prema</h1>
-      <p class="r-headline">Revenue Operations | GTM Strategy | Sales Strategy &amp; Operations | Commercial Planning</p>
-      <div class="r-contact-line">
-        <span>Pittsburgh, PA (Open to Relocation &bull; NYC, Chicago, SF, Remote)</span>
-        <a href="mailto:arunshanmugamprema@gmail.com">arunshanmugamprema@gmail.com</a>
-        <span>+1 (724) 359-9803</span>
-        <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://arunshanmugamprema.github.io" target="_blank" rel="noopener">Portfolio</a>
+    <header class="r-header r-header-with-photo">
+      <div class="r-header-text">
+        <h1 class="r-name">Arun S. Prema</h1>
+        <p class="r-headline">Revenue Operations | GTM Strategy | Sales Strategy &amp; Operations | Commercial Planning</p>
+        <div class="r-contact-line">
+          <span>Pittsburgh, PA (Open to Relocation &bull; NYC, Chicago, SF, Remote)</span>
+          <a href="mailto:arunshanmugamprema@gmail.com">arunshanmugamprema@gmail.com</a>
+          <span>+1 (724) 359-9803</span>
+          <a href="https://linkedin.com/in/arunshanmugamprema" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://arunshanmugamprema.github.io" target="_blank" rel="noopener">Portfolio</a>
+        </div>
+      </div>
+      <div class="r-header-photo">
+        <img src="../assets/images/arun-prema.jpg" alt="Arun S. Prema" class="r-photo-img">
       </div>
     </header>
 
