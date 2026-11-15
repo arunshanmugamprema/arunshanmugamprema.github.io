@@ -15,17 +15,17 @@
 
 /* ── Tokens ── */
 :root {
-  --paper: #fbfbf8;
-  --surface: #eef2ec;
-  --ink: #16302b;
-  --muted: #55655f;
-  --line: #d5dcd6;
-  --mark: #f0a202;          /* marigold: the "after" colour */
-  --btn-bg: #16302b;
-  --btn-ink: #fbfbf8;
-  --band-bg: #16302b;
-  --band-ink: #f3f6f1;
-  --band-muted: #b5c4bd;
+  --paper: #fafbfd;
+  --surface: #edf1f7;
+  --ink: #14233f;
+  --muted: #55617a;
+  --line: #d5dbe6;
+  --mark: #f2a900;          /* amber: the "after" colour */
+  --btn-bg: #14233f;
+  --btn-ink: #fafbfd;
+  --band-bg: #14233f;
+  --band-ink: #f3f6fb;
+  --band-muted: #b4bfd3;
 
   --display: "Bricolage Grotesque", "Public Sans", system-ui, sans-serif;
   --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -37,29 +37,29 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #0f1f1c;
-    --surface: #152925;
-    --ink: #e8eee9;
-    --muted: #a3b3ac;
-    --line: #2a413b;
-    --btn-bg: #f0a202;
-    --btn-ink: #15211d;
-    --band-bg: #152925;
-    --band-ink: #e8eee9;
-    --band-muted: #a3b3ac;
+    --paper: #0d1626;
+    --surface: #131f35;
+    --ink: #e8edf5;
+    --muted: #a3aec2;
+    --line: #26344e;
+    --btn-bg: #f2a900;
+    --btn-ink: #14233f;
+    --band-bg: #131f35;
+    --band-ink: #e8edf5;
+    --band-muted: #a3aec2;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #0f1f1c;
-  --surface: #152925;
-  --ink: #e8eee9;
-  --muted: #a3b3ac;
-  --line: #2a413b;
-  --btn-bg: #f0a202;
-  --btn-ink: #15211d;
-  --band-bg: #152925;
-  --band-ink: #e8eee9;
-  --band-muted: #a3b3ac;
+  --paper: #0d1626;
+  --surface: #131f35;
+  --ink: #e8edf5;
+  --muted: #a3aec2;
+  --line: #26344e;
+  --btn-bg: #f2a900;
+  --btn-ink: #14233f;
+  --band-bg: #131f35;
+  --band-ink: #e8edf5;
+  --band-muted: #a3aec2;
 }
 
 /* ── Base ── */
@@ -188,7 +188,7 @@ h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); line-height: 1.08; }
 .contact h2 { max-width: 20ch; font-size: clamp(2.2rem, 5.4vw, 4rem); line-height: 1.02; }
 .contact-lede { margin-top: 22px; max-width: 56ch; color: var(--band-muted); font-size: 1.1rem; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
-.contact .btn-primary { background: var(--mark); color: #15211d; }
+.contact .btn-primary { background: var(--mark); color: #14233f; }
 .contact-mail { margin-top: 20px; color: var(--band-muted); font-size: 0.95rem; user-select: all; }
 
 /* ── Footer ── */
