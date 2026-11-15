@@ -145,6 +145,8 @@ h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); line-height: 1.08; }
 .shift-label small { display: block; margin-top: 5px; font-family: var(--body); font-weight: 400; font-size: 0.8rem; color: var(--muted); }
 .shift-label.is-from { left: var(--from); bottom: 20px; font-size: 1.1rem; color: var(--muted); }
 .shift-label.is-to { left: var(--to); top: 24px; font-size: clamp(1.7rem, 3vw, 2.2rem); }
+.shift-label.at-start { transform: translateX(-11px); text-align: left; }
+.shift-label.at-end { transform: translateX(calc(-100% + 11px)); text-align: right; }
 .shift-axis { display: flex; justify-content: space-between; margin-inline: 34px; padding-top: 8px; border-top: 1px dashed var(--line); color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 
 /* One reveal: the line draws from "before" to "after" */
