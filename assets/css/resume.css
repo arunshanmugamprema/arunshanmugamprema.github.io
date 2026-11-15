@@ -77,3 +77,9 @@
   a { color: #000; text-decoration: none; }
   @page { margin: 12mm; }
 }
+
+/* Resume built from the master file: second headline line, title under employer, compact items */
+.r-headline-2 { margin-top: 2px; }
+.r-role-sub { margin-top: 2px; font-weight: 600; }
+.r-role-item.r-compact { margin-bottom: 14px; }
+@media print { .r-role-item.r-compact { margin-bottom: 5pt; } .r-headline-2 { margin-top: 1pt; } }
