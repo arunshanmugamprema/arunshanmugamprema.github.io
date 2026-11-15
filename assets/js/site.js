@@ -1,4 +1,4 @@
-/* Home page: theme toggle and the one reveal for the before/after lines. */
+/* Shared: theme toggle, resume print button, and the one reveal for the before/after lines. */
 (function () {
   var root = document.documentElement;
 
@@ -13,6 +13,10 @@
       try { localStorage.setItem('theme', next); } catch (e) {}
     });
   }
+
+  // Resume page: print button.
+  var printBtn = document.getElementById('print-resume');
+  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
 
   // Before/after lines draw once when they scroll into view.
   var shifts = document.querySelectorAll('.shift');
