@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
     <meta name="description" content="Path 2 Consulting: I help mid-size companies that sell through distributors and dealers get more from the channel they already have. Analytics, incentive design, and the Channel Diagnostic." />
-    <link rel="icon" href="data:," />
+    <link rel="icon" href="https://arunshanmugamprema.github.io/path2/logo.svg" type="image/svg+xml" />
     <title>Path 2 Consulting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -82,7 +82,8 @@
         display: flex; align-items: center; justify-content: space-between;
         gap: 16px; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap;
       }
-      .brand { font-family: "Newsreader", Georgia, serif; font-weight: 700; font-size: 1.35rem; letter-spacing: 0; color: var(--ink); text-decoration: none; }
+      .brand { font-family: "Newsreader", Georgia, serif; font-weight: 700; font-size: 1.35rem; letter-spacing: 0; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+      .brand-logo { width: 34px; height: 34px; display: block; flex: 0 0 34px; border-radius: 7px; }
       .brand span { color: var(--accent); }
       .topnav { display: flex; gap: 4px; flex-wrap: wrap; }
       .topnav a {
@@ -222,6 +223,9 @@
       .about-facts .row + .row { border-top: 1px solid var(--line); }
       .about-facts dt { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); padding-top: 3px; }
       .about-facts dd { margin: 0; font-size: 0.98rem; font-weight: 500; }
+      .about-side { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+      .about-photo { width: 170px; max-width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--line); box-shadow: var(--shadow); object-fit: cover; background: var(--surface); }
+      .about-side .about-facts { width: 100%; }
       .about-text p { color: var(--ink-soft); font-size: 1.03rem; }
       .about-text p + p { margin-top: 14px; }
       .about-text p strong { color: var(--ink); }
@@ -273,7 +277,7 @@
   <body>
     <header class="topbar">
       <div class="wrap topbar-inner">
-        <a class="brand" href="#top">Path 2 <span>Consulting</span></a>
+        <a class="brand" href="#top"><img class="brand-logo" src="https://arunshanmugamprema.github.io/path2/logo.svg" alt="Path 2 Consulting logo" width="34" height="34" />Path 2 <span>Consulting</span></a>
         <nav class="topnav" aria-label="Page sections">
           <a href="#diagnostic">The Diagnostic</a>
           <a href="#proof">Track Record</a>
@@ -476,12 +480,15 @@
           <h2>About me</h2>
         </div>
         <div class="about-grid">
-          <div class="about-facts">
-            <dl>
-              <div class="row"><dt>Based</dt><dd>Pittsburgh, PA, working nationally</dd></div>
-              <div class="row"><dt>Practice</dt><dd>Path 2 Consulting, channel analytics and incentive design</dd></div>
-              <div class="row"><dt>Channel</dt><dd>12 years running distributor networks, Bajaj Electricals</dd></div>
-            </dl>
+          <div class="about-side">
+            <img class="about-photo" src="https://arunshanmugamprema.github.io/path2/photo.jpg" alt="Arun S. Prema" width="170" loading="lazy" />
+            <div class="about-facts">
+              <dl>
+                <div class="row"><dt>Based</dt><dd>Pittsburgh, PA, working nationally</dd></div>
+                <div class="row"><dt>Practice</dt><dd>Path 2 Consulting, channel analytics and incentive design</dd></div>
+                <div class="row"><dt>Channel</dt><dd>12 years running distributor networks, Bajaj Electricals</dd></div>
+              </dl>
+            </div>
           </div>
           <div class="about-text">
             <p>I spent <strong>12 years at Bajaj Electricals</strong> running distributor networks in consumer durables, with responsibility for a $100M P&amp;L, 200+ distributors, and 40,000+ retail accounts across 15 regions. The work that defined that tenure was measurement: cutting distributor forecast error from 28% to 11%, raising retailer participation in incentive programs from 15% to 55%, and running a distributor ROI program that redirected spend to the partners actually moving volume.</p>
