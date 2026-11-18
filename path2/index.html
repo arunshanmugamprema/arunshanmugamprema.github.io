@@ -5,42 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
     <meta name="description" content="Path 2 Consulting: I help mid-size companies that sell through distributors and dealers get more from the channel they already have. Analytics, incentive design, and the Channel Diagnostic." />
-    <link rel="icon" href="https://arunshanmugamprema.github.io/path2/mark.svg" type="image/svg+xml" />
+    <link rel="icon" href="https://arunshanmugamprema.github.io/path2/favicon.png" type="image/png" />
     <title>Path 2 Consulting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
       :root {
-        --bg: #f5f5f1;
+        --navy: #102744;
+        --teal: #079E9B;
+        --teal-dark: #067F7D;
+        --teal-bright: #2EC4C0;
+        --amber: #F2A21B;
+        --graphite: #87919A;
+        --bg: #F7F9FA;
+        --bg-white: #ffffff;
         --surface: #ffffff;
-        --surface-2: #eceee9;
-        --ink: #16211c;
-        --ink-soft: #43524a;
-        --line: #d8dcd2;
-        --accent: #175c46;
+        --surface-2: #EEF2F4;
+        --ink: #102744;
+        --ink-soft: #3E546E;
+        --line: #D6DDE2;
+        --accent: #079E9B;
+        --accent-dark: #067F7D;
         --accent-ink: #ffffff;
-        --accent-soft: #dcebe3;
-        --amber: #b96f1e;
-        --bar-track: #dde2d8;
-        --bar-before: #9aa79c;
-        --shadow: 0 1px 2px rgba(22, 33, 28, 0.06), 0 10px 30px rgba(22, 33, 28, 0.07);
+        --accent-soft: #E3F2F2;
+        --bar-track: #E2E8EC;
+        --bar-before: #87919A;
+        --final-bg: #102744;
+        --footer-bg: #102744;
+        --footer-ink: #EAF0F5;
+        --shadow: 0 1px 2px rgba(16, 39, 68, 0.06), 0 10px 30px rgba(16, 39, 68, 0.08);
         color-scheme: light;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg: #10140f;
-          --surface: #171d18;
-          --surface-2: #1e2620;
-          --ink: #edf0e8;
-          --ink-soft: #aebbb0;
-          --line: #2c362d;
-          --accent: #4cb48c;
-          --accent-ink: #0c1712;
-          --accent-soft: #1d2f27;
-          --amber: #d99a4e;
-          --bar-track: #263027;
-          --bar-before: #5d6f61;
+          --bg: #0A1A2F;
+          --bg-white: #0A1A2F;
+          --surface: #122840;
+          --surface-2: #1A3553;
+          --ink: #EDF2F7;
+          --ink-soft: #B9C6D3;
+          --line: #2B435F;
+          --accent: #1ABAB6;
+          --accent-dark: #079E9B;
+          --accent-soft: #143A44;
+          --bar-track: #223A55;
+          --bar-before: #87919A;
+          --final-bg: #0D2340;
+          --footer-bg: #08182D;
+          --footer-ink: #EAF0F5;
           --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.35);
           color-scheme: dark;
         }
@@ -66,9 +79,14 @@
         line-height: 1.15;
         margin: 0;
         letter-spacing: -0.01em;
+        color: var(--ink);
       }
       p { margin: 0; }
       a { color: var(--accent); }
+      a:hover { color: var(--accent-dark); }
+      @media (prefers-color-scheme: dark) {
+        a:hover { color: var(--teal-bright); }
+      }
       button, [role="button"], select, summary, input:not([type="checkbox"], [type="radio"]) { min-height: 2rem; }
 
       .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
@@ -76,16 +94,31 @@
       /* Top bar */
       .topbar {
         border-bottom: 1px solid var(--line);
-        background: var(--bg);
+        background: var(--bg-white);
+      }
+      @media (prefers-color-scheme: dark) {
+        .topbar { background: var(--surface); }
       }
       .topbar-inner {
         display: flex; align-items: center; justify-content: space-between;
-        gap: 16px; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap;
+        gap: 16px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap;
       }
-      .brand { font-family: "Newsreader", Georgia, serif; display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; font-size: 1.25rem; letter-spacing: .01em; }
-      .brand b { font-weight: 650; }
-      .brand span { font-weight: 450; }
-      .brand svg { flex: 0 0 28px; display: block; }
+      .brand {
+        font-family: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+        display: inline-flex; align-items: center; gap: 12px;
+        text-decoration: none; color: var(--ink);
+        font-size: 1.3rem; letter-spacing: -0.01em; line-height: 1;
+        white-space: nowrap;
+      }
+      .brand:hover { color: var(--ink); }
+      .brand-logo { height: 40px; width: auto; display: block; flex: 0 0 auto; }
+      .brand-text { display: inline-flex; align-items: baseline; white-space: nowrap; font-weight: 400; }
+      .brand-path { font-weight: 800; color: var(--ink); }
+      .brand-two { font-weight: 800; color: var(--teal); margin-left: 1px; }
+      @media (prefers-color-scheme: dark) {
+        .brand-two { color: var(--accent); }
+      }
+      .brand-consulting { font-weight: 400; color: var(--ink); margin-left: 0.45em; }
       .topnav { display: flex; gap: 4px; flex-wrap: wrap; }
       .topnav a {
         color: var(--ink-soft); text-decoration: none; font-size: 0.92rem; font-weight: 500;
@@ -96,9 +129,20 @@
       /* Hero */
       .hero { padding: 64px 0 8px; }
       .hero-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 44px; align-items: start; }
-      .hero h1 { font-size: clamp(2.3rem, 5.2vw, 3.6rem); font-weight: 600; }
+      .hero h1 { font-size: clamp(2.3rem, 5.2vw, 3.6rem); font-weight: 600; color: var(--navy); }
+      @media (prefers-color-scheme: dark) {
+        .hero h1 { color: var(--ink); }
+      }
       .hero h1 em { font-style: italic; color: var(--accent); }
-      .hero .lede { margin-top: 20px; font-size: 1.13rem; color: var(--ink-soft); max-width: 34em; }
+      .hero-rule { width: 56px; height: 3px; background: var(--amber); border-radius: 2px; margin-top: 20px; }
+      .tagline {
+        margin-top: 14px; font-size: 1.05rem; font-weight: 600;
+        color: var(--teal); letter-spacing: 0.01em;
+      }
+      @media (prefers-color-scheme: dark) {
+        .tagline { color: var(--accent); }
+      }
+      .hero .lede { margin-top: 14px; font-size: 1.13rem; color: var(--ink-soft); max-width: 34em; }
       .hero .byline { margin-top: 18px; font-size: 0.98rem; color: var(--ink-soft); }
       .hero .byline strong { color: var(--ink); }
       .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
@@ -108,8 +152,12 @@
         font-weight: 600; font-size: 1rem; text-decoration: none; cursor: pointer;
         border: 1px solid transparent; font-family: inherit;
       }
-      .btn-primary { background: var(--accent); color: var(--accent-ink); }
-      .btn-primary:hover { filter: brightness(1.08); }
+      .btn-primary { background: var(--teal); color: #ffffff; }
+      .btn-primary:hover { background: var(--teal-dark); color: #ffffff; }
+      @media (prefers-color-scheme: dark) {
+        .btn-primary { background: var(--teal); }
+        .btn-primary:hover { background: var(--accent); }
+      }
       .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
       .btn-ghost:hover { background: var(--surface-2); }
       .hero-note { margin-top: 14px; font-size: 0.9rem; color: var(--ink-soft); }
@@ -121,7 +169,10 @@
       }
       .offer-card .card-label {
         font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
-        color: var(--amber);
+        color: var(--teal);
+      }
+      @media (prefers-color-scheme: dark) {
+        .offer-card .card-label { color: var(--accent); }
       }
       .offer-card h2 { font-size: 1.55rem; margin-top: 8px; }
       .offer-card .weeks { margin-top: 6px; font-weight: 600; color: var(--accent); font-size: 0.98rem; }
@@ -144,16 +195,26 @@
       .stats {
         margin-top: 56px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
         display: grid; grid-template-columns: repeat(4, 1fr);
+        background: var(--bg-white);
+      }
+      @media (prefers-color-scheme: dark) {
+        .stats { background: transparent; }
       }
       .stat { padding: 24px 18px 22px; }
       .stat + .stat { border-left: 1px solid var(--line); }
-      .stat .num { font-family: "Newsreader", Georgia, serif; font-size: 2.1rem; font-weight: 600; line-height: 1; }
+      .stat .num { font-family: "Newsreader", Georgia, serif; font-size: 2.1rem; font-weight: 600; line-height: 1; color: var(--navy); }
+      @media (prefers-color-scheme: dark) {
+        .stat .num { color: var(--ink); }
+      }
       .stat .lbl { margin-top: 8px; font-size: 0.88rem; color: var(--ink-soft); line-height: 1.45; }
 
       /* Sections */
       section.block { padding: 64px 0 0; }
       .sec-head { max-width: 44em; }
-      .sec-head h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); }
+      .sec-head h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); color: var(--navy); }
+      @media (prefers-color-scheme: dark) {
+        .sec-head h2 { color: var(--ink); }
+      }
       .sec-head p { margin-top: 12px; color: var(--ink-soft); font-size: 1.05rem; }
 
       /* Proof */
@@ -162,17 +223,26 @@
         background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
         padding: 26px; box-shadow: var(--shadow);
       }
-      .proof-card h3 { font-size: 1.3rem; }
+      .proof-card h3 { font-size: 1.3rem; color: var(--navy); }
+      @media (prefers-color-scheme: dark) {
+        .proof-card h3 { color: var(--ink); }
+      }
       .proof-card .sub { margin-top: 6px; color: var(--ink-soft); font-size: 0.97rem; }
       .metric { margin-top: 22px; }
       .metric .m-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
       .metric .m-name { font-weight: 600; font-size: 0.98rem; }
-      .metric .m-change { font-family: "Newsreader", Georgia, serif; font-size: 1.35rem; font-weight: 600; color: var(--accent); white-space: nowrap; }
+      .metric .m-change { font-family: "Newsreader", Georgia, serif; font-size: 1.35rem; font-weight: 600; color: var(--teal); white-space: nowrap; }
+      @media (prefers-color-scheme: dark) {
+        .metric .m-change { color: var(--accent); }
+      }
       .bar-row { display: grid; grid-template-columns: 52px 1fr 44px; align-items: center; gap: 10px; margin-top: 10px; font-size: 0.85rem; color: var(--ink-soft); }
       .bar-track { height: 12px; background: var(--bar-track); border-radius: 6px; overflow: hidden; }
       .bar-fill { height: 100%; border-radius: 6px; }
       .bar-fill.before { background: var(--bar-before); }
-      .bar-fill.after { background: var(--accent); }
+      .bar-fill.after { background: var(--teal); }
+      @media (prefers-color-scheme: dark) {
+        .bar-fill.after { background: var(--accent); }
+      }
       .bar-val { font-weight: 700; color: var(--ink); text-align: right; }
       .proof-card .foot { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 0.96rem; }
       .proof-card .foot strong { color: var(--ink); }
@@ -182,7 +252,10 @@
       .aud {
         border: 1px solid var(--line); border-radius: 12px; padding: 24px; background: var(--surface);
       }
-      .aud .n { font-family: "Newsreader", Georgia, serif; font-size: 1.5rem; color: var(--amber); font-weight: 600; }
+      .aud .n { font-family: "Newsreader", Georgia, serif; font-size: 1.5rem; color: var(--teal); font-weight: 600; }
+      @media (prefers-color-scheme: dark) {
+        .aud .n { color: var(--accent); }
+      }
       .aud h3 { font-size: 1.2rem; margin-top: 8px; }
       .aud p { margin-top: 8px; color: var(--ink-soft); font-size: 0.97rem; }
 
@@ -192,7 +265,7 @@
       .step .n {
         display: inline-flex; align-items: center; justify-content: center;
         width: 38px; height: 38px; border-radius: 50%;
-        background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 1rem;
+        background: var(--teal); color: #ffffff; font-weight: 700; font-size: 1rem;
       }
       .step h3 { font-size: 1.2rem; margin-top: 14px; }
       .step p { margin-top: 8px; color: var(--ink-soft); font-size: 0.97rem; }
@@ -233,19 +306,21 @@
 
       /* Final CTA */
       .final {
-        margin: 72px 0 0; background: var(--accent); color: var(--accent-ink);
+        margin: 72px 0 0; background: var(--final-bg); color: #ffffff;
         border-radius: 16px; padding: 44px 40px;
       }
-      .final h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); max-width: 20em; }
-      .final .final-brand { font-family: "Newsreader", Georgia, serif; font-size: 1.15rem; font-weight: 700; margin: 0 0 10px; opacity: 0.95; }
-      .final p { margin-top: 14px; max-width: 38em; opacity: 0.92; font-size: 1.05rem; }
+      .final h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); max-width: 20em; color: #ffffff; }
+      .final .final-brand { font-family: "Newsreader", Georgia, serif; font-size: 1.15rem; font-weight: 700; margin: 0 0 10px; opacity: 0.95; color: #ffffff; }
+      .final p { margin-top: 14px; max-width: 38em; opacity: 0.92; font-size: 1.05rem; color: #ffffff; }
       .final .cta-row { margin-top: 26px; }
-      .final .btn-light { background: var(--accent-ink); color: var(--accent); }
-      .final .btn-outline { background: transparent; color: var(--accent-ink); border-color: rgba(255, 255, 255, 0.55); }
+      .final .btn-light { background: var(--teal); color: #ffffff; }
+      .final .btn-light:hover { background: var(--teal-dark); color: #ffffff; }
       @media (prefers-color-scheme: dark) {
-        .final .btn-outline { border-color: rgba(12, 23, 18, 0.5); }
+        .final .btn-light:hover { background: var(--accent); }
       }
-      .final .email-line { margin-top: 18px; font-size: 0.95rem; opacity: 0.92; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+      .final .btn-outline { background: transparent; color: #ffffff; border-color: rgba(255, 255, 255, 0.55); }
+      .final .email-line { margin-top: 18px; font-size: 0.95rem; opacity: 0.92; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; color: #ffffff; }
+      .final a { color: var(--teal-bright); }
       .copy-btn {
         background: transparent; border: 1px solid currentColor; color: inherit;
         border-radius: 6px; padding: 6px 12px; min-height: 36px; font-family: inherit;
@@ -253,14 +328,15 @@
       }
       .copy-btn:hover { opacity: 1; }
 
-      footer { padding: 34px 0 44px; }
+      footer { padding: 0; margin-top: 56px; background: var(--footer-bg); color: var(--footer-ink); }
       .footer-inner {
-        border-top: 1px solid var(--line); padding-top: 22px;
+        padding-top: 24px; padding-bottom: 26px;
         display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
-        font-size: 0.9rem; color: var(--ink-soft);
+        font-size: 0.9rem; color: var(--footer-ink);
       }
-      .footer-inner a { padding: 6px 0; display: inline-block; min-height: 32px; }
-      .footer-inner strong { color: var(--ink); font-weight: 700; }
+      .footer-inner a { padding: 6px 0; display: inline-block; min-height: 32px; color: var(--teal-bright); text-decoration: none; }
+      .footer-inner a:hover { color: #ffffff; text-decoration: underline; }
+      .footer-inner strong { color: #ffffff; font-weight: 700; }
 
       @media (max-width: 860px) {
         .hero { padding-top: 44px; }
@@ -272,6 +348,8 @@
         .faq-item { gap: 10px; }
         .final { padding: 34px 24px; }
         section.block { padding-top: 52px; }
+        .brand { font-size: 1.15rem; gap: 10px; }
+        .brand-logo { height: 36px; }
       }
     </style>
   </head>
@@ -279,11 +357,8 @@
     <header class="topbar">
       <div class="wrap topbar-inner">
         <a class="brand" href="#top" aria-label="Path 2 Consulting home">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M16 29V17C16 12 10 11 8 5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-            <path d="M16 17C16 12 22 11 24 5" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          <span><b>Path 2</b> Consulting</span>
+          <img class="brand-logo" src="https://arunshanmugamprema.github.io/path2/logo-p2.png" alt="Path 2 Consulting logo" height="40" />
+          <span class="brand-text"><span class="brand-path">Path</span><span class="brand-two">2</span><span class="brand-consulting">Consulting</span></span>
         </a>
         <nav class="topnav" aria-label="Page sections">
           <a href="#diagnostic">The Diagnostic</a>
@@ -300,6 +375,8 @@
         <div class="hero-grid">
           <div>
             <h1>Get more from the distributor channel <em>you already have.</em></h1>
+            <div class="hero-rule" aria-hidden="true"></div>
+            <p class="tagline">Find the Problem. Find the Path.</p>
             <p class="lede">Analytics and incentive design for mid-size companies that sell through distributors and dealers. Most channel programs leak money in places nobody is measuring. I find those places, in your numbers, and rank the fixes by what pays back first.</p>
             <p class="byline"><strong>Path 2 Consulting</strong> · Arun S. Prema · Pittsburgh, PA · Working with clients nationally</p>
             <div class="cta-row">
