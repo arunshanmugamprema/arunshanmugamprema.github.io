@@ -175,15 +175,6 @@
       .proof-card .foot { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 0.96rem; }
       .proof-card .foot strong { color: var(--ink); }
 
-      .second-proof {
-        margin-top: 20px; background: var(--surface-2); border-radius: 12px; padding: 26px;
-        display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: center;
-      }
-      .second-proof .big { font-family: "Newsreader", Georgia, serif; font-size: 2.4rem; font-weight: 600; line-height: 1.05; white-space: nowrap; }
-      .second-proof .big small { display: block; font-family: "Archivo", sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); margin-top: 6px; letter-spacing: 0.02em; }
-      .second-proof p { color: var(--ink-soft); font-size: 1rem; }
-      .second-proof p strong { color: var(--ink); }
-
       /* Who it is for */
       .audience { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
       .aud {
@@ -203,6 +194,25 @@
       }
       .step h3 { font-size: 1.2rem; margin-top: 14px; }
       .step p { margin-top: 8px; color: var(--ink-soft); font-size: 0.97rem; }
+
+      /* Brief and needs */
+      .brief-parts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+      .brief-part { border: 1px solid var(--line); border-radius: 12px; padding: 24px; background: var(--surface); }
+      .brief-part h3 { font-size: 1.15rem; }
+      .brief-part p { margin-top: 8px; color: var(--ink-soft); font-size: 0.97rem; }
+      .brief-close { margin-top: 22px; font-size: 1.05rem; font-weight: 600; }
+      .needs-card { margin-top: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 8px 26px 22px; }
+      .needs-card ul { margin: 0; padding: 0; list-style: none; }
+      .needs-card li { padding: 14px 0 14px 26px; position: relative; font-size: 1rem; border-top: 1px solid var(--line); }
+      .needs-card li:first-child { border-top: none; }
+      .needs-card li::before { content: ""; position: absolute; left: 2px; top: 23px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+      .needs-note { margin-top: 18px; color: var(--ink-soft); font-size: 1rem; max-width: 44em; }
+
+      /* FAQ */
+      .faq-list { margin-top: 28px; border-top: 1px solid var(--line); }
+      .faq-item { padding: 24px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1.6fr; gap: 28px; }
+      .faq-item h3 { font-size: 1.2rem; }
+      .faq-item p { color: var(--ink-soft); font-size: 1rem; }
 
       /* About */
       .about-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 36px; margin-top: 30px; align-items: start; }
@@ -253,8 +263,8 @@
         .stats { grid-template-columns: 1fr 1fr; }
         .stat:nth-child(3) { border-left: none; }
         .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
-        .proof-grid, .audience, .steps, .about-grid { grid-template-columns: 1fr; }
-        .second-proof { grid-template-columns: 1fr; gap: 14px; }
+        .proof-grid, .audience, .steps, .about-grid, .brief-parts, .faq-item { grid-template-columns: 1fr; }
+        .faq-item { gap: 10px; }
         .final { padding: 34px 24px; }
         section.block { padding-top: 52px; }
       }
@@ -359,13 +369,6 @@
           </article>
         </div>
 
-        <div class="second-proof">
-          <div class="big">$1B<small>PORTFOLIO UNDER KPI GOVERNANCE</small></div>
-          <div>
-            <p><strong>The same discipline, applied in the public sector.</strong> Public sector experience: KPI governance and budget analytics built across eight departments on a $1B portfolio. The setting is different. The work is the same: clear measures, visible performance, and spending tied to results.</p>
-          </div>
-        </div>
-
         <div class="proof-grid" style="margin-top: 20px;">
           <article class="proof-card" style="grid-column: 1 / -1;">
             <h3>Distributor ROI: spend follows the partners moving volume</h3>
@@ -424,6 +427,49 @@
         </div>
       </section>
 
+      <!-- What you receive -->
+      <section class="block wrap" id="receive">
+        <div class="sec-head">
+          <h2>What you receive</h2>
+          <p>A written findings brief. It is short and plain. It has four parts.</p>
+        </div>
+        <div class="brief-parts">
+          <div class="brief-part">
+            <h3>What is visible.</h3>
+            <p>The distributor results you can already see clearly.</p>
+          </div>
+          <div class="brief-part">
+            <h3>What is missing.</h3>
+            <p>The gaps in your reporting, and which ones matter.</p>
+          </div>
+          <div class="brief-part">
+            <h3>Where spend and sales line up.</h3>
+            <p>Whether incentive money goes to the partners who sell your product through to customers.</p>
+          </div>
+          <div class="brief-part">
+            <h3>Three fixes, ranked.</h3>
+            <p>The three changes most likely to pay back first, in order.</p>
+          </div>
+        </div>
+        <p class="brief-close">You can act on the brief without me.</p>
+      </section>
+
+      <!-- What I need from you -->
+      <section class="block wrap" id="needs">
+        <div class="sec-head">
+          <h2>What I need from you</h2>
+          <p>Three things. Most firms already have them.</p>
+        </div>
+        <div class="needs-card">
+          <ul>
+            <li>Sales by distributor or dealer.</li>
+            <li>Your forecast history.</li>
+            <li>What you paid out in incentives, and to whom.</li>
+          </ul>
+        </div>
+        <p class="needs-note">A spreadsheet export is enough. I sign a confidentiality agreement before I see any of it. You do not need to clean it first.</p>
+      </section>
+
       <!-- About -->
       <section class="block wrap" id="about">
         <div class="sec-head">
@@ -435,12 +481,32 @@
               <div class="row"><dt>Based</dt><dd>Pittsburgh, PA, working nationally</dd></div>
               <div class="row"><dt>Practice</dt><dd>Path 2 Consulting, channel analytics and incentive design</dd></div>
               <div class="row"><dt>Channel</dt><dd>12 years running distributor networks, Bajaj Electricals</dd></div>
-              <div class="row"><dt>Public sector</dt><dd>KPI governance and budget analytics across eight departments, $1B portfolio</dd></div>
             </dl>
           </div>
           <div class="about-text">
             <p>I spent <strong>12 years at Bajaj Electricals</strong> running distributor networks in consumer durables, with responsibility for a $100M P&amp;L, 200+ distributors, and 40,000+ retail accounts across 15 regions. The work that defined that tenure was measurement: cutting distributor forecast error from 28% to 11%, raising retailer participation in incentive programs from 15% to 55%, and running a distributor ROI program that redirected spend to the partners actually moving volume.</p>
-            <p>My public sector experience carries the same discipline into a different setting: <strong>KPI governance and budget analytics built across eight departments on a $1B portfolio</strong>. Path 2 Consulting is where that experience is available to the companies it was built in: mid-size manufacturers, distributors, and rep agencies that sell through partners and want the channel measured as carefully as the rest of the business.</p>
+            <p>Path 2 Consulting is where that experience is available to the companies it was built for: mid-size manufacturers, distributors, and rep agencies that sell through partners and want the channel measured as carefully as the rest of the business.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Questions owners ask -->
+      <section class="block wrap" id="faq">
+        <div class="sec-head">
+          <h2>Questions owners ask</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>Why one person and not a large firm?</h3>
+            <p>You work with me directly, from the first call to the findings brief. Nothing is handed to a junior team.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What does it cost?</h3>
+            <p>I agree the fee with you after our first conversation, once I understand your channel. The conversation itself costs nothing.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What happens to my data?</h3>
+            <p>I use it only for your diagnostic. It stays under the confidentiality agreement. When the work ends, I return or delete it, whichever you prefer.</p>
           </div>
         </div>
       </section>
